@@ -72,7 +72,7 @@ ReactDOM.render(
 {/* <br></br><br></br> */}
 
 
-<Route path = "/" component = {Home} exact></Route>
+<Route path = "/" component = {Loginpage} exact></Route>
 <Route path='/loginpage' component={Loginpage} exact></Route>
 <Route path='/signuppage' component={Signupage} exact></Route>
 <Route path='/forgotpasswordpage' component={Forgotpasswordpage} exact></Route>
