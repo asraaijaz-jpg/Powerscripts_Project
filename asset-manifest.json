@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Powerscripts_Project/static/css/main.4bcfab78.chunk.css",
+    "main.js": "/Powerscripts_Project/static/js/main.ed928c3f.chunk.js",
+    "main.js.map": "/Powerscripts_Project/static/js/main.ed928c3f.chunk.js.map",
+    "runtime-main.js": "/Powerscripts_Project/static/js/runtime-main.fb06bc6f.js",
+    "runtime-main.js.map": "/Powerscripts_Project/static/js/runtime-main.fb06bc6f.js.map",
+    "static/css/2.da1eef19.chunk.css": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css",
+    "static/js/2.ccb1bbda.chunk.js": "/Powerscripts_Project/static/js/2.ccb1bbda.chunk.js",
+    "static/js/2.ccb1bbda.chunk.js.map": "/Powerscripts_Project/static/js/2.ccb1bbda.chunk.js.map",
+    "static/js/3.6e8710ef.chunk.js": "/Powerscripts_Project/static/js/3.6e8710ef.chunk.js",
+    "static/js/3.6e8710ef.chunk.js.map": "/Powerscripts_Project/static/js/3.6e8710ef.chunk.js.map",
+    "index.html": "/Powerscripts_Project/index.html",
+    "static/css/2.da1eef19.chunk.css.map": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css.map",
+    "static/css/main.4bcfab78.chunk.css.map": "/Powerscripts_Project/static/css/main.4bcfab78.chunk.css.map",
+    "static/js/2.ccb1bbda.chunk.js.LICENSE.txt": "/Powerscripts_Project/static/js/2.ccb1bbda.chunk.js.LICENSE.txt",
+    "static/media/cartoon1.b82cf640.png": "/Powerscripts_Project/static/media/cartoon1.b82cf640.png",
+    "static/media/cartoon2.aa6d316f.png": "/Powerscripts_Project/static/media/cartoon2.aa6d316f.png",
+    "static/media/cartoon3.3db7d731.png": "/Powerscripts_Project/static/media/cartoon3.3db7d731.png",
+    "static/media/cartoon4.a804c983.png": "/Powerscripts_Project/static/media/cartoon4.a804c983.png",
+    "static/media/cir3.f97487db.png": "/Powerscripts_Project/static/media/cir3.f97487db.png",
+    "static/media/logo.6ce24c58.svg": "/Powerscripts_Project/static/media/logo.6ce24c58.svg",
+    "static/media/logo3.51dd037c.png": "/Powerscripts_Project/static/media/logo3.51dd037c.png",
+    "static/media/txtimg.7a0b7746.png": "/Powerscripts_Project/static/media/txtimg.7a0b7746.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fb06bc6f.js",
+    "static/css/2.da1eef19.chunk.css",
+    "static/js/2.ccb1bbda.chunk.js",
+    "static/css/main.4bcfab78.chunk.css",
+    "static/js/main.ed928c3f.chunk.js"
+  ]
+}
