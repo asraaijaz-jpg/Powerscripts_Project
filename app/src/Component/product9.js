@@ -61,7 +61,7 @@ function Product9()
       
        </p>
 
-       <hr id='tou'></hr>
+       {/* <hr id='tou'></hr> */}
 
 
        <button type="button" class="btn " style={{ width:'auto' , fontFamily:'Lato/Regular/Small' ,

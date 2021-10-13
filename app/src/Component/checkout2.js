@@ -105,7 +105,8 @@ function Checkout2()
     <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
     <img src={power} id='imm'/><br></br><br></br>
      <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
-    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'}}>New Task &nbsp;  &nbsp; &nbsp; 
+    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
+    , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
       <b style={{fontsize:'20px'}}>+</b></p></button>
     <br></br>
     <div className='row'>
@@ -147,7 +148,7 @@ function Checkout2()
     
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
-      <b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></button>
+     <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
 
     
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
@@ -242,14 +243,13 @@ function Checkout2()
 <div className='row' id='dr'>
 
 
-<div style={{marginLeft:'77px' , border:'1px solid blue' , borderRadius:'4px' , width:'130px'}} className='col-3 p-2'>
+<div style={{marginLeft:'77px' , border:'1px solid blue' , borderRadius:'4px'}} className='col-3 p-2'>
 <a href='https://www.paypal.com/us/signin' style={{textDecoration:'none' , color:'black'}}>
 <h5 ><b><i><center>Paypal</center></i></b></h5>
 </a>
 </div>
 
-<div className='col-3 p-2' style={{marginLeft:'11px' , border:'1px solid #DFDFDF' , borderRadius:'4px',
-width:'130px'}}>
+<div className='col-3 p-2' style={{marginLeft:'11px' , border:'1px solid #DFDFDF' , borderRadius:'4px'}}>
 <a href='https://dashboard.stripe.com/login' style={{textDecoration:'none' , color:'black'}}>
 <h5><b><i><center>Stripe</center></i></b></h5>
 </a>

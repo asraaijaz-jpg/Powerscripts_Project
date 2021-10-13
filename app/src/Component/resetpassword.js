@@ -46,11 +46,11 @@ function check()
 {
     if(a!=b)
     {
-        alert('Password fields are not same');
+        // alert('Password fields are not same');
     }
     // alert('hello');
     // isPreview=true;
-    else
+    else if(a == b)
     {
     setIsPreview(true);
     }

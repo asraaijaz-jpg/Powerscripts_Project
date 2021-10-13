@@ -28,6 +28,7 @@ function ForgotpasswordPage()
         document.title='Forgotpassword Page';
     });
 
+    const [email,setemail]=useState('');
     const [isPreview, setIsPreview] = useState(false);
     // const isPreview=false;
     
@@ -46,6 +47,17 @@ function check()
     // alert(isPreview);
 }
 
+let storedata={email};
+console.log(storedata)
+
+fetch("https://gencore.ar/micro_services_new/public/api/reset-password-request",
+{
+    method:'POST',
+    headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+    body: JSON.stringify(storedata)
+}).then((results)=>{
+   console.log(results)
+})
 }
 
 
@@ -102,7 +114,8 @@ function check()
     <label for="Email"><b>Email </b></label><br></br><br></br>
     <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
     style={{  height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required/><br></br>
+    pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required
+    onChange={(e)=>setemail(e.target.value)}/><br></br>
 <br></br><br></br>
 
     <button type="submit" class="btn btn-primary mb-2 btn-lg" id='btnwid' 

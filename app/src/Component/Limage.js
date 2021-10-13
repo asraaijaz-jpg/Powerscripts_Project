@@ -14,7 +14,7 @@ function Image()
 
  <div className='row' style={{backgroundColor:'white'}}>
      <div className='col'>
-     <img src={logo1} style={{marginTop:'-170px'  
+     <img src={logo1} style={{marginTop:'-150px'  
  , marginLeft:'630px' , position:'fixed'}} id='im4' 
  ></img>
 
@@ -23,7 +23,7 @@ function Image()
 
 <div className='row'>
     <div className='col'>
-    <img src={logo7} style={{marginTop:'-98px'  ,
+    <img src={logo7} style={{marginTop:'-58px'  ,
   marginLeft:'700px' ,position:'fixed'}} id='im5' ></img>
  
     </div>
@@ -38,13 +38,13 @@ width:'70px' ,position:'fixed'}} id='im1' ></img>
 </div>
 
 <div className='row'>
-<div className='col offset-10' style={{marginTop:'-400px'  , marginLeft:'610px'}}>
+<div className='col offset-10' style={{marginTop:'-380px'  , marginLeft:'628px'}}>
 <img src={logo3} style={{height:'200px' , width:'200px' ,position:'fixed'}} id='im2' ></img>
 </div>
 </div>
 
 <div className='row'>
-<div className='col offset-10' style={{marginTop:'-220px'  , marginLeft:'540px'}}>
+<div className='col offset-10' style={{marginTop:'-180px'  , marginLeft:'540px'}}>
 <img src={logo4}   style={{height:'200px' , width:'200px' ,position:'fixed'}} id='im3'></img>
 </div>
 </div>

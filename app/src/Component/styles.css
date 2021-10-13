@@ -73,6 +73,9 @@
     #e3{
       width: 310px;
     }
+    #e4{
+      width: 310px;
+    }
     #lh{
  margin-left:58px;
     }
@@ -157,6 +160,7 @@
     }
     #sepp{
       margin-top: -50px;
+      background-color: #F5F5F5;
     }
     #seppp{
       margin-top: -50px;
@@ -648,6 +652,9 @@ width:'auto';
 #si{
   margin-left: 33px;
 }
+#sio{
+  margin-left: 33px;
+}
 }
 
 
@@ -659,6 +666,11 @@ width:'auto';
   #si{
     margin-left: 39px;
   }
+  #sio{
+    margin-left: 33px;
+    margin-top: 60px;
+    /* margin-top: -450px; */
+  }
   #mt{
 margin-left: 78px;
 width: 600px;
@@ -668,16 +680,25 @@ width: 600px;
     margin-left: -10px;
   }
   #tbb{
-    margin-left: 60px;
+    margin-left: 20px;
+  }
+  #tbbt{
+    margin-left: 3px;
+  }
+  #tbb4{
+    margin-left: 5px;
   }
   #tss{
     margin-left: 20px;
   }
   #tbbb{
-    margin-left: 50px;
+    margin-left: 105px;
+    /* margin-top: -400px; */
+    margin-top: -30px;
   }
+
   #tsss{
-    margin-left: 5px;
+    margin-left: -5px;
   }
   #oo{
     margin-top: -53px;
@@ -767,26 +788,27 @@ width: 600px;
   }
   #bob{
     margin-left: -10px;
-    width: 220px;
+    width: 190px;
     margin-top: -35px;
   }
   #bob2{
-    margin-left: 80px;
-    width: 220px;
+    margin-left: 98px;
+    width: 190px;
     margin-top: -35px;
   }
   #bob3{
-    margin-left: 170px;
-    width: 240px;
+    margin-left: 202px;
+    width: 190px;
     margin-top: -35px;
   }
   #ob{
-    width: 360px;
+    width: 320px;
     margin-left: 60px;
   }
   #ob2{
-    width: 360px;
+    width: 320px;
     margin-left: 135px;
+    height:155px;
   }
 
   #b33{
@@ -827,7 +849,9 @@ width: 600px;
     margin-left: 65px;
   }
   #or42{
-    margin-left: 65px;
+    margin-left: 175px;
+    /* border: 2px solid black; */
+    width: 200px;
   }
   #ob4{
     margin-left: 320px;
@@ -837,7 +861,7 @@ width: 600px;
   }
   #imo3{
     margin-top: -20px;
-    margin-left: 135px;
+    margin-left: 45px;
   }
   #imo2{
     margin-top: -20px;
@@ -955,7 +979,7 @@ width: 600px;
   }
   #rside2{
     margin-left: 1032px;
-    margin-top: -618px;
+    margin-top: -656px;
     width: 385px;
     height: 700px;
   }
@@ -1023,6 +1047,7 @@ width: 100px;
 }
 #mlk{
   margin-left: 70px;
+  /* margin-top: -30px; */
 }
 #ml01{
   margin-left: 220px;
@@ -1056,21 +1081,23 @@ mll{
 }
 #dv{
   margin-left: 15px;
+  /* width: 200px;
+  border: 2px solid black; */
 }
 #dv2{
   margin-left: 15px;
 }
 
 #dv4{
-  margin-left: 5px;
+  margin-left: 375px;
   margin-top: -33px;
 }
 #dv24{
-  margin-left: 480px;
+  margin-left: 500px;
   margin-top: -34px;
 }
 #dvv4{
-  margin-left: 76px;
+  margin-left: 125px;
   margin-top: -33px;
 }
 #dvdv{
@@ -1088,6 +1115,9 @@ mll{
   border-right: none;
   border-bottom: 3px solid #D8D8D8;
 }
+#sds{
+  margin-left: -50px;
+}
 }
 
 
@@ -1098,6 +1128,10 @@ mll{
 
 @media  (max-width: 1200px) 
 {
+  /* #dvv{
+width: 200px;
+  } */
+
   #dv24{
     width: 50px;
     margin-top: 60px;
@@ -1366,6 +1400,11 @@ display: none;
     margin-bottom: 40px;
     margin-top: -33px;
   }
+  #hrt{
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-top: -33px;
+  }
   #bts1{
 margin-left: 20px;
 font-size: 13px;
@@ -1531,15 +1570,19 @@ margin-top: -50px;
     width:500px;
   }
   #mp{
-    margin-top: -100px;
+    margin-top: -108px;
   }
   #hr{
     margin-top: -33px;
     width: 990px;
   }
+  #hrt{
+    margin-top: -33px;
+    width: 950px;
+  }
   #hrr{
     margin-top: 2px;
-    width: 990px;
+    width: 950px;
     margin-left: 10px;
   
   }
@@ -1853,6 +1896,14 @@ margin-top: -30px;
 
 @media  (min-width: 1201px) 
 {
+  #fp5{
+    margin-left: 70px;
+    /* width: 480px; */
+  }
+  #fp4{
+    margin-left: 70px;
+    /* width: 480px; */
+  }
   #bilt{
     margin-top: -20px;
     margin-left: -30px;
@@ -1897,7 +1948,7 @@ margin-top: -30px;
   }
   #boxb{
     margin-left: 10px;
-    width: 985px;
+    width: 940px;
     height: 140px;
   }
   #bt{
@@ -1922,7 +1973,7 @@ margin-top: -30px;
   }
   #table2{
     margin-left: 50px;
-    width: 950px;
+    width: 940px;
   }
   #bp{
     margin-left: 50px;
@@ -1941,25 +1992,26 @@ margin-top: -30px;
   #boxp{
     margin-top: -8px;
     margin-left: 47px;
-    width: 960px;
+    width: 950px;
     height: 130px;
   }
   #fp2{
     margin-left: -37px;
   }
   #fp3{
-    margin-left: 90px;
+    margin-left: 70px;
+    /* width: 450px; */
   }
   #fp2b{
     margin-left: -38px;
   }
   #fp3b{
     margin-left: 90px;
-    width: 480px;
+    /* width: 480px; */
   }
   #fp4b{
     margin-left: 90px;
-    width: 480px;
+    /* width: 480px; */
   }
   #dcd{
     width: 775px;
@@ -2021,6 +2073,7 @@ margin-top: -30px;
   margin-left: 35px;
   width: 500px;
   margin-bottom: 30px;
+
 }
 #dcd{
   width: 550px;
@@ -2029,6 +2082,7 @@ margin-top: -30px;
 #dr{
   width: 600px;
   margin-left: -50px;
+ 
 }
 #r{
   margin-left:50px;
@@ -2076,6 +2130,10 @@ margin-top: -30px;
 
 @media  (min-width: 1201px)
  {
+   #dr{
+    /* border: 2px solid black; */
+    width: 750px;
+   }
   #divtab{
     margin-top: 30px;
     margin-left: 70px;
@@ -2109,10 +2167,10 @@ margin-top: -30px;
     margin-left:170px
   }
   #r2{
-    margin-left:100px
+    margin-left:70px
   }
   #r3{
-    margin-left:-270px
+    margin-left:-130px
   }
   #c{
     margin-left: 32px;
@@ -2124,5 +2182,7 @@ margin-top: -30px;
   #mc
   {
     margin-left: 80px;
+    /* border: 2px solid black; */
+    width: 800px;
   }
 } 

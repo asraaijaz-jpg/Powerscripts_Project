@@ -117,7 +117,8 @@ function Subscription4()
       <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
       <img src={power} id='imm'/><br></br><br></br>
        <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
-      style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'}}>New Task &nbsp;  &nbsp; &nbsp; 
+      style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
+      , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
         <b style={{fontsize:'20px'}}>+</b></p></button>
       <br></br>
       <div className='row'>
@@ -158,7 +159,7 @@ function Subscription4()
       
     <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
     width:'190px' , height:'42px'}} id='btb'>
-        <b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></button>
+     <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
 
         <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
@@ -211,7 +212,7 @@ id='nav'>Billing</h5></NavLink>
 <div className='col-1 m-4'>
 <NavLink style={{textDecoration:'none' , color:'#DBDBDB'}} to='/settings' >
   <h5 style={{ marginTop:'-17px'}}
- id='navset'>Settings</h5></NavLink>
+ id='navset'>&nbsp;&nbsp;&nbsp;&nbsp;Settings</h5></NavLink>
 </div>
 </div>
 
@@ -383,7 +384,7 @@ style={{marginTop:'-5px' , width:'290px'}}></hr></center>
 
 
 
-<div className='col-4 p-3 ' style={{backgroundColor:'#F9F9F9' , color:'black' ,
+<div className='col-4 p-3' style={{backgroundColor:'#F9F9F9' , color:'black' ,
 width:'330px' , 
 height:'500px' }} id='sb2'>
 

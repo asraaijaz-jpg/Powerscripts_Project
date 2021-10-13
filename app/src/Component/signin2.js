@@ -30,6 +30,9 @@ function SigninPage2()
     });
 
 
+    const [email,setemail]=useState('');
+    const [password,setpassword]=useState('');
+
     const [isPreview, setIsPreview] = useState(false);
     // const isPreview=false;
 
@@ -47,6 +50,19 @@ function check()
     setIsPreview(true);
     // alert(isPreview);
 }
+
+let storedata={email,password};
+console.log(storedata)
+
+fetch("https://gencore.ar/micro_services_new/public/api/login",
+{
+    method:'POST',
+    headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+    body: JSON.stringify(storedata)
+}).then((results)=>{
+    console.log(results)
+})
+
 
 }
 
@@ -102,7 +118,8 @@ function check()
     <label for="Email"><b>Email</b></label><br></br>
     <input type="email" class="form-control" id="Email" placeholder="lindsey.westerveltgmail.com"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required/><br></br><br></br>
+    pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required
+    onChange={(e)=>setemail(e.target.value)}/><br></br><br></br>
 
     <label for="password"><b>Password</b></label><br></br>
     <input type="password" class="form-control" id="password" placeholder="Password"
@@ -111,7 +128,8 @@ function check()
      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
      title="Must contain at least one number and one uppercase and 
      lowercase letter, and at least 8 or more characters"
-    required /><br></br>
+    required 
+    onChange={(e)=>setpassword(e.target.value)}/><br></br>
 <br></br>    <br></br>
 
 <button type="submit" class="btn btn-primary mb-2 btn-lg" id='btnwid'

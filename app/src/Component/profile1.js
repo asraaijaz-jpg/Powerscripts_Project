@@ -76,7 +76,8 @@ function Profile1()
     <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
     <img src={power} id='imm'/><br></br><br></br>
      <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
-    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'}}>New Task &nbsp;  &nbsp; &nbsp; 
+    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
+    , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
       <b style={{fontsize:'20px'}}>+</b></p></button>
     <br></br>
     <div className='row'>
@@ -117,7 +118,7 @@ function Profile1()
     
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
-     <b> Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></button>
+     <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
 
      <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -188,7 +189,7 @@ id='nav'>Billing</h5></NavLink>
 
 
 
- <hr id='hr'></hr> <br></br>
+ <hr id='hrt'></hr> <br></br>
 
 {/* 
  <hr></hr> 

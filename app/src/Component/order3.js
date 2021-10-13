@@ -106,7 +106,8 @@ function Order3()
     <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
     <img src={power} id='imm'/><br></br><br></br>
      <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
-    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'}}>New Task &nbsp;  &nbsp; &nbsp; 
+    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
+    , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
       <b style={{fontsize:'20px'}}>+</b></p></button>
     <br></br>
     <div className='row'>
@@ -147,7 +148,7 @@ function Order3()
     
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
-      <b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></button>
+       <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
@@ -161,31 +162,12 @@ function Order3()
 <div className='row'>
 
 
-<div className='row' id='profile'>
-
-  <div  id='touu' className='p-3'>
-
-        <div className='col-lg-1 col-3 offset-lg-9 offset-sm-4' id='pf'>
-        {/* <AccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
-        <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
-           <img src={ladyprofile} style={{height:'50px' , width:'50px' }}></img>
-           </a>
-        </div>
-
-<div className='col-lg-2 col-9' id='pt'>
-<h6 id='tb'><a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
-  Lindsey Westervelt <br></br> PREMIUM</a></h6>
-</div>
-
-</div>
-
- </div>
 
 
 
 
 
-<div id='si'>
+<div id='sio'>
 
 <h2 id='order11'><b>Orders</b></h2><br></br>
 
@@ -279,6 +261,23 @@ function Order3()
 
 <div className='col-3' style={{backgroundColor:'#F5F5F5'}} id='rside2'>
 
+<br></br>
+<div className='row' id='sepp' >
+      <div id='dip'>
+      {/* <AccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
+      <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+         <img src={ladyprofile} style={{height:'45x' , width:'45px' }}></img>
+         </a>
+      </div>
+<div  id='ptss'>
+<h6 ><a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+Lindsey Westervelt <br></br> PREMIUM</a></h6>
+</div>
+</div>
+  
+
+
+
 <center><h5 style={{color:'blue' , fontFamily:'Bangers/XL Large 2'}}><br></br><i><b>WE EXPECTED TO <br></br>
 FINISH THIS JOB IN<img src={cir2} style={{marginTop:'-20px' , marginLeft:'8px'}}/></b></i></h5>
 
@@ -307,8 +306,8 @@ backgroundColor:'#2143FB' , color:'white'}}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 <br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br><br></br><br></br>
-<div style={{ marginTop:'-220px' , marginLeft:'-12px',
-width:'390px' , height:'530px' , backgroundColor:'#F5F5F5' }} id='bekar'>
+<div style={{ marginTop:'-260px' , marginLeft:'-12px',
+width:'385px' , height:'590px' , backgroundColor:'#F5F5F5' }} id='bekar'>
 <h3></h3>
 </div>
 

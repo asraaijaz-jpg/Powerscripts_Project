@@ -104,7 +104,8 @@ function Productt8()
     <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
     <img src={power} id='im1'/><br></br><br></br>
      <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
-    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'}}>New Task &nbsp;  &nbsp; &nbsp; 
+    style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
+    , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
       <b style={{fontsize:'20px'}}>+</b></p></button>
     <br></br>
     <div className='row'>
@@ -146,7 +147,7 @@ function Productt8()
     
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}}>
-      <b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></button>
+  <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -279,9 +280,9 @@ className='p-3'  id='bop'>
     <br></br><br></br>
 
     <img src={jet} style={{height:'40px' , 
-  width:'40px' , marginLeft:'190px' , marginTop:'-30px'}} id='jet'></img>
+  width:'40px' , marginLeft:'250px' , marginTop:'-30px'}} id='jet'></img>
 
-    <h5 style={{fontWeight:'850'}}><i><b>ADVANCED MODE</b></i></h5>
+    <h5 style={{fontWeight:'850' , marginTop:'-35px'}}><i><b>ADVANCED MODE</b></i></h5>
 
     <h6 id='hp' style={{color:'#C4C4C4'}}>Template default &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -314,7 +315,7 @@ borderRadius:'8px' , backgroundColor:'white',
         </div>
 
         <div className='col-6'>
-<img src={ee} style={{width:'50px' , height:'50px' , marginLeft:'50px'}}/>
+<img src={ee} style={{width:'50px' , height:'50px' , marginLeft:'30px'}}/>
         </div>
     </div>
 </div>
@@ -336,7 +337,7 @@ borderRadius:'8px' , backgroundColor:'white'}} className='p-2' id='hp'>
     , color:'blue'}}>SALE100OFF</h6>
     </div>
     <div className='col-6'>
-<img src={aa} style={{width:'50px' , height:'50px' , marginLeft:'50px'}}/>
+<img src={aa} style={{width:'50px' , height:'50px' , marginLeft:'30px'}}/>
         </div>
     </div>    
 </div>
@@ -361,7 +362,7 @@ borderRadius:'8px' , backgroundColor:'white'}} className='p-2' id='hp'>
 </div>
 
 <div className='col-6'>
-<img src={bb} style={{width:'50px' , height:'50px' , marginLeft:'50px'}}/>
+<img src={bb} style={{width:'50px' , height:'50px' , marginLeft:'30px'}}/>
         </div>
     </div>    
 </div>
@@ -384,7 +385,7 @@ borderRadius:'8px' , backgroundColor:'white' , height:'75px'}} className='p-2' i
     <img src={ee1} style={{width:'25px' , height:'25px' , marginLeft:'90px' , marginTop:'-60px'}}/>
 </div>
 <div className='col-6'>
-<img src={cc} style={{width:'50px' , height:'50px' , marginLeft:'50px'}}/>
+<img src={cc} style={{width:'50px' , height:'50px' , marginLeft:'30px'}}/>
         </div>
     </div>    
 </div>
@@ -408,7 +409,7 @@ borderRadius:'8px' , backgroundColor:'white' , height:'75px'}} className='p-2' i
 </div>
 
 <div className='col-6'>
-<img src={dd} style={{width:'50px' , height:'50px' , marginLeft:'50px'}}/>
+<img src={dd} style={{width:'50px' , height:'50px' , marginLeft:'30px'}}/>
         </div>
     </div>    
 </div>
@@ -417,10 +418,12 @@ borderRadius:'8px' , backgroundColor:'white' , height:'75px'}} className='p-2' i
 
 
 <br></br>
+<center>
 <a href='/settings'>
-<button style={{backgroundColor:'#FDFD96' , width:'280px'}} className='btn '><center>
-    <b>Save Settings</b></center></button>
+<button style={{backgroundColor:'#FDFD96' , width:'209px'}} className='btn '>
+    <b>Save Settings</b></button>
 </a>
+</center>
 </div>
 
 <br></br>

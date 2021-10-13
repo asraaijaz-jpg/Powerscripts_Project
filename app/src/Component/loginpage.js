@@ -166,7 +166,7 @@ function check()
     </div>
     </div>
    
-    {isPreview ? <Redirect to='/signuppage2'/> : null}
+    {isPreview ? <Redirect to='/signuppage'/> : null}
 
     </div>)
 }

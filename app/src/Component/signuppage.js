@@ -32,22 +32,52 @@ function SignupPage()
     });
 
     const [isPreview, setIsPreview] = useState(false);
+
+    const [email, setemail] = useState('');
+    const [name, setname] = useState('');
+    const [password, setpassword] = useState('');
+    const [cpassword, setcpassword] = useState('');
+    const [number, setnumber] = useState('');
+    const [type, settype] = useState('');
+   
+
     // const isPreview=false;
 
 function check()
 {
     var a=document.getElementById("e1").value;
     var b=document.getElementById("e2").value;
+    var c=document.getElementById("e3").value;
+    var d=document.getElementById("e4").value;
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var  pattern2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+    var  pattern3=/^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$/;
 
-    if(a.match(pattern) && (b.match(pattern2)))
+    // if( (a.match(pattern)) && (b.match(pattern2)) && (c.match(pattern2)) && (d.match(pattern3)))
+    if( (a.match(pattern)) && (b.match(pattern2)) && (d.match(pattern3)))
 {
-    // alert('hello');
-    // isPreview=true;
+    // setIsPreview(true);
+   if(b == c)
+   {
     setIsPreview(true);
-    // alert(isPreview);
+   }
+ 
+   else{
+       alert("not same");
+   }
 }
+
+let storedata={email,name , password , cpassword , number , type};
+console.log(storedata)
+
+fetch("https://gencore.ar/micro_services_new/public/api/login",
+{
+    method:'POST',
+    headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+    body: JSON.stringify(storedata)
+}).then((results)=>{
+    console.log(results)
+})
 
 }
 
@@ -118,12 +148,14 @@ function check()
     <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}}
      
-     pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required/><br></br><br></br>
+     pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required
+     onChange={(e)=>setemail(e.target.value)}/><br></br><br></br>
 
-    <label for="name"><b>Name</b></label><br></br>
+    <label for="name" ><b>Name</b></label><br></br>
     <input type="text" class="form-control" id="name" placeholder="Name"
-    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    className='col-lg-9 col-12' id='e1' required/><br></br><br></br>
+    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px' }} 
+    className='col-lg-9 col-12' id='e1' required
+    onChange={(e)=>setname(e.target.value)}/><br></br><br></br>
 
     <label for="password"><b>Password</b></label><br></br>
     <input type="password" class="form-control" id="password" placeholder="Password"
@@ -131,7 +163,35 @@ function check()
     className='col-lg-9 col-12' id='e2' 
     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     title="Must contain at least one number and one uppercase and 
-    lowercase letter, and at least 8 or more characters" required/>
+    lowercase letter, and at least 8 or more characters" required
+    onChange={(e)=>setpassword(e.target.value)}/>
+    <br></br><br></br>
+
+
+    <label for="password"><b>Password Confirmation</b></label><br></br>
+    <input type="password" class="form-control" id="password" placeholder="Password_Confirmation"
+    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
+    className='col-lg-9 col-12' id='e3' 
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+    title="Must contain at least one number and one uppercase and 
+    lowercase letter, and at least 8 or more characters" required
+    onChange={(e)=>setcpassword(e.target.value)}/>
+    <br></br><br></br>
+
+    <label for="password"><b>Phone</b></label><br></br>
+    <input type="number" class="form-control" id="password" placeholder="Phone"
+    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
+    className='col-lg-9 col-12' id='e4' 
+    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+    title="Must match with phone number pattern" required
+    onChange={(e)=>setnumber(e.target.value)}/>
+    <br></br><br></br>
+
+    <label for="text"><b>Type</b></label><br></br>
+    <input type="text" class="form-control" id="password" placeholder="Type"
+    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
+    className='col-lg-9 col-12' id='e1' required
+    onChange={(e)=>settype(e.target.value)}/>
     <br></br><br></br>
 
     <button type="submit" class="btn btn-primary mb-2 btn-lg"

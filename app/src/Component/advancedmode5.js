@@ -69,37 +69,78 @@ function Advancedmode5()
     <br></br>
 
     <center>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}} >
-             <img src={e9}  id='be'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-             <img src={e10} id='be'/></button>
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e8} id='be'/></button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'3px solid #101010',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}} >
+           {/* <img src={e9}  id='be'/> */}
+           Informal 🤓
+           </button>
+           <button style={{backgroundColor:'#F9F9F9' , borderRadius:'20px' , border:'3px solid blue',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+             {/* <img src={e10} id='be'/> */}
+             Neutral 😐
+             </button>
+          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'3px solid #101010',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+            Formal 💼
+            {/* <img src={e8} id='be'/> */}
+            </button>
           <br></br><br></br>
           <h5  id='mh2'>Tone</h5><br></br>
 
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e7} id='be'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-             <img src={e6} id='be'/></button>
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e5} id='be'/></button>
+          <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' ,
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}}>
+            {/* <img src={e7} id='be'/> */}
+            Neutral 😐
+            </button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+             {/* <img src={e6} id='be'/> */}
+             Friendly 🤗
+             </button>
+          <button style={{backgroundColor:'white' , borderRadius:'20p0x' , borderRadius:'20px' ,
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+            {/* <img src={e5} id='be'/> */}
+            Joyful 😊
+            </button>
          
          <br></br><br></br>
 
-         <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-           <img src={e4} id='be'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-          <img src={e3} id='be'/></button>
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e2} id='be1'/></button>
+         <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+         border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}}>
+           {/* <img src={e4} id='be'/> */}
+           Optimistic 🌈
+           </button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+          {/* <img src={e3} id='be'/> */}
+          Respectful 🙌
+          </button>
+          <button style={{backgroundColor:'#F9F9F9' , borderRadius:'20px' , borderRadius:'20px' ,
+           border:'3px solid blue',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+            {/* <img src={e2} id='be1'/> */}
+            Confident 🤝
+            </button>
          
          <br></br><br></br>
 
-         <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-           <img src={e1} id='be1'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-             <img src={e11} id='be1'/></button>
+         <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+         border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}}>
+           {/* <img src={e1} id='be1'/> */}
+           Analytical 📈
+           </button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+             {/* <img src={e11} id='be1'/> */}
+             Urgent ⏰
+             </button>
          
 
     </center>

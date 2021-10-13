@@ -108,7 +108,8 @@ function Order4()
   <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
   <img src={power} id='imm'/><br></br><br></br>
    <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
-  style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'}}>New Task &nbsp;  &nbsp; &nbsp; 
+  style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
+  , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
     <b style={{fontsize:'20px'}}>+</b></p></button>
   <br></br>
   <div className='row'>
@@ -149,7 +150,7 @@ function Order4()
   
 <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
 width:'190px' , height:'42px'}} id='btb'>
-    <b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></button>
+    <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
 
     <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'650px' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
@@ -209,17 +210,19 @@ width:'190px' , height:'42px'}} id='btb'>
        
 <div className='col-3' id='dvdv' >
 <button style={{backgroundColor:'white' , border:'3px solid #ECECEC' , 
- color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'200px'}}
+ color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
 className='btn btn-outline-secondary p-2' id='bob'>
-<span id='tsss'>To be reviwed </span>
+<span id='tsss' >To be reviwed </span>
 
-<b id='tbbb'>56</b></button>
+{/* <b id='tbbb'>56</b> */}
+<b id='tbb'>5</b>
+</button>
     </div>
 
     
     <div className='col-3' id='dvv4'>
 <button style={{backgroundColor:'white' , border:'3px solid #ECECEC' , 
- color:'black'  ,  borderRadius:'8px' }}
+ color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
 className='btn btn-outline-secondary p-2' id='bob'><img src={g1} id='ti'/>
 <span id='tss'>&nbsp;&nbsp;Liked </span>
 
@@ -231,19 +234,19 @@ className='btn btn-outline-secondary p-2' id='bob'><img src={g1} id='ti'/>
     
     <div className='col-3' id='dv4'>
 <button style={{backgroundColor:'white' , border:'3px solid #ECECEC' ,
- color:'black'  ,  borderRadius:'8px'}}
+ color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
 className='btn btn-outline-primary p-2' id='bob2'><img src={g2} id='ti'/>
 <span id='tss'>&nbsp;Disliked </span>
-<b id='tbb'>&nbsp;&nbsp;3</b></button>
+<b id='tbb4'>&nbsp;&nbsp;3</b></button>
     </div>
 
 
     <div className='col-3' id='dv24'>
 <button style={{backgroundColor:'white' , border:'3px solid #ECECEC' ,
- color:'black' ,  borderRadius:'8px' }}
+ color:'black' ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
 className='btn btn-outline-primary p-2' id='bob3'><img src={g3} id='ti'/>
-<span id='tss'>Make edits </span>
-<b id='tbb'>3</b></button>
+<span id='tss'>Make edit </span>
+<b id='tbbt'>3</b></button>
     </div>
 
 </div>
@@ -257,7 +260,7 @@ id='bo'>
 
 <button  style={{backgroundColor:'white'  , border:'none' , border:'1px solid white'}}
  className="btn btn-outline-light" id='bb'>
-    <img src={col} style={{marginTop:'-60px' , width:'90px' , height:'30px'}}/></button>
+    <img src={col} style={{marginTop:'-60px' , width:'109px' , height:'35px'}}/></button>
 
 <p style={{color:'#101010' , fontSize:'14px' , marginTop:'-30px' , textAlign:'justify'}}>  Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
             Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
@@ -273,7 +276,7 @@ backgroundColor:'white' }} id='bo2' className='btn btn-outline-primary'>
 
 <button  style={{backgroundColor:'white'  , border:'none' , border:'1px solid white'}} 
 className="btn btn-outline-light" id='bb'>
-    <img src={col} style={{ marginTop:'-60px' , width:'90px' , height:'30px'}}/></button>
+    <img src={col} style={{ marginTop:'-60px' , width:'109px' , height:'35px'}}/></button>
 
 <p style={{color:'#101010' , fontSize:'14px' , marginTop:'-30px' , textAlign:'justify'}}>  Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
             Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
@@ -289,7 +292,7 @@ backgroundColor:'white' }} id='bo3' className='btn btn-outline-primary'>
 
 <button  style={{backgroundColor:'white'  , border:'none' , border:'1px solid white'}}
  className="btn btn-outline-light" id='bb'>
-    <img src={col} style={{ marginTop:'-60px' , width:'90px' , height:'30px'}}/></button>
+    <img src={col} style={{ marginTop:'-60px' , width:'109px' , height:'35px'}}/></button>
 
     <p style={{color:'#101010' , fontSize:'14px' , marginTop:'-30px' , textAlign:'justify'}} >  Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament 
             consectutur adipiscing elit. Mauris.<i style={{color:'blue'}}>Lobortis vel vitae viverra interdum vitae</i>.
@@ -308,7 +311,7 @@ backgroundColor:'white' }} id='bo4' className='btn btn-outline-primary'>
 
 <button  style={{backgroundColor:'white'  , border:'none' , border:'1px solid white'}} 
 className="btn btn-outline-light" id='bb'>
-    <img src={col} style={{marginTop:'-60px' , width:'90px' , height:'30px'}}/></button>
+    <img src={col} style={{marginTop:'-60px' , width:'109px' , height:'35px'}}/></button>
 
 <p style={{color:'#101010' , fontSize:'14px' , marginTop:'-30px' , textAlign:'justify'}}>  Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
             Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
@@ -324,7 +327,7 @@ backgroundColor:'white'}} id='bo5' className='btn btn-outline-primary'>
 
 <button  style={{backgroundColor:'white'  , border:'none' , border:'1px solid white'}} 
 className="btn btn-outline-light" id='bb'>
-    <img src={col} style={{ marginTop:'-60px' , width:'90px' , height:'30px'}} /></button>
+    <img src={col} style={{ marginTop:'-60px' , width:'109px' , height:'35px'}} /></button>
     
 
 <p style={{color:'black' , fontSize:'12px' , marginTop:'-30px' , textAlign:'justify'}}>  Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
