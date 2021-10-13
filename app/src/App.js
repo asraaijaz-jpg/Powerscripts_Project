@@ -39,53 +39,6 @@ import Home from './Component/home';
 function App() {
   return (
     <div>
-
-
-{/* 
-<BrowserRouter>
-<Home/>
-<br></br><br></br>
-
-
-<Route path = "/" component = {Home}>
-<Route path='/loginpage' component={Loginpage} exact></Route>
-<Route path='/signuppage' component={Signupage} exact></Route>
-<Route path='/forgotpasswordpage' component={Forgotpasswordpage} exact></Route>
-<Route path='/signinpage' component={SigninPage} exact></Route>
-<Route path='/signinpage2' component={SigninPage2} exact></Route>
-<Route path='/signuppage2' component={SignupPage2} exact></Route>
-<Route path='/signuppage3' component={SignupPage3} exact></Route>
-<Route path='/resetpassword' component={Resetpassword} exact></Route>
-<Route path='/resetpassword2' component={ResetpasswordPage2}exact></Route>
-<Route path='/dashboard1' component={Dashboard1} exact></Route>
-<Route path='/dashboard3' component={Dashboard3} exact></Route>
-<Route path='/dashboard4' component={Dashboard4} exact></Route>
-<Route path='/dashboard2' component={Dashboard2} exact></Route>
-
-<Route path='/profile1' component={Profile1} exact></Route>
-<Route path='/billing' component={Billing} exact></Route>
-<Route path='/settings' component={Settings} exact></Route>
-<Route path='/subscription1' component={Subscription1} exact></Route>
-
-<Route path='/subscription2' component={Subscription2} exact></Route>
-<Route path='/subscription3' component={Subscription3} exact></Route>
-<Route path='/subscription4' component={Subscription4} exact></Route>
-<Route path='/subscription5' component={Subscription5} exact></Route>
-<Route path='/subscription6' component={Subscription6} exact></Route>
-<Route path='/subscription7' component={Subscription7} exact></Route>
-<Route path='/order1' component={Order1} exact></Route>
-<Route path='/order2' component={Order2} exact></Route>
-<Route path='/order3' component={Order3} exact></Route>
-<Route path='/order4' component={Order4} exact></Route>
-<Route path='/order5' component={Order5} exact></Route>
-<Route path='/order6' component={Order6} exact></Route>
-<Route path='/order7' component={Order7} exact></Route>
-
-</Route>
-</BrowserRouter>  */}
-
-
-   
       
     </div>
   );
