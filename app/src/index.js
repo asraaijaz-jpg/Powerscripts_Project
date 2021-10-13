@@ -15,7 +15,8 @@ import SigninPage from './Component/signin';
 import SignupPage3 from './Component/signuppage3';
 import Resetpassword from './Component/resetpassword';
 import ResetpasswordPage2 from './Component/resetpassword2';
-import {Route , Link , Switch , BrowserRouter , browserHistory, IndexRoute} from 'react-router-dom';
+import {Route , Link , Switch , BrowserRouter , browserHistory, IndexRoute ,
+HashRouter} from 'react-router-dom';
 import Dashboard1 from './Component/dashboard1';
 import Dashboard3 from './Component/dashboard3';
 import Dashboard4 from './Component/dashboard4';
@@ -67,7 +68,7 @@ ReactDOM.render(
     {/* <App /> */}
 
     
-<BrowserRouter basename={window.location.pathname || ''}>
+<HashRouter basename={window.location.pathname || ''}>
 
 {/* <br></br><br></br> */}
 
@@ -129,7 +130,7 @@ ReactDOM.render(
 <Route path='/productt8' component={Productt8} exact></Route>
 
 
-</BrowserRouter> 
+</HashRouter> 
 
 
   </React.StrictMode>,
