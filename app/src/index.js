@@ -71,7 +71,7 @@ ReactDOM.render(
 <BrowserRouter 
 basename={window.location.pathname || 'https://asraaijaz-jpg.github.io/Powerscripts_Project/'}>
 
-{/* <br></br><br></br> */}
+
 
 
 <Route path = "/" component = {Loginpage} exact></Route>
