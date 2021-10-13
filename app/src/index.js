@@ -68,7 +68,7 @@ ReactDOM.render(
     {/* <App /> */}
 
     
-<HashRouter basename={window.location.pathname || ''}>
+<BrowserRouter basename={window.location.pathname || ''}>
 
 {/* <br></br><br></br> */}
 
@@ -130,7 +130,7 @@ ReactDOM.render(
 <Route path='/productt8' component={Productt8} exact></Route>
 
 
-</HashRouter> 
+</BrowserRouter> 
 
 
   </React.StrictMode>,
