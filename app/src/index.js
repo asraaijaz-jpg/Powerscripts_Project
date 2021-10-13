@@ -67,7 +67,7 @@ ReactDOM.render(
     {/* <App /> */}
 
     
-<BrowserRouter>
+<BrowserRouter basename={window.location.pathname || ''}>
 
 {/* <br></br><br></br> */}
 
