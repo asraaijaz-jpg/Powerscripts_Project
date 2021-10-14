@@ -159,9 +159,11 @@ function Productt1()
  <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
  </p>
     
+ <a href='checkout1' style={{textDecoration:'none'}}>  
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}}>
        <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+       </a>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -205,7 +207,7 @@ Lindsey Westervelt <br></br> PREMIUM</a></h6>
   
   
   <div style={{ width:'300px' }} id='bpp'>
-  <button className='btn btn-outline-primary'>
+  <button className='btn btn-outline-primary' style={{backgroundColor:'white' , color:'white'}}>
   <a href='/referalprogram1' style={{textDecoration:'none' , color:'blue'}}>
     Invite teammates to project
     </a></button>
@@ -358,37 +360,78 @@ backgroundColor:'#2143FB'}} onClick={handleShow2}
     <br></br>
 
     <center>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}} >
-             <img src={e9}  id='be'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-             <img src={e10} id='be'/></button>
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e8} id='be'/></button>
+    <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'3px solid #101010',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}} >
+           {/* <img src={e9}  id='be'/> */}
+           Informal 🤓
+           </button>
+           <button style={{backgroundColor:'#F9F9F9' , borderRadius:'20px' , border:'3px solid blue',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+             {/* <img src={e10} id='be'/> */}
+             Neutral 😐
+             </button>
+          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'3px solid #101010',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+            Formal 💼
+            {/* <img src={e8} id='be'/> */}
+            </button>
           <br></br><br></br>
           <h5  id='mh2'>Tone</h5><br></br>
 
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e7} id='be'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-             <img src={e6} id='be'/></button>
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e5} id='be'/></button>
+          <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' ,
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}}>
+            {/* <img src={e7} id='be'/> */}
+            Neutral 😐
+            </button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+             {/* <img src={e6} id='be'/> */}
+             Friendly 🤗
+             </button>
+          <button style={{backgroundColor:'white' , borderRadius:'20p0x' , borderRadius:'20px' ,
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+            {/* <img src={e5} id='be'/> */}
+            Joyful 😊
+            </button>
          
          <br></br><br></br>
 
-         <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-           <img src={e4} id='be'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-          <img src={e3} id='be'/></button>
-          <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-            <img src={e2} id='be1'/></button>
+         <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+         border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}}>
+           {/* <img src={e4} id='be'/> */}
+           Optimistic 🌈
+           </button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+          {/* <img src={e3} id='be'/> */}
+          Respectful 🙌
+          </button>
+          <button style={{backgroundColor:'#F9F9F9' , borderRadius:'20px' , borderRadius:'20px' ,
+           border:'3px solid blue',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+            {/* <img src={e2} id='be1'/> */}
+            Confident 🤝
+            </button>
          
          <br></br><br></br>
 
-         <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-           <img src={e1} id='be1'/></button>
-           <button style={{backgroundColor:'white' , borderRadius:'20px' , border:'none'}}>
-             <img src={e11} id='be1'/></button>
+         <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+         border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px'}}>
+           {/* <img src={e1} id='be1'/> */}
+           Analytical 📈
+           </button>
+           <button style={{backgroundColor:'white' , borderRadius:'20px' , borderRadius:'20px' , 
+           border:'3px solid #DDDDDD',
+          padding:'6px' , paddingLeft:'24px' , paddingRight:'24px' , marginLeft:'15px'}}>
+             {/* <img src={e11} id='be1'/> */}
+             Urgent ⏰
+             </button>
          
 
     </center>
@@ -400,21 +443,22 @@ backgroundColor:'#2143FB'}} onClick={handleShow2}
       
        
 
-<h5 ><a href='' style={{textDecoration:'none' , color:'black'}} id='mt2'>Skip</a></h5>
-{/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-
-
-<button className='btn btn-primary'style={{color:'white'}} id='mb'>Next</button>
-{/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;&nbsp;</button>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
-
-       
-        </Modal.Footer>
+      <h6 ><a href='' style={{textDecoration:'none' , color:'black'}} id='ad2'>Back</a></h6>
+      {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
+      
+      
+      <button className='btn btn-primary'style={{color:'white' ,
+      backgroundColor:'#2143FB' , width:'150px'}} id='ad'>Next</button>
+      {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
+      
+             
+              </Modal.Footer>
       </Modal>
   
 <Modal show={show} onHide={() => setShow(false)} size="xl"  style={{borderRadius:'30px' , height:'2000px'}}>

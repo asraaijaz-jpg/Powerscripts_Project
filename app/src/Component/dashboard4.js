@@ -135,10 +135,12 @@ export function Dashboard4()
     <br></br>
    <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
    </p>
-      
+
+    <a href='checkout1' style={{textDecoration:'none'}}>  
     <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
     width:'180px' , height:'42px'}} id='btb'>
           <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+          </a>
 
         <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} ></div> 
@@ -175,9 +177,11 @@ export function Dashboard4()
     <div className='col-6 p-4 m-1' style={{backgroundColor:'#CDE2F5' , borderRadius:'5px' }} id='dba'>
         <div className='row'>
             <div className='col-7'>
+            <a href='/checkout1' style={{textDecoration:'none' , color:'black'}}>
             <h4 
             id='ds'><b>50+ </b>templates <br></br> for your need
             </h4>
+            </a>
             </div>
             <div className='col-5'>
             <img src={cartoon}  id='di'/>
@@ -190,11 +194,16 @@ export function Dashboard4()
 
     <div className='col-4 p-4' style={{backgroundColor:'#98F1D2' , color:'blue' , borderRadius:'5px' ,  
     }} id='dbb'>
-    <h4 id='ds'>Invite <b>friends</b> <br></br> and get <b>tasks
-       <br></br> for free</b></h4>
-    
+    <h4 id='ds'>
+    <a href='/referalprogram1' style={{textDecoration:'none'}}>
+      Invite <b>friends</b> <br></br> and get <b>tasks
+       <br></br> for free</b>
+       </a>
+       </h4>
+
 
     </div>
+  
 {/* <div className='row'>
 <div className='col offset-11' style={{
   marginTop:'-170px'  ,
@@ -221,7 +230,7 @@ width:'70px'}}></img>
 <RemoveShoppingCartIcon style={{fontSize:'40px' , color:'white' , marginTop:'3px' , marginLeft:'-6px'}}></RemoveShoppingCartIcon>
 </div>
 <div className='col-7' id='top3'>
-<h6>Product <br></br> Description</h6>
+<a href='/productt1' style={{textDecoration:'none'}}><h6>Product <br></br> Description</h6></a>
 </div>
     </div>
 </a>
@@ -239,7 +248,8 @@ width:'70px'}}></img>
 <InstagramIcon style={{fontSize:'40px' , color:'#2143FB' , marginTop:'4px' , marginLeft:'-7px'}}></InstagramIcon>
 </div>
 <div className='col-7' id='top3'>
-<h6>Instagram <br></br> Captions</h6>
+<a href='/productt8' style={{textDecoration:'none', color:'white'}}>
+<h6>Instagram <br></br> Captions</h6></a>
 </div>
     </div>
 </a>
@@ -253,7 +263,8 @@ width:'70px'}}></img>
 <InstagramIcon style={{fontSize:'40px' , color:'white' , marginTop:'4px' , marginLeft:'-7px'}}></InstagramIcon>
 </div>
 <div className='col-7' id='top3'>
-<h6>Instagram<br></br> Captions</h6>
+<a href='/productt1' style={{textDecoration:'none'}}>
+<h6>Instagram<br></br> Captions</h6></a>
 </div>
 
     </div>
@@ -344,7 +355,7 @@ width:'180px' , marginLeft:'50px'}}></img>
       <td>Grownbusters Demo text</td>
       <td><b>Delivered</b><br></br>2020-3-21</td>
       <td>Blog Article</td>
-      <td><Link to='/order5'>
+      <td><Link to='/order2'>
       <button type="button" class="btn " style={{fontSize:'14px',
     color:'#4A66FB' , border:'2px solid #4A66FB'}}><b>View Order</b></button>
      </Link></td>
@@ -355,7 +366,7 @@ width:'180px' , marginLeft:'50px'}}></img>
       <td><b>Delivered</b><br></br>2020-3-21</td>
       <td>Blog Article</td>
       <td>
-      <Link to='/order5'>
+      <Link to='/order2'>
       <button type="button" class="btn " style={{fontSize:'14px',
     color:'#4A66FB' , border:'2px solid #4A66FB'}}><b>View Order</b></button>
      </Link></td>

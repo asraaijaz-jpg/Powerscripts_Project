@@ -144,9 +144,11 @@ function Checkout1()
  <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
  </p>
     
+ <a href='/checkout1' style={{textDecoration:'none'}}> 
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
      <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+     </a>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
@@ -302,9 +304,9 @@ Lindsey Westervelt <br></br> PREMIUM</a></h6>
 
 <br></br><br></br>
 
-<h4><br></br><br></br>&nbsp;&nbsp;
+<h2 id='up'><br></br><br></br>&nbsp;&nbsp;
 <br></br><br></br>
-Your Order Details</h4>
+&nbsp;&nbsp;Your Order Details</h2>
 <h6 style={{marginTop:'-25px'}}><br></br><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brand name</h6>
 <p><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Growbusters</i></p>
 

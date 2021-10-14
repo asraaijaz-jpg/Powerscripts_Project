@@ -116,9 +116,11 @@ function Profile1()
  <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
  </p>
     
+ <a href='checkout1' style={{textDecoration:'none'}}> 
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
      <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+     </a>
 
      <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -280,9 +282,11 @@ style={{marginTop:'-10px' , fontSize:'16px' , height:'43px' ,fontFamily:'Lato/Re
 <div className='row'>
 <div className='col-lg-6 col' >
 <br></br>
+<a href='settings' style={{textDecoration:'none'}}> 
 <button type="button" className="btn btn-primary p-2"
 style={{fontSize:'14px' , backgroundColor:'#2143FB' , color:'#FEFEFE'}} id='bp2'>
   Update Profile Setting</button>
+  </a>
   <br></br>
 </div>
 </div>
@@ -327,9 +331,11 @@ marginLeft:'-50px'}}/>
 </div>
 <div className='col-3'>
     <br></br>
+    <a href='/referalprogram1' style={{textDecoration:'none'}}> 
 <button type="button" class="btn btn-primary" style={{borderRadius:'7px' , marginTop:'-27px' ,
  marginLeft:'-4px' , backgroundColor:'#2143FB' , color:'white'}}>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invite&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+</a>
 </div>
 
 </div>
@@ -392,8 +398,12 @@ width:'200px'  , marginLeft:'100px'}}></img>
     
   </tbody>
 </table>
-<button type="button" class="btn btn-outline-danger"  id='bp' style={{color:'#FB275D'}}>
-     <b> Close Account</b></button>
+
+<button type="button" class="btn btn-outline-danger"  id='bp' style={{color:'#FB275D' , backgroundColor:'white'}}>
+<a href='/loginpage' style={{textDecoration:'none' , color:'red'}}> 
+     <b> Close Account</b>
+     </a></button>
+    
 {/*  
 <div className='row'>
 <div className='col offset-10' style={{              marginTop:'-450px' }}>

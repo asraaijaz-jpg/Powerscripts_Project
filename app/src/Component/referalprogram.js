@@ -139,10 +139,12 @@ function Referalprogram1()
     <br></br>
    <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
    </p>
-      
+
+     <a href='checkout1' style={{textDecoration:'none'}}>    
     <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
     width:'190px' , height:'42px'}}>
           <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+          </a>
 
         <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -171,17 +173,29 @@ function Referalprogram1()
 
 <div id='r'>
  
+
 <h2 style={{color:'#2143FB' , fontFamily:'CA Saygon' , fontWeight:'bold'}} id='r'><i><b><strong>
+  
+
   INVITE & GET 50<EuroSymbolIcon></EuroSymbolIcon> NOW
+
     </strong></b></i></h2>
 
      <div className='row' id='r2'>
         <div className='col-6'>
+        <a href='/referalprogram2' style={{textDecoration:'none'}}>
 <button className='btn btn-primary'>Invite your friends to Powerscript</button>
+</a>
         </div>
         &nbsp; &nbsp; &nbsp;
         <div className='col-6' id='r3'>
-<button className='btn btn-outline-primary'>Check your referrals</button>
+
+        <a href='/referalprogram2' style={{textDecoration:'none'}}>
+<button className='btn btn-outline-primary' style={{backgroundColor:'white' , color:'blue'}}>
+
+  Check your referrals
+  </button>
+  </a>
         </div>
     </div> 
     </div>

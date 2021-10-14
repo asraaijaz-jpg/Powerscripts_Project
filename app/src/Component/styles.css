@@ -155,8 +155,15 @@
 
   @media  (min-width: 1201px) 
   {
+    #up{
+      margin-top: -50px;
+    }
     #ss{
       width: 280px;
+    }
+    #seppt{
+      margin-top: -50px;
+      /* background-color: #F5F5F5; */
     }
     #sepp{
       margin-top: -50px;
@@ -2096,7 +2103,7 @@ margin-top: -30px;
 #r3{
   margin-left:270px;
   width:300px;
-  margin-top:-35px;
+  margin-top:-38px;
 }
 #br{
   margin-left:-120px;
@@ -2170,7 +2177,7 @@ margin-top: -30px;
     margin-left:70px
   }
   #r3{
-    margin-left:-130px
+    margin-left:-195px
   }
   #c{
     margin-left: 32px;

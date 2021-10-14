@@ -140,9 +140,11 @@ function Order1()
  <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
  </p>
     
+ <a href='checkout1' style={{textDecoration:'none'}}> 
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
        <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+       </a>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
