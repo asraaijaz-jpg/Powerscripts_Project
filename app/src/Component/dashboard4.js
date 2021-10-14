@@ -116,12 +116,12 @@ export function Dashboard4()
     
     <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
     <p style={{fontSize:'13px'}}>Product Descriptions</p>
-    <b><h6 style={{fontSize:'13px'}}><strong>   <Link href='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></Link>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
+    <b><h6 style={{fontSize:'13px'}}><strong>   <Link to='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></Link>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
     <p style={{fontSize:'13px'}}>
         Facebook Primary  <br></br>More tools ... </p>
-    <b><h6 style={{fontSize:'13px'}}><strong><Link href='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></Link>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
+    <b><h6 style={{fontSize:'13px'}}><strong><Link to='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></Link>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
     <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
-    <b><h6 style={{fontSize:'13px'}}><strong><Link href='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></Link>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
+    <b><h6 style={{fontSize:'13px'}}><strong><Link to='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></Link>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
     <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
     <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon>
      &nbsp; &nbsp;<strong>Log out<br></br>
@@ -129,14 +129,14 @@ export function Dashboard4()
     
   
     <p style={{fontSize:'13px'}}>
-     <span>  <Link href='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</Link></span>
+     <span>  <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</Link></span>
       <br></br>
-     <span>  <Link href='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</Link></span>
+     <span>  <Link to='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</Link></span>
     <br></br>
-   <span>  <Link href='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
+   <span>  <Link to='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
    </p>
 
-    <Link href='checkout1' style={{textDecoration:'none'}}>  
+    <Link to='checkout1' style={{textDecoration:'none'}}>  
     <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
     width:'180px' , height:'42px'}} id='btb'>
           <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
@@ -161,12 +161,12 @@ export function Dashboard4()
 <div className='row' id='profiles'>
         <div className='col-lg-1 col-3 offset-lg-9 offset-sm-4'>
         {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
-        <Link href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+        <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
            <img src={ladyprofile} style={{height:'45px' , width:'45px' }}></img>
            </Link>
         </div>
 <div className='col-lg-2 col-9' id='pts'>
-<h6 ><Link href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+<h6 ><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
   Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
  </div>
@@ -177,7 +177,7 @@ export function Dashboard4()
     <div className='col-6 p-4 m-1' style={{backgroundColor:'#CDE2F5' , borderRadius:'5px' }} id='dba'>
         <div className='row'>
             <div className='col-7'>
-            <Link href='/checkout1' style={{textDecoration:'none' , color:'black'}}>
+            <Link to='/checkout1' style={{textDecoration:'none' , color:'black'}}>
             <h4 
             id='ds'><b>50+ </b>templates <br></br> for your need
             </h4>
@@ -195,7 +195,7 @@ export function Dashboard4()
     <div className='col-4 p-4' style={{backgroundColor:'#98F1D2' , color:'blue' , borderRadius:'5px' ,  
     }} id='dbb'>
     <h4 id='ds'>
-    <Link href='/referalprogram1' style={{textDecoration:'none'}}>
+    <Link to='/referalprogram1' style={{textDecoration:'none'}}>
       Invite <b>friends</b> <br></br> and get <b>tasks
        <br></br> for free</b>
        </Link>
@@ -223,14 +223,14 @@ width:'70px'}}></img>
 
 <div className='col-2 offset-1 p-2  ' style={{border:'2px solid blue' , borderRadius:'8px'  }} id='cart2'>
 
-<Link href='' style={{textDecoration:'none'}}>  
+<Link to='' style={{textDecoration:'none'}}>  
     <div className='row'>
         
 <div className='col-2 offset-2' style={{backgroundColor:'blue' , borderRadius:'8px' , width:'50px'}}id='top2'>
 <RemoveShoppingCartIcon style={{fontSize:'40px' , color:'white' , marginTop:'3px' , marginLeft:'-6px'}}></RemoveShoppingCartIcon>
 </div>
 <div className='col-7' id='top3'>
-<Link href='/productt1' style={{textDecoration:'none'}}><h6>Product <br></br> Description</h6></Link>
+<Link to='/productt1' style={{textDecoration:'none'}}><h6>Product <br></br> Description</h6></Link>
 </div>
     </div>
 </Link>
@@ -241,14 +241,14 @@ width:'70px'}}></img>
 <div className='col-2 p-2 ' style={{border:'2px solid blue' , backgroundColor:'blue' , color:'white' , 
  borderRadius:'7px'  }} id='cart3'>
 
-<Link href='' style={{textDecoration:'none' , color:'white'}}>  
+<Link to='' style={{textDecoration:'none' , color:'white'}}>  
 <div className='row'>
 <div className='col-3 offset-2' style={{backgroundColor:'white' , borderRadius:'8px'
 , width:'50px'}} id='top2'>
 <InstagramIcon style={{fontSize:'40px' , color:'#2143FB' , marginTop:'4px' , marginLeft:'-7px'}}></InstagramIcon>
 </div>
 <div className='col-7' id='top3'>
-<Link href='/productt8' style={{textDecoration:'none', color:'white'}}>
+<Link to='/productt8' style={{textDecoration:'none', color:'white'}}>
 <h6>Instagram <br></br> Captions</h6></Link>
 </div>
     </div>
@@ -257,13 +257,13 @@ width:'70px'}}></img>
 
 <div className='col-2 p-2' style={{border:'2px solid blue' , borderRadius:'7px' }} id='cart4'>
 
-<Link href='' style={{textDecoration:'none'}}>  
+<Link to='' style={{textDecoration:'none'}}>  
 <div className='row'>
 <div className='col-3 offset-2' style={{backgroundColor:'blue' , borderRadius:'8px' , width:'50px'}} id='top2'>
 <InstagramIcon style={{fontSize:'40px' , color:'white' , marginTop:'4px' , marginLeft:'-7px'}}></InstagramIcon>
 </div>
 <div className='col-7' id='top3'>
-<Link href='/productt1' style={{textDecoration:'none'}}>
+<Link to='/productt1' style={{textDecoration:'none'}}>
 <h6>Instagram<br></br> Captions</h6></Link>
 </div>
 
@@ -422,27 +422,27 @@ backgroundColor:' #ffffff' , border:'none'}}><CancelIcon></CancelIcon></button>
   <input type='search'  className='p-2' id='modalb'  placeholder='Search Template'
   style={{height:'37px'}}/>
   <br></br><br></br><br></br>
-  <h5 style={{}}><b><Link href='' style={{textDecoration:'none' , color:'black'}}
+  <h5 style={{}}><b><Link to='' style={{textDecoration:'none' , color:'black'}}
   id='modaltext'>Categories</Link></b></h5><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='' style={{textDecoration:'none' , color:'black'}} 
+  <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
   id='modaltxt'>Browse all</Link></h5><br></br>
   <button type="button" class="btn btn-lg" style={{backgroundColor:'#EEFOFD' , color:'black',
    border:'2px solid gray' , textAlign:'start'}}
-   id='modalb'> &nbsp;&nbsp;&nbsp;<Link href='https://www.facebook.com/' 
+   id='modalb'> &nbsp;&nbsp;&nbsp;<Link to='https://www.facebook.com/' 
    style={{textDecoration:'none' , color:'black'}} id='modaltxtfb'
   >Facebook</Link>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br></br><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='https://www.linkedin.com/feed/' 
+  <h5 style={{fontSize:'18px' }}><Link to='https://www.linkedin.com/feed/' 
   style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</Link></h5><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='' style={{textDecoration:'none' , color:'black'}}
+  <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
   id='modaltxt'>Medium</Link></h5><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='' style={{textDecoration:'none' , color:'black'}}
+  <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
   id='modaltxt'>Google Ads</Link></h5><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='' style={{textDecoration:'none' , color:'black'}}
+  <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
   id='modaltxt'>Blog</Link></h5><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='' style={{textDecoration:'none' , color:'black'}} 
+  <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
   id='modaltxt'>Landing Page</Link></h5><br></br>
-  <h5 style={{fontSize:'18px' }}><Link href='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
+  <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
   >Greeting </Link></h5><br></br>
   </div>
 
