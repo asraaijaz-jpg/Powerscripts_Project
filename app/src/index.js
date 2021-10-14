@@ -69,7 +69,9 @@ ReactDOM.render(
 
     
 <BrowserRouter 
-basename={window.location.pathname || 'https://asraaijaz-jpg.github.io/Powerscripts_Project/'}>
+// basename={window.location.pathname || 'https://asraaijaz-jpg.github.io/Powerscripts_Project/'}
+basename={process.env.PUBLIC_URL}
+>
 
 
 
