@@ -116,12 +116,18 @@ export function Dashboard4()
     
     <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
     <p style={{fontSize:'13px'}}>Product Descriptions</p>
-    <b><h6 style={{fontSize:'13px'}}><strong>   <Link to='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></Link>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
+    <b><h6 style={{fontSize:'13px'}}><strong>   <Link to='https://www.facebook.com/' 
+    style={{color:'black'}} target='_blank'><FacebookIcon></FacebookIcon></Link>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
     <p style={{fontSize:'13px'}}>
         Facebook Primary  <br></br>More tools ... </p>
-    <b><h6 style={{fontSize:'13px'}}><strong><Link to='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></Link>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
+    <b><h6 style={{fontSize:'13px'}}><strong>
+      <a href='https://www.instagram.com/accounts/login/' 
+    target='_blank' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>
+    
+    &nbsp; &nbsp;INSTGRAM</strong></h6></b>
     <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
-    <b><h6 style={{fontSize:'13px'}}><strong><Link to='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></Link>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
+    <b><h6 style={{fontSize:'13px'}}><strong><Link to='https://www.linkedin.com/feed/' 
+    target='_blank' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></Link>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
     <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
     <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon>
      &nbsp; &nbsp;<strong>Log out<br></br>
@@ -241,7 +247,7 @@ width:'70px'}}></img>
 <div className='col-2 p-2 ' style={{border:'2px solid blue' , backgroundColor:'blue' , color:'white' , 
  borderRadius:'7px'  }} id='cart3'>
 
-<Link to='' style={{textDecoration:'none' , color:'white'}}>  
+<Link to='/productt8' style={{textDecoration:'none' , color:'white'}}>  
 <div className='row'>
 <div className='col-3 offset-2' style={{backgroundColor:'white' , borderRadius:'8px'
 , width:'50px'}} id='top2'>
@@ -257,7 +263,7 @@ width:'70px'}}></img>
 
 <div className='col-2 p-2' style={{border:'2px solid blue' , borderRadius:'7px' }} id='cart4'>
 
-<Link to='' style={{textDecoration:'none'}}>  
+<Link to='/productt1' style={{textDecoration:'none'}}>  
 <div className='row'>
 <div className='col-3 offset-2' style={{backgroundColor:'blue' , borderRadius:'8px' , width:'50px'}} id='top2'>
 <InstagramIcon style={{fontSize:'40px' , color:'white' , marginTop:'4px' , marginLeft:'-7px'}}></InstagramIcon>
