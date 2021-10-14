@@ -62,12 +62,14 @@ import Productt2 from './Component/product2';
 import Productt8 from './Component/product8';
 
 
-ReactDOM.render(
-// {/* <BrowserRouter basename={process.env.PUBLIC_URL}>   */}
-  < App />
-  // </BrowserRouter>
+ReactDOM.render(< App />
   ,document.getElementById('root'));
 
 
+  // ReactDOM.render(
+  // <BrowserRouter basename={process.env.PUBLIC_URL}>
+  //     < App />
+  // </BrowserRouter>
+  //     ,document.getElementById('root'));
 
 reportWebVitals();
