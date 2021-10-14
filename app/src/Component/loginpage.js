@@ -29,6 +29,7 @@ function LoginPage()
 {
     useEffect(()=>{
         document.title='Login Page';
+        alert(process.env.PUBLIC_URL);
     });
     const [isPreview, setIsPreview] = useState(false);
     // const isPreview=false;

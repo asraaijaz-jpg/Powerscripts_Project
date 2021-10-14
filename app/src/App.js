@@ -65,12 +65,12 @@ ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></Brows
   document.getElementById('root'));
 
 
-function App() {
+function App() 
+{
   return (
     <div>
       
-      <BrowserRouter>
-
+      <HashRouter>
 
 <Route path = '/' component = {Loginpage} exact></Route>
 <Route path='/loginpage' component={Loginpage} exact></Route>
@@ -129,10 +129,11 @@ function App() {
 <Route path='/productt8' component={Productt8} exact></Route>
 
 
-</BrowserRouter> 
+</HashRouter> 
 
     </div>
   );
+
 }
 
 export default App;
