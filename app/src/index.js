@@ -64,12 +64,12 @@ import Productt8 from './Component/product8';
 
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* <App /> */}
+
 
     
 <BrowserRouter 
 // basename={window.location.pathname || 'https://asraaijaz-jpg.github.io/Powerscripts_Project/'}
+// basename={process.env.PUBLIC_URL}
 basename={process.env.PUBLIC_URL}
 >
 
@@ -135,8 +135,7 @@ basename={process.env.PUBLIC_URL}
 
 </BrowserRouter> 
 
-
-  </React.StrictMode>,
+,
   document.getElementById('root')
 );
 
