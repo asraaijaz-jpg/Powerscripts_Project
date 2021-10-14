@@ -63,83 +63,8 @@ import Productt8 from './Component/product8';
 
 
 
-ReactDOM.render(
-
-
-    
-<BrowserRouter 
-// basename={window.location.pathname || 'https://asraaijaz-jpg.github.io/Powerscripts_Project/'}
-// basename={process.env.PUBLIC_URL}
-basename={process.env.PUBLIC_URL}
->
-
-
-
-
-<Route path = "/" component = {Loginpage} exact></Route>
-<Route path='/loginpage' component={Loginpage} exact></Route>
-<Route path='/signuppage' component={Signupage} exact></Route>
-<Route path='/forgotpasswordpage' component={Forgotpasswordpage} exact></Route>
-<Route path='/signinpage' component={SigninPage} exact></Route>
-<Route path='/signinpage2' component={SigninPage2} exact></Route>
-<Route path='/signuppage2' component={SignupPage2} exact></Route>
-<Route path='/signuppage3' component={SignupPage3} exact></Route>
-<Route path='/resetpassword' component={Resetpassword} exact></Route>
-<Route path='/resetpassword2' component={ResetpasswordPage2}exact></Route>
-<Route path='/dashboard1' component={Dashboard1} exact></Route>
-<Route path='/dashboard3' component={Dashboard3} exact></Route>
-<Route path='/dashboard4' component={Dashboard4} exact></Route>
-<Route path='/dashboard2' component={Dashboard2} exact></Route>
-
-<Route path='/profile1' component={Profile1} exact></Route>
-<Route path='/billing' component={Billing} exact></Route>
-<Route path='/settings' component={Settings} exact></Route>
-<Route path='/subscription1' component={Subscription1} exact></Route>
-
-<Route path='/subscription2' component={Subscription2} exact></Route>
-<Route path='/subscription3' component={Subscription3} exact></Route>
-<Route path='/subscription4' component={Subscription4} exact></Route>
-<Route path='/subscription5' component={Subscription5} exact></Route>
-<Route path='/subscription6' component={Subscription6} exact></Route>
-<Route path='/subscription7' component={Subscription7} exact></Route>
-<Route path='/order1' component={Order1} exact></Route>
-<Route path='/order2' component={Order2} exact></Route>
-<Route path='/order3' component={Order3} exact></Route>
-<Route path='/order4' component={Order4} exact></Route>
-<Route path='/order5' component={Order5} exact></Route>
-<Route path='/order6' component={Order6} exact></Route>
-<Route path='/order7' component={Order7} exact></Route>
-<Route path='/order8' component={Order8} exact></Route>
-<Route path='/order9' component={Order9} exact></Route>
-<Route path='/checkout1' component={Checkout1} exact></Route>
-<Route path='/checkout2' component={Checkout2} exact></Route>
-<Route path='/support' component={Support} exact></Route>
-<Route path='/advancemode1' component={Advancedmode1} exact></Route>
-<Route path='/advancemode2' component={Advancedmode2} exact></Route>
-<Route path='/advancemode3' component={Advancedmode3} exact></Route>
-<Route path='/advancemode4' component={Advancedmode4} exact></Route>
-<Route path='/advancemode5' component={Advancedmode5} exact></Route>
-<Route path='/referalprogram1' component={Referalprogram1} exact></Route>
-<Route path='/referalprogram2' component={Referalprogram2} exact></Route>
-<Route path='/product3' component={Product3} exact></Route>
-<Route path='/product4' component={Product4} exact></Route>
-<Route path='/product5' component={Product5} exact></Route>
-<Route path='/product6' component={Product6} exact></Route>
-<Route path='/product7' component={Product7} exact></Route>
-<Route path='/product9' component={Product9} exact></Route>
-<Route path='/product10' component={Product10} exact></Route>
-<Route path='/productt1' component={Productt1} exact></Route>
-<Route path='/productt2' component={Productt2} exact></Route>
-<Route path='/productt8' component={Productt8} exact></Route>
-
-
-</BrowserRouter> 
-
-,
-  document.getElementById('root')
+ReactDOM.render(<App/>,document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
