@@ -61,16 +61,15 @@ import Productt2 from './Component/product2';
 import Productt8 from './Component/product8';
 
 
-ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, 
-  document.getElementById('root'));
+// ReactDOM.render(<BrowserRouter basename={process.env.PUBLIC_URL}>< App /></BrowserRouter>, 
+//   document.getElementById('root'));
 
 
 function App() 
 {
   return (
     <div>
-      
-      <HashRouter>
+   <HashRouter>
 
 <Route path = '/' component = {Loginpage} exact></Route>
 <Route path='/loginpage' component={Loginpage} exact></Route>
