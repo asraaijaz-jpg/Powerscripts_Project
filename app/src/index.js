@@ -68,7 +68,7 @@ ReactDOM.render(
 <BrowserRouter basename={process.env.PUBLIC_URL}>
 
 
-<Route path = "/" component = {Loginpage} exact></Route>
+<Route path = {process.env.PUBLIC_URL + '/'} component = {Loginpage} exact></Route>
 <Route path='/loginpage' component={Loginpage} exact></Route>
 <Route path='/signuppage' component={Signupage} exact></Route>
 <Route path='/forgotpasswordpage' component={Forgotpasswordpage} exact></Route>
