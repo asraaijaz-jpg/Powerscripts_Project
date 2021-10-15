@@ -200,17 +200,17 @@ function Order8()
   <div id='do'>
 <div className='col-6 p-3' style={{border:'1px solid #676767' , borderRadius:'8px'
  , fontFamily:'Lato/Light/Small'}} id='dimp' >
-
-
-  <img src={h1} style={{marginLeft:'150px' , margihrefp:'-50px'}}/>
+<Link style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
+  <img src={h1} style={{marginLeft:'150px' , marginTop:'-50px'}}/>
   <img src={h2} style={{marginLeft:'200px' , marginTop:'-100px'}}/>
+
 <h6 style={{marginTop:'-20px'}}><b>Content 1</b></h6>
 <p style={{fontSize:'14px' , marginTop:'-9px' ,textAlign:'justify'}}><br></br>Lorem ipsum dolor sit ament consect adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. 
            <br></br><br></br> Lorem ipsum dolor sit ament consect adipiscing elit. 
            Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
            <br></br>
             </p>
-         
+            </Link>
             </div>
 </div>
 
@@ -218,7 +218,7 @@ function Order8()
 <div id='doo'>
 <div className='col-6 p-3' style={{border:'1px solid #676767' , borderRadius:'8px',
  fontFamily:'Lato/Light/Small'}} id='dimp2' >
-
+<Link style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
   <img src={h1} style={{marginLeft:'150px' , marginTop:'-50px'}}/>
   <img src={h2} style={{marginLeft:'200px' , marginTop:'-100px'}}/>
 <h6 style={{marginTop:'-20px'}}><b>Content 2</b></h6>
@@ -226,7 +226,7 @@ function Order8()
            <br></br><br></br> Lorem ipsum dolor sit ament consect adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
            <br></br>
             </p>
-    
+            </Link>
             </div>
 </div> 
 
@@ -234,7 +234,7 @@ function Order8()
 <div id='do'>
 <div className='col-6 p-3' style={{border:'1px solid #676767' , borderRadius:'8px' , 
  fontFamily:'Lato/Light/Small' }} id='dimp3' >
-
+<Link  style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
   <img src={h1} style={{marginLeft:'150px' , marginTop:'-50px'}}/>
   <img src={h2} style={{marginLeft:'200px' , marginTop:'-100px'}}/>
 <h6 style={{marginTop:'-20px'}}><b>Content 3</b></h6>
@@ -242,7 +242,7 @@ function Order8()
            <br></br><br></br> Lorem ipsum dolor sit ament consect adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
            <br></br>
             </p>
-           
+            </Link>
             </div>
 </div> 
 
@@ -251,7 +251,7 @@ function Order8()
 <div id='doo'>
 <div className='col-6 p-3' style={{  borderRadius:'8px'
 }} id='dimp4' >
-<Link to='' style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
+<Link style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
   <img src={txtimg} style={{marginTop:'-20px' ,marginLeft:'3px' }} id='imo'/>
   </Link>
   </div>
