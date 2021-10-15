@@ -121,30 +121,39 @@ function Order8()
   
   
   <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
-  <p style={{fontSize:'13px'}}>Product Descriptions</p>
-  <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
-  <p style={{fontSize:'13px'}}>
-      Facebook Primary  <br></br>More tools ... </p>
-  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
-  <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
-  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
-  <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
-  <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon> 
-  &nbsp; &nbsp;<strong>Log out<br></br>
-  <SettingsIcon></SettingsIcon>&nbsp; &nbsp;&nbsp;Settings</strong></p>
-  
-
-  <p style={{fontSize:'13px'}}>
-   <span>  <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</a></span>
-    <br></br>
-   <span>  <a href='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</a></span>
-  <br></br>
- <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
- </p>
+    <p style={{fontSize:'13px'}}>Product Descriptions</p>
+    <b><h6 style={{fontSize:'13px'}}><strong>   <Link to='https://www.facebook.com/' 
+    style={{color:'black'}} target='_blank'><FacebookIcon></FacebookIcon></Link>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
+    <p style={{fontSize:'13px'}}>
+        Facebook Primary  <br></br>More tools ... </p>
+    <b><h6 style={{fontSize:'13px'}}><strong>
+      <a href='https://www.instagram.com/accounts/login/' 
+    target='_blank' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>
     
-  <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
-  width:'190px' , height:'42px'}} id='btb'>
-        <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+    &nbsp; &nbsp;INSTGRAM</strong></h6></b>
+    <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
+    <b><h6 style={{fontSize:'13px'}}><strong><Link to='https://www.linkedin.com/feed/' 
+    target='_blank' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></Link>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
+    <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
+    <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon>
+     &nbsp; &nbsp;<strong>Log out<br></br>
+    <SettingsIcon></SettingsIcon>&nbsp; &nbsp;&nbsp;Settings</strong></p>
+    
+  
+    <p style={{fontSize:'13px'}}>
+     <span>  <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</Link></span>
+      <br></br>
+     <span>  <Link to='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</Link></span>
+    <br></br>
+   <span>  <Link to='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
+   </p>
+
+    <Link to='checkout1' style={{textDecoration:'none'}}>  
+    <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
+    width:'180px' , height:'42px'}} id='btb'>
+          <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+          </Link>
+
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
@@ -191,9 +200,9 @@ function Order8()
   <div id='do'>
 <div className='col-6 p-3' style={{border:'1px solid #676767' , borderRadius:'8px'
  , fontFamily:'Lato/Light/Small'}} id='dimp' >
-<a href='' style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
 
-  <img src={h1} style={{marginLeft:'150px' , marginTop:'-50px'}}/>
+
+  <img src={h1} style={{marginLeft:'150px' , margihrefp:'-50px'}}/>
   <img src={h2} style={{marginLeft:'200px' , marginTop:'-100px'}}/>
 <h6 style={{marginTop:'-20px'}}><b>Content 1</b></h6>
 <p style={{fontSize:'14px' , marginTop:'-9px' ,textAlign:'justify'}}><br></br>Lorem ipsum dolor sit ament consect adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. 
@@ -201,7 +210,7 @@ function Order8()
            Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
            <br></br>
             </p>
-            </a>
+         
             </div>
 </div>
 
@@ -209,7 +218,7 @@ function Order8()
 <div id='doo'>
 <div className='col-6 p-3' style={{border:'1px solid #676767' , borderRadius:'8px',
  fontFamily:'Lato/Light/Small'}} id='dimp2' >
-<a href='' style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
+
   <img src={h1} style={{marginLeft:'150px' , marginTop:'-50px'}}/>
   <img src={h2} style={{marginLeft:'200px' , marginTop:'-100px'}}/>
 <h6 style={{marginTop:'-20px'}}><b>Content 2</b></h6>
@@ -217,7 +226,7 @@ function Order8()
            <br></br><br></br> Lorem ipsum dolor sit ament consect adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
            <br></br>
             </p>
-            </a>
+    
             </div>
 </div> 
 
@@ -225,7 +234,7 @@ function Order8()
 <div id='do'>
 <div className='col-6 p-3' style={{border:'1px solid #676767' , borderRadius:'8px' , 
  fontFamily:'Lato/Light/Small' }} id='dimp3' >
-<a href='' style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
+
   <img src={h1} style={{marginLeft:'150px' , marginTop:'-50px'}}/>
   <img src={h2} style={{marginLeft:'200px' , marginTop:'-100px'}}/>
 <h6 style={{marginTop:'-20px'}}><b>Content 3</b></h6>
@@ -233,7 +242,7 @@ function Order8()
            <br></br><br></br> Lorem ipsum dolor sit ament consect adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.
            <br></br>
             </p>
-            </a>
+           
             </div>
 </div> 
 
@@ -242,9 +251,9 @@ function Order8()
 <div id='doo'>
 <div className='col-6 p-3' style={{  borderRadius:'8px'
 }} id='dimp4' >
-<a href='' style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
+<Link to='' style={{color:'black' , textDecoration:'none'  , marginLeft:'-18px'}}>
   <img src={txtimg} style={{marginTop:'-20px' ,marginLeft:'3px' }} id='imo'/>
-  </a>
+  </Link>
   </div>
 </div> 
 
@@ -263,14 +272,14 @@ function Order8()
 
 <div className='row' id='seppp' >
       <div id='pid'>
-      {/* <AccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
-      <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+      {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></LinkccountCircleIcon> */}
+      <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
          <img src={ladyprofile} style={{height:'45x' , width:'45px' }}></img>
-         </a>
+         </Link>
       </div>
 <div  id='tps'>
-<h6 ><a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
-Lindsey Westervelt <br></br> PREMIUM</a></h6>
+<h6 ><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
+Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
 </div>
 <br></br>
@@ -286,23 +295,23 @@ Lindsey Westervelt <br></br> PREMIUM</a></h6>
 <h6 style={{marginTop:'-5px'}}><br></br><b>Description</b></h6>
 <p style={{fontSize:'14px'}}><i>Lorem ipsum dolor sit ament consectutur adipiscing elit. Mauris.Lorem ipsum dolor sit ament consectutur 
   adipiscing elit. Mauris.</i></p>
-  <p style={{color:'blue' , fontSize:'14px'}}><b><i><a href='' style={{textDecoration:'none'}}>
-    Show more</a></i></b></p>
+  <p style={{color:'blue' , fontSize:'14px'}}><b><i><Link to='' style={{textDecoration:'none'}}>
+    Show more</Link></i></b></p>
 
 <h6 style={{marginTop:'-8px'}}><br></br>Tags</h6>
 <p style={{fontSize:'14px'}}><i>growbusters , cdb , oil , cannabis</i></p>
 
 <h6 style={{marginTop:'-8px'}}><br></br>Website</h6>
-<p style={{color:'blue' ,   fontSize:'14px'}}><i><a href='' style={{textDecoration:'none'}}>
-    growbusters.de</a></i></p>
+<p style={{color:'blue' ,   fontSize:'14px'}}><i><Link to='' style={{textDecoration:'none'}}>
+    growbusters.de</Link></i></p>
 
 
 
 <center>
-<a href='/order1' style={{textDecoration:'none' , color:'black'}}>
+<Link to='/order1' style={{textDecoration:'none' , color:'black'}}>
 <button className='btn  bt-lg text-center' id='ss' style={{backgroundColor:'#2143FB' , color:'white'}}
 >
-Complete Orders</button></a>
+Complete Orders</button></Link>
 
 <br></br>
 <button className='btn  bt-lg text-center' style={{backgroundColor:'#D3D9FE' , color:'blue',
@@ -311,9 +320,9 @@ Rebuild Orders
 </button>
 
 
-<a href='/support' style={{textDecoration:'none' , color:'black' , fontsize:'2px'}}>
+<Link to='/support' style={{textDecoration:'none' , color:'black' , fontsize:'2px'}}>
 <h6 style={{fontSize:'12px' , marginTop:'9px'}}><b>Report to Support</b></h6>
- </a>
+ </Link>
 
 </center>
 
@@ -351,28 +360,28 @@ height:'1530px'}} id='hh'></div>
      id='modaltext'><b>Template center</b></h4><br></br>
      <input type='search' placeholder='Search ' className='p-2' id='modalb'/>
      <br></br><br></br><br></br>
-     <h5 style={{}}><b><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltext'>Categories</a></b></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Browse all</a></h5><br></br>
+     <h5 style={{}}><b><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltext'>Categories</Link></b></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Browse all</Link></h5><br></br>
      <button type="button" class="btn btn-lg" style={{backgroundColor:'#EEFOFD' , color:'black',
       border:'2px solid gray' }}
-      id='modalb'> &nbsp;&nbsp;&nbsp;<a href='https://www.facebook.com/' 
+      id='modalb'> &nbsp;&nbsp;&nbsp;<Link to='https://www.facebook.com/' 
       style={{textDecoration:'none' , color:'black'}} id='modaltxtfb'
-     >Facebook</a>
+     >Facebook</Link>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br></br><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='https://www.linkedin.com/feed/' 
-     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Medium</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Google Ads</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Blog</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Landing Page</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
-     >Greeting </a></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='https://www.linkedin.com/feed/' 
+     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Medium</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Google Ads</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Blog</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Landing Page</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
+     >Greeting </Link></h5><br></br>
      </div>
    
    
