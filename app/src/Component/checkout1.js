@@ -123,12 +123,16 @@ function Checkout1()
   
   <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
   <p style={{fontSize:'13px'}}>Product Descriptions</p>
-  <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
+  
+  <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' 
+  target='_blank' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
   <p style={{fontSize:'13px'}}>
       Facebook Primary  <br></br>More tools ... </p>
-  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
+  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' 
+  target='_blank' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
   <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
-  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
+  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' 
+  target='_blank' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
   <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
   
   <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon> &nbsp;
@@ -137,18 +141,18 @@ function Checkout1()
   
 
   <p style={{fontSize:'13px'}}>
-   <span>  <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</a></span>
+   <span>  <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</Link></span>
     <br></br>
-   <span>  <a href='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</a></span>
+   <span>  <Link to='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</Link></span>
   <br></br>
- <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
+ <span>  <Link to='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
  </p>
     
- <a href='/checkout1' style={{textDecoration:'none'}}> 
+ <Link to='/checkout1' style={{textDecoration:'none'}}> 
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}} id='btb'>
      <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
-     </a>
+     </Link>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
@@ -182,28 +186,28 @@ function Checkout1()
 <div className='row' >
   
 <div className='col-4 p-3' style={{border:'1px solid #DFDFDF'}} id='box22'>
-<a href='' style={{textDecoration:'none' , color:'black'}}>
+<Link to='subscription4' style={{textDecoration:'none' , color:'black'}}>
 <h6><b>Superman Delivery</b></h6>
 <p style={{color:'#101010'}}>Next 60 mint</p>
 <img src={p1}/>
-</a>
+</Link>
 </div>
 
 
 <div className='col-4 p-3' style={{border:'1px solid blue' }} id='box23'>
-<a href='' style={{textDecoration:'none' , color:'black'}}>
+<Link to='subscription1' style={{textDecoration:'none' , color:'black'}}>
 <h6><b>Hero Delivery</b></h6>
 <p style={{color:'#101010'}}>Next 120 mint</p>
 <img src={p2}/>
-</a>
+</Link>
 </div>
 
 <div className='col-4 p-3' style={{border:'1px solid #DFDFDF' }} id='box24'>
-<a href='' style={{textDecoration:'none' , color:'black'}}>
+<Link to='subscription3' style={{textDecoration:'none' , color:'black'}}>
 <h6><b>Standard Delivery</b></h6>
 <p style={{color:'#101010'}}>same day delivery</p>
 <img src={p3}/>
-</a>
+</Link>
 </div>
 </div>
 </div>
@@ -249,31 +253,31 @@ function Checkout1()
 
 
 <div style={{marginLeft:'77px' , border:'1px solid blue' , borderRadius:'4px'}} className='col-3 p-2'>
-<a href='https://www.paypal.com/us/signin' style={{textDecoration:'none' , color:'black'}}>
+<a href='https://www.paypal.com/us/signin' target='_blank' style={{textDecoration:'none' , color:'black'}}>
 <h5 ><b><i><center>Paypal</center></i></b></h5>
 </a>
 </div>
 
 <div className='col-3 p-2' style={{marginLeft:'11px' , border:'1px solid #DFDFDF' , borderRadius:'4px'}}>
-<a href='https://dashboard.stripe.com/login' style={{textDecoration:'none' , color:'black'}}>
+<a href='https://dashboard.stripe.com/login' target='_blank' style={{textDecoration:'none' , color:'black'}}>
 <h5><b><i><center>Stripe</center></i></b></h5>
 </a>
 </div>
 
 
 <div className='col-4 p-2' style={{marginLeft:'11px' , border:'1px solid #DFDFDF' , borderRadius:'4px'}}>
-<a href='' style={{textDecoration:'none' , color:'black'}}>
+<Link to='/billing' target='_blank' style={{textDecoration:'none' , color:'black'}}>
 <h5 style={{fontWeight:'400'}}><i><center>Pay by invoice</center></i></h5>
-</a>
+</Link>
 </div>
 
 </div>
 
 <br></br><br></br><br></br>
-<a href='/billing'>
+<Link to='/billing'>
 <button className='btn ' id='c2' style={{backgroundColor:'#2143FB' , color:'white'}}
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-</a>
+</Link>
 </div>
 
 
@@ -288,15 +292,15 @@ function Checkout1()
 
 
       <div className='col-lg-1 col-3 offset-lg-9 offset-sm-4' id='pf'>
-      {/* <AccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
-      <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+      {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
+      <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
          <img src={ladyprofile} style={{height:'50px' , width:'50px' }}></img>
-         </a>
+         </Link>
       </div>
 
 <div className='col-lg-2 col-9' id='pt'>
-<h6 id='tb'><a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
-Lindsey Westervelt <br></br> PREMIUM</a></h6>
+<h6 id='tb'><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
+Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
 
 </div>
@@ -318,15 +322,15 @@ Lindsey Westervelt <br></br> PREMIUM</a></h6>
   adipiscing elit. Mauris.</i></p>
   </div>
 
-<p style={{color:'blue' , fontSize:'14px'}}><b><i><a href='' style={{textDecoration:'none'}}>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Show more</a></i></b></p>
+<p style={{color:'blue' , fontSize:'14px'}}><b><i><Link to='' style={{textDecoration:'none'}}>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Show more</Link></i></b></p>
 
 <h6 style={{marginTop:'-20px'}}><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tags</h6>
 <p style={{fontSize:'14px'}}><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;growbusters , cdb , oil , cannabis</i></p>
 
 <h6 style={{marginTop:'-15px'}}><br></br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Website</h6>
-<p style={{color:'blue' ,   fontSize:'14px'}}><i><a href='' style={{textDecoration:'none'}}>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;growbusters.de</a></i></p>
+<p style={{color:'blue' ,   fontSize:'14px'}}><i><Link to='' style={{textDecoration:'none'}}>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;growbusters.de</Link></i></p>
 <br></br><br></br><br></br><br></br><br></br>
 <br></br><br></br><br></br><br></br><br></br><br></br>
 <div style={{ marginTop:'-87px' , marginLeft:'-12px',
@@ -372,28 +376,28 @@ height:'1700px' ,  width:'20px'}}></div>
      id='modaltext'><b>Template center</b></h4><br></br>
      <input type='search' placeholder='Search ' className='p-2' id='modalb'/>
      <br></br><br></br><br></br>
-     <h5 style={{}}><b><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltext'>Categories</a></b></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Browse all</a></h5><br></br>
+     <h5 style={{}}><b><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltext'>Categories</Link></b></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Browse all</Link></h5><br></br>
      <button type="button" class="btn btn-lg" style={{backgroundColor:'#EEFOFD' , color:'black',
       border:'2px solid gray' }}
-      id='modalb'> &nbsp;&nbsp;&nbsp;<a href='https://www.facebook.com/' 
+      id='modalb'> &nbsp;&nbsp;&nbsp;<Link to='https://www.facebook.com/' 
       style={{textDecoration:'none' , color:'black'}} id='modaltxtfb'
-     >Facebook</a>
+     >Facebook</Link>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br></br><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='https://www.linkedin.com/feed/' 
-     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Medium</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Google Ads</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Blog</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Landing Page</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
-     >Greeting </a></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='https://www.linkedin.com/feed/' 
+     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Medium</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Google Ads</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Blog</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Landing Page</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
+     >Greeting </Link></h5><br></br>
      </div>
    
    
