@@ -98,7 +98,7 @@ function Productt8()
 {/*         
     <Collapse in={open}>
        */}
-    <div className='col-3  p-5' style={{backgroundColor:'#F5F5F5' , height:'100vh' , width:'270px'}}
+    <div className='col-3  p-5' style={{backgroundColor:'#F5F5F5' , height:'auto' , width:'270px'}}
      id="example-collapse-text" id='toggle1'>
     {/* 
     <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}

@@ -111,7 +111,7 @@ function Productt1()
     <div className='container-fluid' >
    <div className='row' style={{display:'flex'}}>
 
-     <div className='col-3 p-5' style={{backgroundColor:'#F5F5F5' , height:'100vh' , width:'270px'}}
+     <div className='col-3 p-5' style={{backgroundColor:'#F5F5F5' , height:'auto' , width:'270px'}}
      id="example-collapse-text" id='toggle1'>
 
 
