@@ -116,16 +116,16 @@ function Referalprogram1()
     <b><h6 style={{fontSize:'14px' , lineHeight:'9px'}}><strong>FEATURED TOOLS</strong></h6></b>
     <p style={{fontSize:'13px' }}>Product Description<br></br>Instagram Captions<br></br>Blog Ideas</p>
     
-    
-    <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
-    <p style={{fontSize:'13px'}}>Product Descriptions</p>
-    <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
-    <p style={{fontSize:'13px'}}>
-        Facebook Primary  <br></br>More tools ... </p>
-    <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
-    <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
-    <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
-    <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
+    <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' 
+  target='_blank' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
+  <p style={{fontSize:'13px'}}>
+      Facebook Primary  <br></br>More tools ... </p>
+  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' 
+  target='_blank' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
+  <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
+  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' 
+  target='_blank' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
+  <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
     
     <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon> &nbsp;
      &nbsp;<strong>Log out<br></br>
@@ -133,18 +133,18 @@ function Referalprogram1()
     
   
     <p style={{fontSize:'13px'}}>
-     <span>  <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</a></span>
+     <span>  <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</Link></span>
       <br></br>
-     <span>  <a href='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</a></span>
+     <span>  <Link to='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</Link></span>
     <br></br>
-   <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
+   <span>  <Link to='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
    </p>
 
-     <a href='checkout1' style={{textDecoration:'none'}}>    
+     <Link to='checkout1' style={{textDecoration:'none'}}>    
     <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
     width:'190px' , height:'42px'}}>
           <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
-          </a>
+          </Link>
 
         <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -159,14 +159,14 @@ function Referalprogram1()
     
 <div className='row' id='profiles'>
         <div className='col-lg-1 col-3 offset-lg-9 offset-sm-4'>
-        {/* <AccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
-        <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+        {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></LinkccountCircleIcon> */}
+        <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
            <img src={ladyprofile} style={{height:'45px' , width:'45px' }}></img>
-           </a>
+           </Link>
         </div>
 <div className='col-lg-2 col-9' id='pts'>
-<h6 ><a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
-  Lindsey Westervelt <br></br> PREMIUM</a></h6>
+<h6 ><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
+  Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
  </div>
 
@@ -183,19 +183,19 @@ function Referalprogram1()
 
      <div className='row' id='r2'>
         <div className='col-6'>
-        <a href='/referalprogram2' style={{textDecoration:'none'}}>
+        <Link to='/referalprogram2' style={{textDecoration:'none'}}>
 <button className='btn btn-primary'>Invite your friends to Powerscript</button>
-</a>
+</Link>
         </div>
         &nbsp; &nbsp; &nbsp;
         <div className='col-6' id='r3'>
 
-        <a href='/referalprogram2' style={{textDecoration:'none'}}>
+        <Link to='/referalprogram2' style={{textDecoration:'none'}}>
 <button className='btn btn-outline-primary' style={{backgroundColor:'white' , color:'blue'}}>
 
   Check your referrals
   </button>
-  </a>
+  </Link>
         </div>
     </div> 
     </div>
@@ -272,8 +272,8 @@ marginLeft:'120px' , backgroundColor:'blue' }}  id='size'>
 {/* <hr style={{marginTop:'30px' , marginLeft:'520px' , width:'360px' , marginTop:'-20px'}}></hr> */}
 
 <i><h5 style={{color:'blue' , marginLeft:'440px'}}>
-    <a href='' style={{textDecoration:'none' , 
-  color:'#2143FB'}}>Share Link</a></h5></i>
+    <Link to='' style={{textDecoration:'none' , 
+  color:'#2143FB'}}>Share Link</Link></h5></i>
 <i><p style={{ marginLeft:'220px'}}>You can also share your link by copying and sending it or through social media</p></i>
 <i><button style={{ marginLeft:'270px' , height:'40px' , width:'470px' , border:'1px solid blue'}} className='btn '>
     <p style={{color:'black'}}><center>
@@ -349,28 +349,28 @@ width:'200px'}}></img>
      id='modaltext'><b>Template center</b></h4><br></br>
      <input type='search' placeholder='Search ' className='p-2' id='modalb'/>
      <br></br><br></br><br></br>
-     <h5 style={{}}><b><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltext'>Categories</a></b></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Browse all</a></h5><br></br>
+     <h5 style={{}}><b><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltext'>Categories</Link></b></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Browse all</Link></h5><br></br>
      <button type="button" class="btn btn-lg" style={{backgroundColor:'#EEFOFD' , color:'black',
       border:'2px solid gray' }}
-      id='modalb'> &nbsp;&nbsp;&nbsp;<a href='https://www.facebook.com/' 
+      id='modalb'> &nbsp;&nbsp;&nbsp;<Link to='https://www.facebook.com/' 
       style={{textDecoration:'none' , color:'black'}} id='modaltxtfb'
-     >Facebook</a>
+     >Facebook</Link>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br></br><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='https://www.linkedin.com/feed/' 
-     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Medium</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Google Ads</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Blog</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Landing Page</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
-     >Greeting </a></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='https://www.linkedin.com/feed/' 
+     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Medium</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Google Ads</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Blog</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Landing Page</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
+     >Greeting </Link></h5><br></br>
      </div>
    
    
