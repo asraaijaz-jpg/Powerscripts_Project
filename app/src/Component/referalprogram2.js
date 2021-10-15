@@ -186,11 +186,16 @@ function Referalprogram2()
  
       <div className='row' id='r2'>
          <div className='col-6'>
+         <Link to='/referalprogram1' style={{textDecoration:'none'}}>
  <button className='btn btn-primary'>Invite your friends to Powerscript</button>
+ </Link>
          </div>
          &nbsp; &nbsp; &nbsp;
          <div className='col-6' id='r3'>
- <button className='btn btn-outline-primary'>Check your referrals</button>
+         <Link to='/referalprogram1' style={{textDecoration:'none'}}>
+ <button className='btn btn-outline-primary'
+  style={{backgroundColor:'white' , color:'blue'}}>Check your referrals</button>
+  </Link>
          </div>
      </div> 
      </div>

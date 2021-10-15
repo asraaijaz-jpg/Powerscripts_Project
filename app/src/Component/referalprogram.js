@@ -116,6 +116,11 @@ function Referalprogram1()
     <b><h6 style={{fontSize:'14px' , lineHeight:'9px'}}><strong>FEATURED TOOLS</strong></h6></b>
     <p style={{fontSize:'13px' }}>Product Description<br></br>Instagram Captions<br></br>Blog Ideas</p>
     
+    
+
+ <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
+    <p style={{fontSize:'13px'}}>Product Descriptions</p>
+    
     <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' 
   target='_blank' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
   <p style={{fontSize:'13px'}}>

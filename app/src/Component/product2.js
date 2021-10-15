@@ -124,14 +124,19 @@ function Productt2()
   <p style={{fontSize:'13px' }}>Product Description<br></br>Instagram Captions<br></br>Blog Ideas</p>
   
   
-  <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
-  <p style={{fontSize:'13px'}}>Product Descriptions</p>
-  <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
+
+ <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
+    <p style={{fontSize:'13px'}}>Product Descriptions</p>
+
+  <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' 
+  target='_blank' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
   <p style={{fontSize:'13px'}}>
       Facebook Primary  <br></br>More tools ... </p>
-  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
+  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.instagram.com/accounts/login/' 
+  target='_blank' style={{color:'black'}}><InstagramIcon></InstagramIcon></a>&nbsp; &nbsp;INSTGRAM</strong></h6></b>
   <p style={{fontSize:'13px'}}>Instagram Product Showcase <br></br>Instagram Captions</p>
-  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
+  <b><h6 style={{fontSize:'13px'}}><strong><a href='https://www.linkedin.com/feed/' 
+  target='_blank' style={{color:'black'}}><LinkedInIcon></LinkedInIcon></a>&nbsp; &nbsp;LINKEDIN</strong></h6></b>
   <p style={{fontSize:'13px'}}> Linkedin Text Ads..</p>
   
   <p style={{fontSize:'13px'}}><ExitToAppIcon></ExitToAppIcon> &nbsp;
@@ -140,19 +145,19 @@ function Productt2()
   
 
   <p style={{fontSize:'13px'}}>
-   <span>  <a href='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</a></span>
+   <span>  <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>Profile</Link></span>
     <br></br>
-   <span>  <a href='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</a></span>
+   <span>  <Link to='/order1' style={{textDecoration:'none' , color:'black'}}>Orders</Link></span>
   <br></br>
- <span>  <a href='/support' style={{textDecoration:'none' , color:'black'}}>Support</a></span>
+ <span>  <Link to='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
  </p>
 
  
- <a href='checkout1' style={{textDecoration:'none'}}>  
+ <Link to='checkout1' style={{textDecoration:'none'}}>  
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
   width:'190px' , height:'42px'}}>
       <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
- </a>
+ </Link>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
         , marginLeft:'-45px', marginTop:'-300px'}}></div> 
@@ -173,15 +178,15 @@ function Productt2()
 
 
 <div className='col-lg-1 col-3 offset-lg-9 offset-sm-4' id='pfp'>
-{/* <AccountCircleIcon style={{fontsize:'30px'}}></AccountCircleIcon> */}
-<a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
+{/* <LinkccountCircleIcon style={{fontsize:'30px'}}></LinkccountCircleIcon> */}
+<Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
    <img src={ladyprofile} style={{height:'50px' , width:'50px' }}></img>
-   </a>
+   </Link>
 </div>
 
 <div className='col-lg-2 col-9' id='ptp'>
-<h6 id='tb'><a href='/profile1' style={{textDecoration:'none' , color:'black'}}>
-Lindsey Westervelt <br></br> PREMIUM</a></h6>
+<h6 id='tb'><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
+Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
 
 </div>
@@ -192,13 +197,12 @@ Lindsey Westervelt <br></br> PREMIUM</a></h6>
 
 <h3 id='fp'><b>Facebook Primary Text</b></h3><br></br>
 
-
 <div style={{ width:'300px' }} id='bpp'>
-<button className='btn btn-outline-primary'  style={{backgroundColor:'white' , color:'white'}}>
-<a href='/referalprogram1' style={{textDecoration:'none' , color:'blue'}}>
-  Invite teammates to project
-  </a></button>
-</div>
+  <button className='btn btn-outline-primary' style={{backgroundColor:'white' , color:'white'}}>
+  <Link to='/referalprogram1' style={{textDecoration:'none' , color:'blue'}}>
+    Invite teammates to project
+    </Link></button>
+  </div>
 
 <br></br>
 
@@ -207,7 +211,7 @@ Lindsey Westervelt <br></br> PREMIUM</a></h6>
  borderRadius:'6px'}} id='bop2'>
 <p style={{marginLeft:'20px'}}> <br></br>Lorem ipsum dolor sit ament consectutur adipisc elit.
  Mauris.Lorem ipsum dolor sit ament consectut adipiscing elit. Mauris.
-  <br></br><a href='' style={{color:'#2143FB' , textDecoration:'none'}}>EXAMPLES</a>          
+  <br></br><Link to='' style={{color:'#2143FB' , textDecoration:'none'}}>EXAMPLES</Link>          
 </p>
 </div>
 
@@ -269,7 +273,8 @@ className='p-3'  id='bop'>
 
 
 <div class="form-group" style={{marginLeft:'20px' , marginTop:'40px'}}>
-   <button className='btn btn-outline-primary'  style={{width:'160px' , color:'#2143FB'}}>
+   <button className='btn btn-outline-primary'  style={{width:'160px' , color:'#2143FB'
+  , backgroundColor:'white'}}>
      <b>Submit</b></button>
 </div>
 
@@ -289,10 +294,12 @@ className='p-3'  id='bop'>
 
 <p>get better results with<br></br>few questions setup<br></br>
 <span style={{color:'#2143FB'}}>100% money back<br></br>guarantee</span></p>
-
 <button className='btn btn-primary' style={{width:'160px' , 
-backgroundColor:'#2143FB'}} onClick={handleShow2} 
-><a href='' style={{textDecoration:'none' , color:'white' }} >Open Now</a></button>
+backgroundColor:'#2143FB' , height:'45px' , marginLeft:'9px'}} onClick={handleShow2} >
+  <Link to='' style={{textDecoration:'none' , color:'white' }} >
+    Open Now</Link>
+    </button>
+    
 </center>
 </div>
 
@@ -306,8 +313,8 @@ width:'100px' , marginLeft:'1220px' , marginTop:'-650px'}}></img> */}
 {/* 
 <div className='row'>
 <div className='col offset-10' style={{marginTop:'-380px' }}>
-<a href=''><img src={logo3} style={{height:'210px' , 
-width:'210px'  , marginLeft:'140px'}}></img></a>
+<Link to=''><img src={logo3} style={{height:'210px' , 
+width:'210px'  , marginLeft:'140px'}}></img></Link>
 </div>
 </div>
 
@@ -457,7 +464,7 @@ height:'993px' }}></div> */}
       
        
 
-      <h6 ><a href='' style={{textDecoration:'none' , color:'black'}} id='ad2'>Back</a></h6>
+      <h6 ><Link to='' style={{textDecoration:'none' , color:'black'}} id='ad2'>Back</Link></h6>
       {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -474,6 +481,7 @@ height:'993px' }}></div> */}
              
               </Modal.Footer>
       </Modal>
+  
   
     
 <Modal show={show} onHide={() => setShow(false)} size="xl"  style={{borderRadius:'30px' , height:'2000px'}}>
@@ -494,28 +502,28 @@ height:'993px' }}></div> */}
      id='modaltext'><b>Template center</b></h4><br></br>
      <input type='search' placeholder='Search ' className='p-2' id='modalb'/>
      <br></br><br></br><br></br>
-     <h5 style={{}}><b><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltext'>Categories</a></b></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Browse all</a></h5><br></br>
+     <h5 style={{}}><b><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltext'>Categories</Link></b></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Browse all</Link></h5><br></br>
      <button type="button" class="btn btn-lg" style={{backgroundColor:'#EEFOFD' , color:'black',
       border:'2px solid gray' }}
-      id='modalb'> &nbsp;&nbsp;&nbsp;<a href='https://www.facebook.com/' 
+      id='modalb'> &nbsp;&nbsp;&nbsp;<Link to='https://www.facebook.com/' 
       style={{textDecoration:'none' , color:'black'}} id='modaltxtfb'
-     >Facebook</a>
+     >Facebook</Link>
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button><br></br><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='https://www.linkedin.com/feed/' 
-     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Medium</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Google Ads</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}
-     id='modaltxt'>Blog</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}} 
-     id='modaltxt'>Landing Page</a></h5><br></br>
-     <h5 style={{fontSize:'18px' }}><a href='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
-     >Greeting </a></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='https://www.linkedin.com/feed/' 
+     style={{textDecoration:'none' , color:'black'}} id='modaltxt'>LinkedIn</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Medium</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Google Ads</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}
+     id='modaltxt'>Blog</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}} 
+     id='modaltxt'>Landing Page</Link></h5><br></br>
+     <h5 style={{fontSize:'18px' }}><Link to='' style={{textDecoration:'none' , color:'black'}}id='modaltxt'
+     >Greeting </Link></h5><br></br>
      </div>
    
    
