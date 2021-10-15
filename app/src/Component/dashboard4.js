@@ -31,7 +31,7 @@ import cart from './images/cart.png';
 import CancelIcon from '@material-ui/icons/Cancel';
 import Image from './bgimage';
 import Limage from './Limage';
-import { Link } from 'react-router-dom';
+import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
 import styles from './styles.css';
 
 
