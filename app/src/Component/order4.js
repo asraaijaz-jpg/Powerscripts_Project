@@ -214,48 +214,35 @@ function Order4()
 <br></br><br></br><br></br>
 
 
-<div className='row' id='bto'>
-       
-<div className='col-3' id='dvdv' >
-<button style={{backgroundColor:'white' , border:'3px solid #ECECEC' , 
- color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
-className='btn btn-outline-secondary p-2' id='bob'>
-<span id='tsss' >To be reviwed </span>
+<div className='row' id='sblock' >
 
-{/* <b id='tbbb'>56</b> */}
-<b id='tbb'>5</b>
-</button>
-    </div>
-
-    
-    <div className='col-3' id='dvv4'>
-<button style={{backgroundColor:'white' , border:'3px solid #ECECEC' , 
- color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
-className='btn btn-outline-secondary p-2' id='bob'><img src={g1} id='ti'/>
-<span id='tss'>&nbsp;&nbsp;Liked </span>
-
-<b id='tbb'>&nbsp;&nbsp;4</b></button>
-    </div>
+<div className='col-3' ><button style={{backgroundColor:'white' , border:'3px solid blue' ,
+ color:'black' ,  borderRadius:'8px' }}
+className='btn btn-outline-primary p-2' id='asa'>Reviewed 
+&nbsp;&nbsp;&nbsp;56</button></div>
 
 
-
-    
-    <div className='col-3' id='dv4'>
-<button style={{backgroundColor:'white' , border:'3px solid #ECECEC' ,
- color:'black'  ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
-className='btn btn-outline-primary p-2' id='bob2'><img src={g2} id='ti'/>
-<span id='tss'>&nbsp;Disliked </span>
-<b id='tbb4'>&nbsp;&nbsp;3</b></button>
-    </div>
+<div className='col-3'><button style={{backgroundColor:'white' , border:'3px solid #979797' ,
+ color:'black' ,  borderRadius:'8px' }}
+className='btn btn-outline-primary p-2' id='as1'>
+  <img src={g1} />&nbsp;&nbsp;&nbsp;
+  Liked &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4</button></div>
 
 
-    <div className='col-3' id='dv24'>
-<button style={{backgroundColor:'white' , border:'3px solid #ECECEC' ,
- color:'black' ,  borderRadius:'8px' , height:'65px' , width:'180px'}}
-className='btn btn-outline-primary p-2' id='bob3'><img src={g3} id='ti'/>
-<span id='tss'>Make edit </span>
-<b id='tbbt'>3</b></button>
-    </div>
+<div className='col-3'><button style={{backgroundColor:'white' , border:'3px solid #979797' ,
+ color:'black' ,  borderRadius:'8px' 
+}}
+className='btn btn-outline-primary p-2' id='as2'>
+  <img src={g2} />&nbsp;&nbsp;&nbsp;
+  Disliked  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</button></div>
+
+
+<div className='col-3'><button style={{backgroundColor:'white' , border:'3px solid #979797' ,
+ color:'black' ,  borderRadius:'8px'  
+}}
+className='btn btn-outline-primary p-2' id='as3'>
+  <img src={g3}/>&nbsp;&nbsp;
+  Make edit &nbsp;&nbsp;&nbsp; 3</button></div>
 
 </div>
 
