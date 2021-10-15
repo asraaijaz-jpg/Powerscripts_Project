@@ -180,6 +180,7 @@ function Referalprogram2()
 
  <div id='r'>
  
+ <div id='sstt'>
  <h2 style={{color:'#2143FB' , fontFamily:'CA Saygon' , fontWeight:'bold'}} id='r'><i><b><strong>
    INVITE & GET 50<EuroSymbolIcon></EuroSymbolIcon> NOW
      </strong></b></i></h2>
@@ -200,31 +201,32 @@ function Referalprogram2()
      </div> 
      </div>
  
- 
+     </div>
   
 
 <br></br><br></br>
 
+
 <div className='row' id='imgr'>
     <div className='col-3' id='imr'>
-    <Link to=''><img src={five}/></Link>
+    <Link to=''><img src={five} id='imgs'/></Link>
 <h6 style={{marginLeft:'-30px' , marginTop:'15px'}}><i><b>
 <Link to='' style={{textDecoration:'none' , color:'black'}}>REFERALS LINK OPENED</Link></b></i></h6>
     </div>
 
     <div className='col-3' id='imr2'>
-    <Link to=''><img src={two2}/></Link>
+    <Link to=''><img src={two2} id='imgss'/></Link>
     <h6 style={{marginLeft:'-30px' , marginTop:'15px'}}><i><b>
     <Link to='' style={{textDecoration:'none' , color:'black'}}>REFERALS LINK REGISTERED</Link></b></i></h6>
     </div>
 
     <div className='col-3' id='imr3'>
-    <Link to=''> <img src={hun}/></Link>
+    <Link to=''> <img src={hun} id='imgsss'/></Link>
     <h6 style={{marginLeft:'-30px' , marginTop:'15px'}}><i><b>
     <Link to='' style={{textDecoration:'none' , color:'black'}}>POWERSCRIPT MONEY EARNED</Link></b></i></h6>
     </div>
-</div>
 
+</div>
 {/* <div>
 <hr style={{marginTop:'20px' , width:'900px' , marginLeft:'90px'}}></hr><br></br>
 </div> */}

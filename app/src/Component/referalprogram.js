@@ -176,6 +176,7 @@ function Referalprogram1()
  </div>
 
 
+<div id='stp'>
 <div id='r'>
  
 
@@ -225,7 +226,7 @@ style={{marginTop:'40px'   , marginLeft:'120px' , border:'1px solid blue'}} id='
               <input type='text' style={{border:'1px solid blue' , marginLeft:'-10px' , width:'350px'}}></input>
               </div>
               <div className='col-4'>
-              <button className='btn btn-primary' style={{marginLeft:'100px' , height:'30px' , width:'80px'}}>
+              <button className='btn btn-primary' style={{marginLeft:'100px' , height:'26px' , width:'80px'}}>
                   <p style={{marginTop:'-5px'}}>Send</p></button>
               </div>
           </div>
@@ -271,6 +272,7 @@ marginLeft:'120px' , backgroundColor:'blue' }}  id='size'>
     </div>
 </button>
 
+<div id='dj'>
 <div id='rr'>
 {/* <hr style={{marginTop:'30px' , marginLeft:'120px' , width:'350px'}}></hr> */}
 <div><h6 style={{marginLeft:'465px' , marginTop:'30px'}}>OR</h6></div>
@@ -279,18 +281,21 @@ marginLeft:'120px' , backgroundColor:'blue' }}  id='size'>
 <i><h5 style={{color:'blue' , marginLeft:'440px'}}>
     <Link to='' style={{textDecoration:'none' , 
   color:'#2143FB'}}>Share Link</Link></h5></i>
-<i><p style={{ marginLeft:'220px'}}>You can also share your link by copying and sending it or through social media</p></i>
-<i><button style={{ marginLeft:'270px' , height:'40px' , width:'470px' , border:'1px solid blue'}} className='btn '>
-    <p style={{color:'black'}}><center>
+  <div  id='uft'>
+<i><p style={{ marginLeft:'220px'}}>
+  You can also share your link by copying and sending it or through social media</p></i>
+  </div>
+<i><button style={{ marginLeft:'270px' ,  border:'1px solid blue'}}
+ className='btn ' id='uf'><p style={{color:'black'}}><center>
       <b>powerscript.com/ref/user-id=33133525</b></center></p></button></i>
 
 <div><button className='btn ' style={{width:'200px' , marginLeft:'380px' , marginTop:'10px'
 , backgroundColor:'#2143FB' , color:'white'}}>Copy Link</button></div>
 </div>
 </div>
-
 </div>
-
+</div>
+</div>
 
 {/* 
 <img src={logo2} style={{height:'150px' , 

@@ -219,14 +219,14 @@ function Order4()
 <div className='col-3' ><button style={{backgroundColor:'white' , border:'3px solid blue' ,
  color:'black' ,  borderRadius:'8px' }}
 className='btn btn-outline-primary p-2' id='asa'>Reviewed 
-&nbsp;&nbsp;&nbsp;56</button></div>
+&nbsp;&nbsp;&nbsp;<b>56</b></button></div>
 
 
 <div className='col-3'><button style={{backgroundColor:'white' , border:'3px solid #979797' ,
  color:'black' ,  borderRadius:'8px' }}
 className='btn btn-outline-primary p-2' id='as1'>
   <img src={g1} />&nbsp;&nbsp;&nbsp;
-  Liked &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4</button></div>
+  Liked &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>4</b></button></div>
 
 
 <div className='col-3'><button style={{backgroundColor:'white' , border:'3px solid #979797' ,
@@ -234,7 +234,7 @@ className='btn btn-outline-primary p-2' id='as1'>
 }}
 className='btn btn-outline-primary p-2' id='as2'>
   <img src={g2} />&nbsp;&nbsp;&nbsp;
-  Disliked  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</button></div>
+  Disliked  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>3</b></button></div>
 
 
 <div className='col-3'><button style={{backgroundColor:'white' , border:'3px solid #979797' ,
@@ -242,7 +242,7 @@ className='btn btn-outline-primary p-2' id='as2'>
 }}
 className='btn btn-outline-primary p-2' id='as3'>
   <img src={g3}/>&nbsp;&nbsp;
-  Make edit &nbsp;&nbsp;&nbsp; 3</button></div>
+  Make edit &nbsp;&nbsp;&nbsp; <b>3</b></button></div>
 
 </div>
 
