@@ -55,10 +55,11 @@ function Dashboard1()
       if(a > "210px")
       {
         document.getElementById("toggle1").style.width = "210px";
-        document.getElementById("toggle1").style.marginLeft= "-190px";
+        document.getElementById("toggle1").style.marginLeft= "-185px";
         document.getElementById('b1').style.marginLeft='-40px';
         document.getElementById('imm').style.marginLeft='-25px';
         document.getElementById('btb').style.display='none';
+        document.getElementById('tog').style.transform='rotate(180deg)';
   
       }
       else
@@ -69,6 +70,7 @@ function Dashboard1()
         document.getElementById('b1').style.marginLeft='-3px';
         document.getElementById('imm').style.marginLeft='-3px';
         document.getElementById('btb').style.display='inline-block';
+        document.getElementById('tog').style.transform='rotate(0deg)';
         
 
       //   if(window.innerWidth > 1200)
@@ -87,12 +89,11 @@ function Dashboard1()
     }
     
       return(<div className='container-fluid' >
-      <div className='row' style={{display:'flex'   }}>
+      <div className='row' style={{display:'flex' }}>
   {/*         
       <Collapse in={open}>
          */}
-      <div className='col-3  p-5' style={{backgroundColor:'#F5F5F5' , height:'auto' , width:'270px'
- }}
+      <div className='col-3  p-5' style={{backgroundColor:'#F5F5F5' , height:'auto' , width:'270px'}}
        id="example-collapse-text" id='toggle1'>
       {/* 
       <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
@@ -105,9 +106,11 @@ function Dashboard1()
       <div className='row'>
       <div className='col offset-11'>
       <br></br>
-      <button style={{border:'none' , backgroundColor:'#ffffff00'}}><img src={circle} style={{height:'30px' , width:'30px' ,
+      <button style={{border:'none' , backgroundColor:'#ffffff00' 
+   }} id='tog'>
+        <img src={circle} style={{height:'30px' , width:'30px' ,
        backgroundColor:'#F5F5F5' ,
-       marginLeft:'6px'}} 
+       marginLeft:'6px' }} 
        onClick={Toggling}>
          </img></button>
       </div>

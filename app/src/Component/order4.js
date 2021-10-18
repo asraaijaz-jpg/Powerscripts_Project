@@ -64,7 +64,8 @@ function Order4()
     if(a > "210px")
     {
       document.getElementById("toggle1").style.width = "210px";
-      document.getElementById("toggle1").style.marginLeft= "-190px";
+      document.getElementById("toggle1").style.marginLeft= "-185px";    
+      document.getElementById('tog').style.transform='rotate(180deg)';
       document.getElementById('b1').style.marginLeft='-40px';
       document.getElementById('imm').style.marginLeft='-20px';
       document.getElementById('dv').style.marginLeft='-190px';
@@ -79,7 +80,7 @@ function Order4()
       document.getElementById('b1').style.marginLeft='-3px';
       document.getElementById('imm').style.marginLeft='-3px';
       document.getElementById('btb').style.display='inline-block';
-        
+      document.getElementById('tog').style.transform='rotate(0deg)';   
      
 
     //   if(window.innerWidth > 1200)
@@ -115,7 +116,7 @@ function Order4()
   <div className='row'>
   <div className='col offset-11'>
   <br></br>
-  <button style={{border:'none' , backgroundColor:'#ffffff00'}}><img src={circle} style={{height:'30px' , width:'30px' ,
+  <button style={{border:'none' , backgroundColor:'#ffffff00'}} id='tog'><img src={circle} style={{height:'30px' , width:'30px' ,
    backgroundColor:'#F5F5F5' ,
    marginLeft:'6px'}} 
    onClick={Toggling}>
