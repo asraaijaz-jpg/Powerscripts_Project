@@ -37,8 +37,8 @@ function SignupPage()
     const [name, setname] = useState('');
     const [password, setpassword] = useState('');
     const [cpassword, setcpassword] = useState('');
-    const [number, setnumber] = useState('');
-    const [type, settype] = useState('');
+    // const [number, setnumber] = useState('');
+    // const [type, settype] = useState('');
    
 
     // const isPreview=false;
@@ -51,26 +51,26 @@ function check()
     var d=document.getElementById("e4").value;
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var  pattern2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
-    var  pattern3=/^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$/;
+    // var  pattern3=/^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$/;
 
     // if( (a.match(pattern)) && (b.match(pattern2)) && (c.match(pattern2)) && (d.match(pattern3)))
-    if( (a.match(pattern)) && (b.match(pattern2)) && (d.match(pattern3)))
+    if( (b.match(pattern)) && (c.match(pattern2)) )
 {
     // setIsPreview(true);
-   if(b == c)
+   if(c == d)
    {
     setIsPreview(true);
    }
  
    else{
-       alert("not same");
+    //    alert("not same");
    }
 }
 
-let storedata={email,name , password , cpassword , number , type};
+let storedata={email,name , password , cpassword };
 console.log(storedata)
 
-fetch("https://gencore.ar/micro_services_new/public/api/login",
+fetch("https://gencore.ar/power_dom/public/api/register",
 {
     method:'POST',
     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
@@ -144,12 +144,6 @@ fetch("https://gencore.ar/micro_services_new/public/api/login",
 
     <form>
     <div class="form-group">
-    <label for="Email"><b>Email</b></label><br></br>
-    <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
-    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}}
-     
-     pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required
-     onChange={(e)=>setemail(e.target.value)}/><br></br><br></br>
 
     <label for="name" ><b>Name</b></label><br></br>
     <input type="text" class="form-control" id="name" placeholder="Name"
@@ -157,10 +151,19 @@ fetch("https://gencore.ar/micro_services_new/public/api/login",
     className='col-lg-9 col-12' id='e1' required
     onChange={(e)=>setname(e.target.value)}/><br></br><br></br>
 
+    <label for="Email"><b>Email</b></label><br></br>
+    <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
+    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}}
+     
+     pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e2' required
+     onChange={(e)=>setemail(e.target.value)}/><br></br><br></br>
+
+ 
+
     <label for="password"><b>Password</b></label><br></br>
     <input type="password" class="form-control" id="password" placeholder="Password"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    className='col-lg-9 col-12' id='e2' 
+    className='col-lg-9 col-12' id='e3' 
     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     title="Must contain at least one number and one uppercase and 
     lowercase letter, and at least 8 or more characters" required
@@ -171,14 +174,14 @@ fetch("https://gencore.ar/micro_services_new/public/api/login",
     <label for="password"><b>Password Confirmation</b></label><br></br>
     <input type="password" class="form-control" id="password" placeholder="Password_Confirmation"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    className='col-lg-9 col-12' id='e3' 
+    className='col-lg-9 col-12' id='e4' 
     pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     title="Must contain at least one number and one uppercase and 
     lowercase letter, and at least 8 or more characters" required
     onChange={(e)=>setcpassword(e.target.value)}/>
     <br></br><br></br>
 
-    <label for="password"><b>Phone</b></label><br></br>
+    {/* <label for="password"><b>Phone</b></label><br></br>
     <input type="number" class="form-control" id="password" placeholder="Phone"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
     className='col-lg-9 col-12' id='e4' 
@@ -192,7 +195,7 @@ fetch("https://gencore.ar/micro_services_new/public/api/login",
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
     className='col-lg-9 col-12' id='e1' required
     onChange={(e)=>settype(e.target.value)}/>
-    <br></br><br></br>
+    <br></br><br></br> */}
 
     <button type="submit" class="btn btn-primary mb-2 btn-lg"
     id='btnwid'  style={{backgroundColor:'#2143FB'}}

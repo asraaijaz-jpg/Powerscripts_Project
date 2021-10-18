@@ -103,7 +103,7 @@ export function Dashboard4()
       <div className='row'>
       <div className='col offset-11'>
       <br></br>
-      <button style={{border:'none' , backgroundColor:'#ffffff00'}}><img src={circle} style={{height:'30px' , width:'30px' ,
+      <button style={{border:'2px solid black' , backgroundColor:'#ffffff00'}}><img src={circle} style={{height:'30px' , width:'30px' ,
        backgroundColor:'#F5F5F5' ,
        marginLeft:'6px'}} 
        onClick={Toggling}>

@@ -50,7 +50,7 @@ function check()
 let storedata={email};
 console.log(storedata)
 
-fetch("https://gencore.ar/micro_services_new/public/api/reset-password-request",
+fetch("https://gencore.ar/power_dom/public/api/reset-password-request",
 {
     method:'POST',
     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},

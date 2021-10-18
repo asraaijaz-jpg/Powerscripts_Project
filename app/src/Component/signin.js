@@ -57,7 +57,7 @@ async function check()
 let storedata={email,password};
 console.log(storedata)
 
-fetch("https://gencore.ar/micro_services_new/public/api/login",
+fetch("https://gencore.ar/power_dom/public/api/login",
 {
     method:'POST',
     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
