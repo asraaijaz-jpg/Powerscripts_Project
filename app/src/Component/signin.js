@@ -63,7 +63,10 @@ fetch("https://gencore.ar/power_dom/public/api/login",
     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
     body: JSON.stringify(storedata)
 }).then((results)=>{
-   console.log(results)
+//  console.log(results.error)
+// const obj = JSON.parse(results);
+// console.log(obj);
+console.log(JSON.parse(JSON.stringify(results)).error)
 })
 
 
