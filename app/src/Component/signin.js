@@ -67,7 +67,11 @@ fetch("https://gencore.ar/power_dom/public/api/login",
 })
 
 
-
+fetch("https://gencore.ar/power_dom/public/api/login").then((resultss)=>{
+    resultss.json().then((respond)=>{
+        console.log("Get API", respond)
+    })
+})
 
 
 
