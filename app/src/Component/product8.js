@@ -65,21 +65,23 @@ function Productt8()
         document.getElementById("toggle1").style.width = "210px";
         document.getElementById("toggle1").style.marginLeft= "-185px";    
         document.getElementById('tog').style.transform='rotate(180deg)';
-        document.getElementById('b1').style.marginLeft='-40px';
-        document.getElementById('im1').style.marginLeft='-20px';
-  
-  
-      }
-      else
-      {
+      document.getElementById('b1').style.marginLeft='-40px';
+      document.getElementById('imm').style.marginLeft='-20px';
+      document.getElementById('dv').style.marginLeft='-190px';
+      document.getElementById('btb').style.display='none';
+      document.getElementById('dvv').style.marginLeft='-190px';
+      
+    }
+    else
+    {
 
-        document.getElementById("toggle1").style.width = "270px";
-        document.getElementById("toggle1").style.marginLeft= "1px";
-        document.getElementById('b1').style.marginLeft='-3px';
-        document.getElementById('im1').style.marginLeft='-3px';
-        document.getElementById('tog').style.transform='rotate(0deg)';
-        
-
+      document.getElementById("toggle1").style.width = "270px";
+      document.getElementById("toggle1").style.marginLeft= "1px";
+      document.getElementById('b1').style.marginLeft='-3px';
+      document.getElementById('imm').style.marginLeft='-3px';
+      document.getElementById('btb').style.display='inline-block';
+      document.getElementById('tog').style.transform='rotate(0deg)';
+       
       //   if(window.innerWidth > 1200)
       //   {
       //   document.getElementById("toggle1").style.width = "270px";
@@ -96,7 +98,7 @@ function Productt8()
     }
     
     return(<div className='container-fluid' >
-    <div className='row' style={{display:'flex' }}>
+    <div className='row' style={{display:'flex'}}>
 {/*         
     <Collapse in={open}>
        */}
@@ -104,7 +106,7 @@ function Productt8()
      id="example-collapse-text" id='toggle1'>
     {/* 
     <br></br><b><h4 className='p-2'><strong><i>powerscript.</i></strong></h4></b><br></br> */}
-    <img src={power} id='im1'/><br></br><br></br>
+    <img src={power} id='imm'/><br></br><br></br>
      <button type='button' className='btn btn-primary btn-lg' onClick={handleShow} 
     style={{width:'180px' , height:'44px' , fontsize:'50px'}} id='b1'><p style={{fontsize:'5px'
     , marginTop:'-3px'}}>New Task &nbsp;  &nbsp; &nbsp; 
@@ -126,7 +128,7 @@ function Productt8()
   
   <b><h6 style={{fontSize:'14px' , lineHeight:'20px'}}><strong>PRODUCT DESCRIPTIONS</strong></h6></b>
   <p style={{fontSize:'13px'}}>Product Descriptions</p>
-
+  
   <b><h6 style={{fontSize:'13px'}}><strong>   <a href='https://www.facebook.com/' 
   target='_blank' style={{color:'black'}}><FacebookIcon></FacebookIcon></a>&nbsp; &nbsp;FACEBOOK</strong></h6></b>
   <p style={{fontSize:'13px'}}>
@@ -150,21 +152,22 @@ function Productt8()
   <br></br>
  <span>  <Link to='/support' style={{textDecoration:'none' , color:'black'}}>Support</Link></span>
  </p>
-
-   <Link to='checkout1' style={{textDecoration:'none'}}>    
+    
+ <Link to='/checkout1' style={{textDecoration:'none'}}> 
   <button type='button' className='btn btn-lg' style={{backgroundColor:'#98F1D2' , color:'blue',
-  width:'190px' , height:'42px'}}>
-  <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
-  </Link>
+  width:'190px' , height:'42px'}} id='btb'>
+     <p style={{marginTop:'-4px'}}><b>Get 50<EuroSymbolIcon></EuroSymbolIcon> now</b></p></button>
+     </Link>
 
       <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'100vh' 
-        , marginLeft:'-45px', marginTop:'-300px'}}></div> 
-     <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'835px' 
-        , marginLeft:'-45px', marginTop:'-300px'}}></div> 
-   
+        , marginLeft:'-45px', marginTop:'-300px'}} id='dv'></div> 
+    
+    <div style={{backgroundColor:'#F5F5F5' , width:'267px' , height:'350px' 
+        , marginLeft:'-45px', marginTop:'-300px'}} id='dvv'></div> 
+    
+     
    
   </div>
- 
 
 
 <div className='col-9' style={{backgroundColor:'white'}}>
