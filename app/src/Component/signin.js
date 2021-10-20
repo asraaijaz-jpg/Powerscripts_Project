@@ -55,27 +55,44 @@ async function check()
 }
 
 let storedata={email,password};
-console.log(storedata)
+// console.log(storedata)
+
+// fetch("https://gencore.ar/power_dom/public/api/login",
+// {
+//     method:'POST',
+//     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+//     body: JSON.stringify(storedata)
+// }).then((results)=>{
+// // console.log(results.response)
+// // const obj = JSON.parse(results);
+// // console.log(obj);
+// // console.log(JSON.parse(JSON.stringify(results)).error)
+// })
+
+
+
+// fetch('https://jsonplaceholder.typicode.com/posts', {
+//   method: "POST",
+//   body: JSON.stringify(storedata),
+//   headers: {"Content-type": "application/json; charset=UTF-8"}
+// })
+// .then(response => response.json()) 
+// .then(json => console.log(json));
+// // .catch(err => console.log(err));
+
 
 fetch("https://gencore.ar/power_dom/public/api/login",
 {
     method:'POST',
-    headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+    // headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
     body: JSON.stringify(storedata)
-}).then((results)=>{
-//  console.log(results.error)
-// const obj = JSON.parse(results);
-// console.log(obj);
-console.log(JSON.parse(JSON.stringify(results)).error)
 })
+.then(response => response.json())
+.then(response => {
 
+    console.log(response.error)
 
-// fetch("https://gencore.ar/power_dom/public/api/login").then((resultss)=>{
-//     resultss.json().then((respond)=>{
-//         console.log("Get API", respond)
-//     })
-// })
-
+})
 
 
 }
