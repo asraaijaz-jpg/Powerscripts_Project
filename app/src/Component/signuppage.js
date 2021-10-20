@@ -46,7 +46,7 @@ function SignupPage()
 function check()
 {
     let storedata={email,name , password , cpassword };
-    console.log(storedata)
+    // console.log(storedata)
 
     var a=document.getElementById("e1").value;
     var b=document.getElementById("e2").value;
