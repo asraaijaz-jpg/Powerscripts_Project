@@ -45,40 +45,40 @@ function SignupPage()
 
 function check()
 {
+    let storedata={email,name , password , cpassword };
+    console.log(storedata)
+
     var a=document.getElementById("e1").value;
     var b=document.getElementById("e2").value;
     var c=document.getElementById("e3").value;
     var d=document.getElementById("e4").value;
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var  pattern2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
-    // var  pattern3=/^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$/;
-
-    // if( (a.match(pattern)) && (b.match(pattern2)) && (c.match(pattern2)) && (d.match(pattern3)))
-    if( (b.match(pattern)) && (c.match(pattern2)) )
-{
-    // setIsPreview(true);
-   if(c == d)
-   {
-    setIsPreview(true);
-   }
+   
+//     if( (b.match(pattern)) && (c.match(pattern2)) )
+// {  
+//    if(c == d)
+//    {
+//     // setIsPreview(true);
+//    }
  
-   else{
-    //    alert("not same");
-   }
-}
+// }
 
-let storedata={email,name , password , cpassword };
-console.log(storedata)
+
 
 fetch("https://gencore.ar/power_dom/public/api/register",
 {
     method:'POST',
     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
     body: JSON.stringify(storedata)
-}).then((results)=>{
-    console.log(results)
 })
+.then(response => response.json())
+.then(response => {
 
+    // console.log(response)
+    console.log(response.error)
+   
+})
 }
 
 
