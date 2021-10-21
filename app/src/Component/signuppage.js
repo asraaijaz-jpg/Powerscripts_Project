@@ -37,11 +37,9 @@ function SignupPage()
     const [name, setname] = useState('');
     const [password, setpassword] = useState('');
     const [cpassword, setcpassword] = useState('');
-    // const [number, setnumber] = useState('');
-    // const [type, settype] = useState('');
-   
+    const [apierror , seterror] = useState('hello');   
 
-    // const isPreview=false;
+
 
 function check()
 {
@@ -55,14 +53,7 @@ function check()
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var  pattern2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
    
-//     if( (b.match(pattern)) && (c.match(pattern2)) )
-// {  
-//    if(c == d)
-//    {
-//     // setIsPreview(true);
-//    }
- 
-// }
+
 
 
 
@@ -75,8 +66,35 @@ fetch("https://gencore.ar/power_dom/public/api/register",
 .then(response => response.json())
 .then(response => {
 
-    // console.log(response)
-    console.log(response.error)
+    console.log(typeof(response.error))
+    let str=response.error;
+    let str2="The password confirmation does not match.";
+    let str3="The email has already been taken.";
+
+
+    if(str === str2)
+    {
+        if( (b.match(pattern)) && (c.match(pattern2)) )
+        {  
+           
+           if(c === d)
+           {
+            setIsPreview(true);
+            // alert(response.error);
+           }
+           else{
+               alert("password not same");
+           }
+         
+        }
+   
+
+    }
+    else if ( str === str3 )
+    {
+        alert(response.error);
+        // seterror(response.error);
+    }
    
 })
 }
@@ -154,9 +172,11 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     <label for="Email"><b>Email</b></label><br></br>
     <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}}
-     
-     pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e2' required
-     onChange={(e)=>setemail(e.target.value)}/><br></br><br></br>
+  className='col-lg-9 col-12' id='e2' required
+     onChange={(e)=>setemail(e.target.value)}/>
+     {/* <div style={{color:'red' , border:'2px solid black' ,
+    width:'400px' , height:'25px'}}>{apierror}</div> */}
+     <br></br>   <br></br>
 
  
 
@@ -164,7 +184,6 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     <input type="password" class="form-control" id="password" placeholder="Password"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
     className='col-lg-9 col-12' id='e3' 
-    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     title="Must contain at least one number and one uppercase and 
     lowercase letter, and at least 8 or more characters" required
     onChange={(e)=>setpassword(e.target.value)}/>
@@ -175,7 +194,6 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     <input type="password" class="form-control" id="password" placeholder="Password_Confirmation"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
     className='col-lg-9 col-12' id='e4' 
-    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     title="Must contain at least one number and one uppercase and 
     lowercase letter, and at least 8 or more characters" required
     onChange={(e)=>setcpassword(e.target.value)}/>
