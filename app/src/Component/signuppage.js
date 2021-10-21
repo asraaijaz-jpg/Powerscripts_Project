@@ -181,32 +181,17 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     onChange={(e)=>setcpassword(e.target.value)}/>
     <br></br><br></br>
 
-    {/* <label for="password"><b>Phone</b></label><br></br>
-    <input type="number" class="form-control" id="password" placeholder="Phone"
-    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    className='col-lg-9 col-12' id='e4' 
-    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-    title="Must match with phone number pattern" required
-    onChange={(e)=>setnumber(e.target.value)}/>
-    <br></br><br></br>
-
-    <label for="text"><b>Type</b></label><br></br>
-    <input type="text" class="form-control" id="password" placeholder="Type"
-    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    className='col-lg-9 col-12' id='e1' required
-    onChange={(e)=>settype(e.target.value)}/>
-    <br></br><br></br> */}
 
     <button type="submit" class="btn btn-primary mb-2 btn-lg"
     id='btnwid'  style={{backgroundColor:'#2143FB'}}
     onClick={check}>Sign Up</button><br></br>
 
-    <br></br><br></br>
-    <h6> <img src={line}/>&nbsp;&nbsp;&nbsp;or Sign In with &nbsp;&nbsp;&nbsp; <img src={line}/></h6>
+    <br></br>
+    <h6 style={{marginTop:'-13px'}}> <img src={line}/>&nbsp;&nbsp;&nbsp;or Sign In with &nbsp;&nbsp;&nbsp; <img src={line}/></h6>
     
-<br></br>
 
-    <div className='row'>
+
+    <div className='row' style={{marginTop:'15px'}}>
         
         <div className='col-3 col-sm-1 '>
         <button type='button' 
