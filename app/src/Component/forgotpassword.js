@@ -51,22 +51,19 @@ fetch("https://gencore.ar/power_dom/public/api/reset-password-request",
 .then(response => response.json())
 .then(response => {
 
-    console.log(typeof(response.error));
-    // let str=response.error;
-    // let str2="Email has been sent";
-    // let str3="Email does not exist.";
+    console.log(response.status);
 
-    // if(str === str3)
-    // {
-    //    alert(response.error);
-    // }
-    // else if (str === str2)
-    // {
-    //     if(a.match(pattern))
-    //     {
-    //        setIsPreview(true);
-    //     }
-    // }
+    if(response.status === false)
+    {
+       alert('User is not found');
+    }
+    else if (response.status === true)
+    {
+        if(a.match(pattern))
+        {
+           setIsPreview(true);
+        }
+    }
    
 })
 
@@ -123,10 +120,11 @@ fetch("https://gencore.ar/power_dom/public/api/reset-password-request",
             <br></br>
 
     <form>    <div class="form-group">
-    <label for="Email"><b>Email </b></label><br></br><br></br>
+    <label for="Email"><b>Email</b></label><br></br>
     <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
-    style={{  height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
-    pattern="[^ @]*@[^ @]*" className='col-lg-9 col-12' id='e1' required
+    style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
+    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+    className='col-lg-9 col-12' id='e1'required
     onChange={(e)=>setemail(e.target.value)}/><br></br>
 <br></br><br></br>
 
