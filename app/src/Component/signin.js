@@ -36,42 +36,47 @@ function SigninPage()
 
 const [email,setemail]=useState('');
 const [password,setpassword]=useState('');
+const [apierror , seterror] = useState('hello');   
 
 
-async function check()
+function check()
 {
- 
+  
+    let storedata={email,password};
+    // console.log(storedata)
+
     var a=document.getElementById("e1").value;
     var b=document.getElementById("e2").value;
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     var  pattern2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
 
-    if(a.match(pattern) && (b.match(pattern2)))
-{
-    // alert('hello');
-    // isPreview=true;
-    setIsPreview(true);
-    // alert(isPreview);
-}
 
-let storedata={email,password};
-console.log(storedata)
- 
-
-
-fetch("https://gencore.ar/power_dom/public/api/login",
-{
-    method:'POST',
-    headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
-    body: JSON.stringify(storedata)
-})
-.then(response => response.json())
-.then(response => {
-
-    console.log(response)
-    console.log(response.error)
-
-})
+    fetch("https://gencore.ar/power_dom/public/api/login",
+    {
+        method:'POST',
+        headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(storedata)
+    })
+    .then(response => response.json())
+    .then(response => {
+    
+        console.log(typeof(response.error))
+        let str=response.error;
+        let str2="Your Email/Password is incorrect";
+        let str3="User is not found";
+    
+        if(str === str2 || str === str3)
+        {
+           alert(response.error);
+        }
+        else{
+            if(a.match(pattern) && (b.match(pattern2)))
+            {
+               setIsPreview(true);
+            }
+        }
+       
+    })
 }
 
 

@@ -35,16 +35,14 @@ function ForgotpasswordPage()
 function check()
 {
     var a=document.getElementById("e1").value;
-    // var b=document.getElementById("e2").value;
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    // var  pattern2=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+   
 
     if(a.match(pattern))
 {
-    // alert('hello');
-    // isPreview=true;
+
     setIsPreview(true);
-    // alert(isPreview);
+
 }
 
 let storedata={email};
@@ -55,9 +53,28 @@ fetch("https://gencore.ar/power_dom/public/api/reset-password-request",
     method:'POST',
     headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
     body: JSON.stringify(storedata)
-}).then((results)=>{
-   console.log(results)
 })
+.then(response => response.json())
+.then(response => {
+
+    console.log(typeof(response.error))
+    let str=response.error;
+    let str2="Email has been sent";
+    let str3="Email does not exist.";
+
+    if(str === str3)
+    {
+       alert(response.error);
+    }
+    else{
+        if(a.match(pattern))
+        {
+           setIsPreview(true);
+        }
+    }
+   
+})
+
 }
 
 

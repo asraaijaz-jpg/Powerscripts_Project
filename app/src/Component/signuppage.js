@@ -55,8 +55,6 @@ function check()
    
 
 
-
-
 fetch("https://gencore.ar/power_dom/public/api/register",
 {
     method:'POST',
