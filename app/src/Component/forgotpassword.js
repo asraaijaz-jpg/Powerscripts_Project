@@ -38,15 +38,9 @@ function check()
     var  pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
    
 
-    if(a.match(pattern))
-{
-
-    setIsPreview(true);
-
-}
 
 let storedata={email};
-console.log(storedata)
+// console.log(storedata)
 
 fetch("https://gencore.ar/power_dom/public/api/reset-password-request",
 {
