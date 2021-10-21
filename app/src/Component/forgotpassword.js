@@ -51,21 +51,22 @@ fetch("https://gencore.ar/power_dom/public/api/reset-password-request",
 .then(response => response.json())
 .then(response => {
 
-    console.log(typeof(response.error))
-    let str=response.error;
-    let str2="Email has been sent";
-    let str3="Email does not exist.";
+    console.log(typeof(response.error));
+    // let str=response.error;
+    // let str2="Email has been sent";
+    // let str3="Email does not exist.";
 
-    if(str === str3)
-    {
-       alert(response.error);
-    }
-    else{
-        if(a.match(pattern))
-        {
-           setIsPreview(true);
-        }
-    }
+    // if(str === str3)
+    // {
+    //    alert(response.error);
+    // }
+    // else if (str === str2)
+    // {
+    //     if(a.match(pattern))
+    //     {
+    //        setIsPreview(true);
+    //     }
+    // }
    
 })
 

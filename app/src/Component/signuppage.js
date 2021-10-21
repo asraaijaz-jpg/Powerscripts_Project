@@ -70,9 +70,17 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     let str3="The email has already been taken.";
 
 
-    if(str === str2)
+    if ( str === str3 )
     {
-        if( (b.match(pattern)) && (c.match(pattern2)) )
+        if( (b.match(pattern)) && (c.match(pattern2)) && (d.match(pattern2)) )
+        {
+        alert(response.error);
+        }
+    }
+    
+    else
+    {
+        if( (b.match(pattern)) && (c.match(pattern2)) && (d.match(pattern2)) )
         {  
            
            if(c === d)
@@ -87,11 +95,6 @@ fetch("https://gencore.ar/power_dom/public/api/register",
         }
    
 
-    }
-    else if ( str === str3 )
-    {
-        alert(response.error);
-        // seterror(response.error);
     }
    
 })
@@ -170,7 +173,8 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     <label for="Email"><b>Email</b></label><br></br>
     <input type="email" class="form-control" id="Email" placeholder="lindsey.westervelt@gmail.com"
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}}
-  className='col-lg-9 col-12' id='e2' required
+    className='col-lg-9 col-12' id='e2' required  
+    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
      onChange={(e)=>setemail(e.target.value)}/>
      {/* <div style={{color:'red' , border:'2px solid black' ,
     width:'400px' , height:'25px'}}>{apierror}</div> */}
@@ -183,7 +187,8 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     style={{height:'40px' , border: '2px solid #CACACA' , borderRadius:'4px'}} 
     className='col-lg-9 col-12' id='e3' 
     title="Must contain at least one number and one uppercase and 
-    lowercase letter, and at least 8 or more characters" required
+    lowercase letter, and at least 8 or more characters" required 
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     onChange={(e)=>setpassword(e.target.value)}/>
     <br></br><br></br>
 
@@ -194,6 +199,7 @@ fetch("https://gencore.ar/power_dom/public/api/register",
     className='col-lg-9 col-12' id='e4' 
     title="Must contain at least one number and one uppercase and 
     lowercase letter, and at least 8 or more characters" required
+    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
     onChange={(e)=>setcpassword(e.target.value)}/>
     <br></br><br></br>
 
