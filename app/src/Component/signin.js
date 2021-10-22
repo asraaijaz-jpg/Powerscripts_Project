@@ -19,11 +19,14 @@ import Image from './bgimage';
 import Limage from './Limage';
 import styles from './styles.css';
 import dot from './images/dot.png';
-import { Redirect } from 'react-router-dom'
+import { Redirect } from 'react-router-dom';
+import ReactSession from 'react-client-session';
 
 
 function SigninPage()
 {
+    
+
     useEffect(()=>{
         document.title='Sign In Page';
     });
@@ -42,8 +45,19 @@ const [apierror , seterror] = useState('hello');
 function check()
 {
   
+
     let storedata={email,password};
     // console.log(storedata)
+
+ 
+// // remove
+// localStorage.removeItem('myData');
+// sessionStorage.removeItem('mysessiondata');
+ 
+// // remove all
+// localStorage.clear();
+// sessionStorage.clear();
+
 
     var a=document.getElementById("e1").value;
     var b=document.getElementById("e2").value;
@@ -72,11 +86,25 @@ function check()
         else{
             if(a.match(pattern) && (b.match(pattern2)))
             {
+                //localstorage and session setter
+               localStorage.setItem('myData', JSON.stringify(storedata));
+               sessionStorage.setItem('mysessiondata',JSON.stringify(storedata));
+
+                //localstorage and sessionstorage getter
+               let data=localStorage.getItem('myData');
+               data=JSON.parse(data);
+               alert(data.email);
+
+               let data2=sessionStorage.getItem('mysessiondata');
+               data2=JSON.parse(data2);
+               alert(data2.email);
+
                setIsPreview(true);
             }
         }
        
     })
+    
 }
 
 
