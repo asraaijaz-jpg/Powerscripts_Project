@@ -33,11 +33,45 @@ import Image from './bgimage';
 import Limage from './Limage';
 import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
 import styles from './styles.css';
+import jsondata from './jsondata';
 
 
 export function Dashboard4()
 {
  
+  var tabledata=
+[
+{
+    "id":"202010410-10001",
+    "title":"Grownbusters Demo text",
+    "status":"Reviewd",
+    "statusdate":"2020-3-21",
+    "type":"Blog Article",
+    "ratings":"View Order",
+    "links":"/order4"
+}
+,
+{
+    "id":"202010410-10002",
+    "title":"Grownbusters Demo text",
+    "status":"Delivered",
+    "statusdate":"2020-3-21",
+    "type":"Blog Article",
+    "ratings":"View Order",
+    "links":"/order2"
+}
+,
+{
+    "id":"202010410-10003",
+    "title":"Grownbusters Demo text",
+    "status":"Delivered",
+    "statusdate":"2020-3-21",
+    "type":"Blog Article",
+    "ratings":"View Order",
+    "links":"/order2"
+}
+]
+
   const [show, setShow] = useState(false);   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -349,37 +383,23 @@ width:'180px' , marginLeft:'50px'}}></img>
     </tr>
   </thead>
   <tbody>
-    <tr style={{height:'9px' , fontSize:'15px'}}>
-      <td scope="row">202010410-10001</td>
-      <td>Grownbusters Demo text</td>
-      <td style={{color:'blue'}}><b>Reviewd</b><br></br><span style={{color:'black'}}>2020-3-21</span></td>
-      <td>Blog Article</td>
-      <td>
-      <Link to='/order4'><button type="button" class="btn " style={{fontSize:'14px',
-    color:'#4A66FB' , border:'2px solid #4A66FB'}}><b>View Order</b></button>
+   
+   {
+     tabledata.map((val,id)=>{
+      return(
+        <tr style={{height:'9px' , fontSize:'15px' }}>
+          <td>{tabledata[id].id}</td>
+          <td>{tabledata[id].title}</td>
+          <td style={{color:'blue'}}><b>{tabledata[id].status}</b>
+          <br></br><span style={{color:'black'}}>{tabledata[id].statusdate}</span></td>
+          <td>{tabledata[id].type}</td>
+          <td><Link to={tabledata[id].links}><button type="button" class="btn " style={{fontSize:'14px',
+    color:'#4A66FB' , border:'2px solid #4A66FB'}}><b>{tabledata[id].ratings}</b></button>
       </Link></td>
-    </tr>
-    <tr style={{height:'9px' , fontSize:'15px'}}>
-      <td scope="row">202010410-10002</td>
-      <td>Grownbusters Demo text</td>
-      <td><b>Delivered</b><br></br>2020-3-21</td>
-      <td>Blog Article</td>
-      <td><Link to='/order2'>
-      <button type="button" class="btn " style={{fontSize:'14px',
-    color:'#4A66FB' , border:'2px solid #4A66FB'}}><b>View Order</b></button>
-     </Link></td>
-    </tr>
-    <tr style={{height:'9px' , fontSize:'15px'}}s>
-      <td scope="row">202010410-10003</td>
-      <td>Grownbusters Demo text</td>
-      <td><b>Delivered</b><br></br>2020-3-21</td>
-      <td>Blog Article</td>
-      <td>
-      <Link to='/order2'>
-      <button type="button" class="btn " style={{fontSize:'14px',
-    color:'#4A66FB' , border:'2px solid #4A66FB'}}><b>View Order</b></button>
-     </Link></td>
-    </tr>
+        </tr>
+      )
+     })
+   }
   </tbody>
 </table>
 {/* 
