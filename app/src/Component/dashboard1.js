@@ -33,6 +33,7 @@ import Limage from './Limage';
 import Dashboard2 from './dashboard2';
 import styles from './styles.css';
 import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 
 function Dashboard1()
@@ -48,6 +49,14 @@ function Dashboard1()
 
     console.log(window.innerWidth);
 
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+    
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -316,6 +325,9 @@ width:'180px' , marginLeft:'100px'}}></img>
 </div>
 </div> */}
 
+<div id='logout'><button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button></div>
 
 </div>
 </div>

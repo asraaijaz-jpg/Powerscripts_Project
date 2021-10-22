@@ -10,6 +10,7 @@ import SettingsIcon from '@material-ui/icons/Settings';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import EuroSymbolIcon from '@material-ui/icons/EuroSymbol';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import logo2 from './images/logo2.png';
 import logo3 from './images/logo3.png';
 import logo4 from './images/logo4.png';
@@ -34,6 +35,7 @@ import Limage from './Limage';
 import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
 import styles from './styles.css';
 import jsondata from './jsondata';
+
 
 
 export function Dashboard4()
@@ -80,6 +82,15 @@ export function Dashboard4()
     useEffect(()=>{
         document.title='Dashboard 4';
     })
+
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -425,6 +436,12 @@ width:'180px' , marginLeft:'50px'}}></img>
 <div style={{marginLeft:'575px' , backgroundColor:'white' , marginTop:'-252px'}}>
 <Limage />
 </div>
+
+<div id='logout'><button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button></div>
+
+  
 </div>
 </div>
 

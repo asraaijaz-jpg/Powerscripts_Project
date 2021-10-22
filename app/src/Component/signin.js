@@ -49,15 +49,6 @@ function check()
     let storedata={email,password};
     // console.log(storedata)
 
- 
-// // remove
-// localStorage.removeItem('myData');
-// sessionStorage.removeItem('mysessiondata');
- 
-// // remove all
-// localStorage.clear();
-// sessionStorage.clear();
-
 
     var a=document.getElementById("e1").value;
     var b=document.getElementById("e2").value;
@@ -93,11 +84,11 @@ function check()
                 //localstorage and sessionstorage getter
                let data=localStorage.getItem('myData');
                data=JSON.parse(data);
-               alert(data.email);
+            //    alert(data.email);
 
                let data2=sessionStorage.getItem('mysessiondata');
                data2=JSON.parse(data2);
-               alert(data2.email);
+            //    alert(data2.email);
 
                setIsPreview(true);
             }

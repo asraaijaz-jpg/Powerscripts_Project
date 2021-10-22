@@ -33,6 +33,7 @@ import CancelIcon from '@material-ui/icons/Cancel';
 import Image from './bgimage';
 import Limage from './Limage';
 import styles from './styles.css';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 
 
@@ -47,6 +48,15 @@ function Dashboard3()
     useEffect(()=>{
         document.title='Dashboard 3';
     })
+
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+    
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -406,6 +416,11 @@ width:'180px' , marginLeft:'50px'}}></img>
 <div style={{marginLeft:'575px' , backgroundColor:'white' , marginTop:'-252px'}}>
 <Limage />
 </div>
+
+<div id='logout'><button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button></div>
+
 </div>
 </div>
 
