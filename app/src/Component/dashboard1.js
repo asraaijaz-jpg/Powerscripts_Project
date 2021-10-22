@@ -56,7 +56,7 @@ function Dashboard1()
      sessionStorage.clear();
      localStorage.clear();
     }
-    
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;

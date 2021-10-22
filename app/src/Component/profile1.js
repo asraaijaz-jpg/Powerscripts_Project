@@ -29,6 +29,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Table } from 'react-bootstrap';
 import fb from './images/fb.png';
 import CancelIcon from '@material-ui/icons/Cancel';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 function Profile1()
 {
@@ -40,6 +41,15 @@ function Profile1()
     useEffect(()=>{
         document.title='Profile 1';
     })
+
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -173,6 +183,10 @@ function Profile1()
   </Link></h6>
 </div>
  </div>
+
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
 <h3 id='sub'><b>Profile</b></h3>
 
@@ -450,7 +464,11 @@ width:'200px' , marginLeft:'110px'}}></img>
 <div style={{marginLeft:'575px' , backgroundColor:'white' , marginTop:'-476px'}}>
 <Limage />
 </div>
-
+{/* 
+<div id='logout'><button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button></div> */}
+  
 </div>
 </div>
 {/* <Image/> */}

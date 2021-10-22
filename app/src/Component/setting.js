@@ -34,6 +34,8 @@ import blog from './images/blog.png';
 import cart from './images/cart.png';
 import CancelIcon from '@material-ui/icons/Cancel';
 import Collapse from 'react-bootstrap/Collapse'
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
+
 
 function Settings()
 {
@@ -49,6 +51,13 @@ function Settings()
     useEffect(()=>{
         document.title='Settings';
     })
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
 
     function Toggling()
     {
@@ -179,6 +188,9 @@ function Settings()
 </div>
  </div>
 
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
 
 <h3 id='sub' style={{marginBottom:'10px', fontWeight:'700'}}>Settings</h3>
@@ -328,6 +340,10 @@ width:'200px'}}></img>
 <Limage />
 </div>
 
+{/* <div id='logout'><button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button></div> */}
+  
 </div>
 </div>
 

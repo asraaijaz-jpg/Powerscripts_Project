@@ -34,7 +34,7 @@ import fb1 from './images/fb1.png';
 import blog from './images/blog.png';
 import cart from './images/cart.png';
 import CancelIcon from '@material-ui/icons/Cancel';
-
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 
 function Billing()
@@ -47,6 +47,13 @@ function Billing()
         document.title='Billing';
     })
 
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ; 
@@ -159,6 +166,10 @@ function Billing()
 </div>
  </div>
 
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+  
 <h3 id='sub'><b>Billing</b></h3>
 
 
@@ -415,6 +426,10 @@ width:'180px' , marginLeft:'100px'}}></img>
 <Limage />
 </div>
 
+{/* <div id='logout'><button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button></div> */}
+  
 </div>
 </div>
 

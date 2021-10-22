@@ -225,7 +225,9 @@ export function Dashboard4()
 </div>
  </div>
 
-
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
  <h3 className='p-2' style={{fontsize:'32px'}} ><b style={{fontWeight:'bold'}}>Welcome , Lindsey</b></h3>
     <div className='col-6 p-4 m-1' style={{backgroundColor:'#CDE2F5' , borderRadius:'5px' }} id='dba'>
@@ -437,9 +439,11 @@ width:'180px' , marginLeft:'50px'}}></img>
 <Limage />
 </div>
 
-<div id='logout'><button onClick={closesession} id='logbtn'>
+{/* <div id='logout'>
+  <button onClick={closesession} id='logbtn'>
 <Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
-  </button></div>
+  </button>
+  </div>  */}
 
   
 </div>
