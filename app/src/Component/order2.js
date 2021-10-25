@@ -53,6 +53,22 @@ function Order2()
       "status":<button className='btn ' id='bttxt' style={{backgroundColor:'#2143FB',
       color:'white'}}>Finish order</button>,
       "statusdate":""
+  },
+  {
+      "id":"2134567890",
+      "title":"Grownbusters Demo text",
+      "status":"Delivered on",
+      "statusdate":"2021/3/20",
+      "type":"Blog Article",
+      "ratings":<img src={star4}/>
+  },
+  {
+    "id":"2134567890",
+    "title":"Grownbusters Demo text",
+    "status":"Delivered on",
+    "statusdate":"2021/3/20",
+    "type":"Blog Article",
+    "ratings":<img src={star3}/>
   }
   ]
 

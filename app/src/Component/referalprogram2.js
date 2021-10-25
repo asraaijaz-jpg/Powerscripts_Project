@@ -51,33 +51,20 @@ function Referalprogram2()
   var tabledata=
   [
     {
-      "id":"2134567890",
-      "title":"Grownbusters Demo text",
-      "status":<button className='btn ' id='bttxt' style={{backgroundColor:'#2143FB',
-      color:'white'}}>Finish order</button>,
-      "statusdate":"",
-      "type":"Blog Article",
-      "ratings":""
+      "name":"SUZANNE ***",
+      "email":"suzanee@gancore.ar",
+      "status":"Registered on",
+      "statusdate":"2021-03-20"
   },
   {
-      "id":"2134567890",
-      "title":"Grownbusters Demo text",
-      "status":"Delivered on",
-      "statusdate":"2021/3/20",
-      "type":"Blog Article",
-      "ratings":<img src={star4}/>
-  },
-  {
-    "id":"2134567890",
-    "title":"Grownbusters Demo text",
-    "status":"Delivered on",
-    "statusdate":"2021/3/20",
-    "type":"Blog Article",
-    "ratings":<img src={star3}/>
-  }
+    "name":"JAMES ***",
+    "email":"james@gencore.ar",
+    "status":"Registered on",
+    "statusdate":"2021-03-20"
+}
   ]
 
-  
+
   const [show, setShow] = useState(false);   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -302,6 +289,18 @@ function Referalprogram2()
   <tbody>
     
 
+  {
+     tabledata.map((val,id)=>{
+      return(
+        <tr style={{height:'9px' , fontSize:'15px' }}>
+          <td style={{fontWeight:'800' }}><b><i style={{fontsize:'30px'}}>{tabledata[id].name}</i></b></td>
+          <td style={{color:'#333333' , fontSize:'16px' }}>{tabledata[id].email}</td>
+          <td style={{color:'blue'}}><b>{tabledata[id].status}</b>
+          <br></br><span style={{color:'#525252'}}>{tabledata[id].statusdate}</span></td>
+        </tr>
+      )
+     })
+   }
 
   </tbody>
 </table>
