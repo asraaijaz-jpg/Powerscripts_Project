@@ -279,7 +279,7 @@ function Order8()
 
 <div className='col-3' id='rside'>
 
-
+<br></br>
 <div className='row' id='seppp' >
       <div id='pid'>
       {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></LinkccountCircleIcon> */}
@@ -291,6 +291,10 @@ function Order8()
 <h6 ><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
 Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
+
+<button onClick={closesession} id='logbtn8'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 </div>
 <br></br>
 
