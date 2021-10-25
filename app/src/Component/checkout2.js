@@ -317,7 +317,7 @@ style={{textDecoration:'none' , color:'black'}}>
 
 <div className='col-3' id='rside555' >
 
-<br></br><br></br>
+<br></br>
 <div className='row' id='profile'>
 
 
@@ -345,7 +345,7 @@ Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 
 <h4><br></br><br></br>&nbsp;&nbsp;
 <br></br><br></br>
-Your Order Details</h4>
+&nbsp;&nbsp;Your Order Details</h4>
   <h5 style={{marginTop:'-25px'}}><br></br><br></br>&nbsp;&nbsp;&nbsp;&nbsp;Prodcut</h5>
 <p style={{color:'black'}}><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hero Level 1</i></p>
 <img src={m} style={{marginLeft:'20px'}}/>

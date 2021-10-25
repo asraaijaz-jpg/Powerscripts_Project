@@ -316,7 +316,7 @@ function Checkout1()
 
 <div className='col-3' id='rside555' >
 
-  
+  <br></br>
 <div className='row' id='profile' >
 
 
