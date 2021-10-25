@@ -229,28 +229,39 @@ function Checkout1()
 <hr></hr>
 </h5>
 
-<p id='c2'>Facebook Primary Text 
-
+<table>
+  <tbody>
+<tr><p id='c2'>Facebook Primary Text 
 <span id='saprator2'>21.97<EuroSymbolIcon></EuroSymbolIcon></span></p>
+</tr>
 
-
+<tr>
 <p id='c2'>Delivery : Hero delivery
-
 <span id='saprator3'>14.97<EuroSymbolIcon></EuroSymbolIcon></span></p>
+</tr>
+
+<tr>
 <p id='c2'>Total (exc. VAT) 
 <span id='saprator4'>36.94<EuroSymbolIcon></EuroSymbolIcon></span></p>
+</tr>
+
+<tr>
 <p id='c2'>Value add Tax (Austria - 8%)
-<span id='saprator5'>6.65<EuroSymbolIcon></EuroSymbolIcon></span>
-</p>
+<span id='saprator5'>6.65<EuroSymbolIcon></EuroSymbolIcon></span></p>
+</tr>
+
 <p id='c2'>
 <hr></hr>
 </p>
 
+<tr>
 <p id='c2'>Total 
-
-
-
 <span id='saprator6'>43.59<EuroSymbolIcon></EuroSymbolIcon></span></p>
+</tr>
+
+  </tbody>
+  </table>
+
 
 </div>
 

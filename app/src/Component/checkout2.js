@@ -228,24 +228,34 @@ function Checkout2()
 
 <hr></hr>
 </h5>
+
+<table>
+  <tbody>
+    
+<tr>
 <p id='c2'>Hero Subscriptions Level 1
 <span id='saprator5'>147.0<EuroSymbolIcon></EuroSymbolIcon></span>
 </p>
+</tr>
 
-<p id='c2'>Total (exc. VAT) 
-<span id='saprator4'>147.0<EuroSymbolIcon></EuroSymbolIcon></span></p>
-<p id='c2'>Value add Tax (Austria - 8%)
+<tr><p id='c2'>Total (exc. VAT) 
+<span id='saprator4'>147.0<EuroSymbolIcon></EuroSymbolIcon></span></p></tr>
+
+
+<tr><p id='c2'>Value add Tax (Austria - 8%)
 <span id='saprator5'>24.4<EuroSymbolIcon></EuroSymbolIcon></span>
-</p>
-<p id='c2'>
+</p></tr>
+
+
+<tr><p id='c2'>
 <hr></hr>
-</p>
+</p></tr>
 
-<p id='c2'>Total 
+<tr><p id='c2'>Total 
+<span id='saprator6'>173.4<EuroSymbolIcon></EuroSymbolIcon></span></p></tr>
 
-
-
-<span id='saprator6'>173.4<EuroSymbolIcon></EuroSymbolIcon></span></p>
+</tbody>
+  </table>
 
 </div>
 
