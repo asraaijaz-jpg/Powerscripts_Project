@@ -295,7 +295,7 @@ function Referalprogram2()
         <tr style={{height:'9px' , fontSize:'15px' }}>
           <td style={{fontWeight:'800' }}><b><i style={{fontsize:'30px'}}>{tabledata[id].name}</i></b></td>
           <td style={{color:'#333333' , fontSize:'16px' }}>{tabledata[id].email}</td>
-          <td style={{color:'blue'}}><b>{tabledata[id].status}</b>
+          <td ><b>{tabledata[id].status}</b>
           <br></br><span style={{color:'#525252'}}>{tabledata[id].statusdate}</span></td>
         </tr>
       )
