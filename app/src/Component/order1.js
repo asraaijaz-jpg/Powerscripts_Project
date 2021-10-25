@@ -14,6 +14,7 @@ import EuroSymbolIcon from '@material-ui/icons/EuroSymbol';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
 import logo2 from './images/logo2.png';
 import logo3 from './images/logo3.png';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import star4 from './images/star4.png';
 import star3 from './images/star3.png';
 import logo4 from './images/logo4.png';
@@ -48,6 +49,15 @@ function Order1()
     useEffect(()=>{
         document.title='Order1';
     })
+
+     
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
 
    
     function Toggling()
@@ -176,7 +186,9 @@ function Order1()
 </div>
  </div>
 
-
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
 
  <h2 id='order11'><b>Orders</b></h2><br></br>

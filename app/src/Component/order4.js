@@ -13,6 +13,7 @@ import DragHandleIcon from '@material-ui/icons/DragHandle';
 import EuroSymbolIcon from '@material-ui/icons/EuroSymbol';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
 import logo2 from './images/logo2.png';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import logo3 from './images/logo3.png';
 import col from './images/collection.png';
 import star4 from './images/star4.png';
@@ -54,6 +55,15 @@ function Order4()
     useEffect(()=>{
         document.title='Order4';
     })
+
+     
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
 
    
    

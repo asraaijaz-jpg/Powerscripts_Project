@@ -13,7 +13,7 @@ import EuroSymbolIcon from '@material-ui/icons/EuroSymbol';
 import RemoveShoppingCartIcon from '@material-ui/icons/RemoveShoppingCart';
 import logo2 from './images/logo2.png';
 import logo3 from './images/logo3.png';
-
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import star4 from './images/star4.png';
 import star3 from './images/star3.png';
 import star5 from './images/star5.png';
@@ -50,6 +50,16 @@ function Order2()
   const handleShow = () => setShow(true);
 
   
+   
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
+
   function Toggling()
   {
    var a= document.getElementById("toggle1").style.width ;
