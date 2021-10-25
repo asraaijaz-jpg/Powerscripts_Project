@@ -279,8 +279,8 @@ function Order8()
 
 <div className='col-3' id='rside'>
 
-<br></br>
-<div className='row' id='seppp' >
+
+<div className='row' id='sepppt' >
       <div id='pid'>
       {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></LinkccountCircleIcon> */}
       <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
