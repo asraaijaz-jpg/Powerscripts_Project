@@ -45,6 +45,7 @@ import group from './images/group.png';
 import CancelIcon from '@material-ui/icons/Cancel';
 import EuroIcon from '@material-ui/icons/Euro';
 import Image from './bgimage';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import Limage from './Limage';
 
 
@@ -67,6 +68,15 @@ function Subscription3()
     useEffect(()=>{
         document.title='Subscription 3';
     })
+
+    
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
 
    
     function Toggling()
@@ -204,6 +214,14 @@ function Subscription3()
 </div>
  </div>
 
+
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
+
+
+  
 <h2 id='sub' style={{  fontWeight: "bold"  }}>Subscriptions</h2>
 
 
@@ -230,7 +248,7 @@ id='nav'>Billing</h5></NavLink>
 <div className='col-1 m-4'>
 <NavLink style={{textDecoration:'none' , color:'#DBDBDB'}} to='/settings' >
   <h5 style={{ marginTop:'-17px'}}
- id='navset'>&nbsp;&nbsp;&nbsp;&nbsp;Settings</h5></NavLink>
+ id='navset'>Settings</h5></NavLink>
 </div>
 </div>
 
@@ -482,6 +500,7 @@ style={{marginTop:'-5px' , width:'290px'}}></hr></center>
 
 
 </div>
+
 
 {/* <div style={{marginLeft:'1070px' , marginTop:'-890px' , borderLeft:'2px solid #DBDBDB',
 height:'910px' }}></div> */}

@@ -21,6 +21,7 @@ import ladyprofile from './images/profile.png';
 import circle from './images/circle.png';
 import ToggleOffIcon from '@material-ui/icons/ToggleOff';
 import man1 from './images/man1.png';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import man2 from './images/man2.png';
 import man3 from './images/man3.png';
 import man11 from './images/man11.png';
@@ -65,6 +66,15 @@ function Subscription4()
     })
 
   
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -197,6 +207,10 @@ function Subscription4()
 </div>
  </div>
 
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
 <h2 id='sub' style={{  fontWeight: "bold"  }}>Subscriptions</h2>
 
 
@@ -222,7 +236,7 @@ id='nav'>Billing</h5></NavLink>
 <div className='col-1 m-4'>
 <NavLink style={{textDecoration:'none' , color:'#DBDBDB'}} to='/settings' >
   <h5 style={{ marginTop:'-17px'}}
- id='navset'>&nbsp;&nbsp;&nbsp;&nbsp;Settings</h5></NavLink>
+ id='navset'></h5></NavLink>
 </div>
 </div>
 

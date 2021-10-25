@@ -50,7 +50,7 @@ import e8 from './images/e8.png';
 import e9 from './images/e9.png';
 import e10 from './images/e10.png';
 import styles from './styles.css';
-
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 
 
@@ -69,6 +69,13 @@ function Productt1()
         document.title='Product1';
     })
 
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
   
     function Toggling()
     {
@@ -207,7 +214,10 @@ Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 
 </div>
   
-  
+<button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
   
   <div className='col-6'>
   

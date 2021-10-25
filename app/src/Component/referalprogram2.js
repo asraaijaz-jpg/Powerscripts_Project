@@ -19,6 +19,7 @@ import logo5 from './images/logo1.png';
 import logo6 from './images/logo5.png';
 import ladyprofile from './images/profile.png';
 import circle from './images/circle.png';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import power from './images/power.png';
 import one from './images/1.png';
 import two from './images/2.png';
@@ -55,6 +56,15 @@ function Referalprogram2()
     })
 
     
+  
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -185,7 +195,9 @@ function Referalprogram2()
 </div>
  </div>
 
-
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
  <div id='r'>
  

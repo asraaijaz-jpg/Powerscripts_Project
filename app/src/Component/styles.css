@@ -295,6 +295,10 @@
 
 @media  (max-width: 1200px) 
 {
+#below{
+margin-top: 30px;
+}
+
   #logbtn{
     padding: 2px;
     border-radius: 30px;
@@ -1811,7 +1815,7 @@ margin-top: -50px;
     margin-top: 10px;
   }
   #ptp{
-    margin-left: 980px;
+    margin-left: 960px;
     margin-top: 2px;
   }
   #tou{

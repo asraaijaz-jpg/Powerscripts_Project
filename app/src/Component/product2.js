@@ -31,6 +31,7 @@ import Limage from './Limage';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import Modal from 'react-bootstrap/Modal';
 import { Table } from 'react-bootstrap';
 import fb from './images/fb.png';
@@ -57,7 +58,14 @@ function Productt2()
     })
 
   
-  
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -194,6 +202,11 @@ Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
 
 </div>
+
+
+<button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
 
 <div className='col-6'>

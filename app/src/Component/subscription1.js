@@ -25,7 +25,7 @@ import man2 from './images/man2.png';
 import man3 from './images/man3.png';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import power from './images/power.png';
-
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -64,6 +64,16 @@ function Subscription1()
     useEffect(()=>{
         document.title='Subscription 1';
     })
+
+    
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
 
     function Toggling()
     {
@@ -194,6 +204,10 @@ function Subscription1()
 </div>
  </div>
 
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
 <h2 id='sub' style={{  fontWeight: "bold"  }}>Subscriptions</h2>
 
 
@@ -219,7 +233,7 @@ id='nav'>Billing</h5></NavLink>
 <div className='col-1 m-4'>
 <NavLink style={{textDecoration:'none' , color:'#DBDBDB'}} to='/settings' >
   <h5 style={{ marginTop:'-17px'}}
- id='navset'>&nbsp;&nbsp;&nbsp;&nbsp;Settings</h5></NavLink>
+ id='navset'>Settings</h5></NavLink>
 </div>
 </div>
 

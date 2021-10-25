@@ -89,6 +89,17 @@ export function Dashboard4()
      localStorage.removeItem('myData');
      sessionStorage.clear();
      localStorage.clear();
+
+     function noBack()
+     {
+         window.history.forward()
+     }
+    noBack();
+    window.onload = noBack;
+    window.onpageshow = function(evt) { if (evt.persisted) noBack() }
+    window.onunload = function() { void (0) }
+    
+
     }
 
     function Toggling()

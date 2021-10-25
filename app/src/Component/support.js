@@ -20,6 +20,7 @@ import circle from './images/circle.png';
 import power from './images/power.png';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import { Table } from 'react-bootstrap';
@@ -46,6 +47,14 @@ function Support()
     })
 
   
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -180,6 +189,9 @@ function Support()
 
 
 
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
 <h3 className='p-2' id='sh'><b>Support</b></h3>
    
@@ -279,7 +291,7 @@ width:'180px' , marginLeft:'50px'}}></img>
 height:'1150px' }}></div> */}
 
 
-<div style={{marginLeft:'575px' , backgroundColor:'white', marginTop:'-140px'}}>
+<div style={{marginLeft:'575px' , backgroundColor:'white', marginTop:'14px'}}>
 <Limage />
 </div>
 

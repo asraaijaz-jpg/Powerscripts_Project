@@ -41,6 +41,7 @@ import CancelIcon from '@material-ui/icons/Cancel';
 import EuroIcon from '@material-ui/icons/Euro';
 import Image from './bgimage';
 import Limage from './Limage';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import styles from './styles.css';
 
 function Subscription2()
@@ -64,7 +65,15 @@ function Subscription2()
         document.title='Subscription 2';
     })
 
-  
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
+
+
     function Toggling()
     {
      var a= document.getElementById("toggle1").style.width ;
@@ -199,6 +208,10 @@ function Subscription2()
 </div>
  </div>
 
+ <button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
 <h2 id='sub' style={{  fontWeight: "bold"  }}>Subscriptions</h2>
 
 
@@ -224,7 +237,7 @@ id='nav'>Billing</h5></NavLink>
 <div className='col-1 m-4'>
 <NavLink style={{textDecoration:'none' , color:'#DBDBDB'}} to='/settings' >
   <h5 style={{ marginTop:'-17px'}}
- id='navset'>&nbsp;&nbsp;&nbsp;&nbsp;Settings</h5></NavLink>
+ id='navset'></h5></NavLink>
 </div>
 </div>
 

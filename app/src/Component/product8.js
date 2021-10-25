@@ -41,6 +41,7 @@ import Modal from 'react-bootstrap/Modal';
 import { Table } from 'react-bootstrap';
 import fb from './images/fb.png';
 import fb1 from './images/fb1.png';
+import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 import blog from './images/blog.png';
 import cart from './images/cart.png';
 import CancelIcon from '@material-ui/icons/Cancel';
@@ -55,6 +56,14 @@ function Productt8()
      useEffect(()=>{
         document.title='Product8';
     })
+
+    function closesession()
+    {
+     sessionStorage.removeItem('mysessiondata');
+     localStorage.removeItem('myData');
+     sessionStorage.clear();
+     localStorage.clear();
+    }
 
     function Toggling()
     {
@@ -193,6 +202,10 @@ Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 
 </div>
 
+
+<button onClick={closesession} id='logbtn'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
 
 
 <div className='col-6'>
