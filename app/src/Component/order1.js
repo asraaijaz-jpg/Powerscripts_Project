@@ -42,6 +42,28 @@ import styles from './styles.css';
 function Order1()
 {
  
+  
+  var tabledata=
+[
+{
+    "id":"2134567890",
+    "title":"Grownbusters Demo text",
+    "status":"Delivered on",
+    "statusdate":"2021/3/20",
+    "type":"Blog Article",
+    "ratings":<img src={star4}/>
+},
+{
+  "id":"2134567890",
+  "title":"Grownbusters Demo text",
+  "status":"Delivered on",
+  "statusdate":"2021/3/20",
+  "type":"Blog Article",
+  "ratings":<img src={star3}/>,
+}
+]
+
+
   const [show, setShow] = useState(false);   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -219,21 +241,21 @@ function Order1()
     </tr>
   </thead>
   <tbody>
-    <tr id='txt1' style={{backgroundColor:'#F3F3F340'}}>
-      <td scope="row" >2134567890</td>
-      <td>Growbusters Demo text</td>
-      <td>Delivered on<br></br>2021/3/20</td>
-     <td>Blog Article</td>
-     <td><img src={star4}/></td>
-
-    </tr >
-    <tr id='txt1' style={{backgroundColor:'#F3F3F340'}}>
-    <td scope="row">2134567890</td>
-    <td>Growbusters Demo text</td>
-    <td>Delivered on<br></br>2021/3/20</td>
-      <td>Blog Article</td>
-      <td><img src={star3}/></td>
-    </tr>
+   
+  {
+     tabledata.map((val,id)=>{
+      return(
+        <tr style={{height:'9px' , fontSize:'15px' }}>
+          <td>{tabledata[id].id}</td>
+          <td>{tabledata[id].title}</td>
+          <td style={{color:'blue'}}><b>{tabledata[id].status}</b>
+          <br></br><span style={{color:'black'}}>{tabledata[id].statusdate}</span></td>
+          <td>{tabledata[id].type}</td>
+          <td>{tabledata[id].ratings}</td>
+        </tr>
+      )
+     })
+   }
 
   </tbody>
 
