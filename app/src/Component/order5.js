@@ -364,7 +364,7 @@ backgroundColor:'white'}} className='p-2' id='ob2'>
 <div className='col-3' id='rside'>
 
 
-<div className='row' id='seppp' >
+<div className='row' id='sepppt' >
       <div id='dippd'>
       {/* <LinkccountCircleIcon style={{fontsize:'30px'}}></LinkccountCircleIcon> */}
       <Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
@@ -375,7 +375,14 @@ backgroundColor:'white'}} className='p-2' id='ob2'>
 <h6 ><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
 Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
+
+<button onClick={closesession} id='logbtn5'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
+
 </div>
+
 
 
 <h3><b>Order Details</b></h3>

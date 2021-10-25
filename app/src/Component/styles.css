@@ -170,6 +170,9 @@
       background-color: #F5F5F5;
     }
     #seppp{
+      margin-top: -80px;
+    }
+    #sepppt{
       margin-top: -50px;
     }
     #ptss{
@@ -297,6 +300,35 @@
   width: 40px;
   height: 40px;
 }
+
+#logbtn3{
+  padding: 4px;
+  border-radius: 30px;
+  border: 3px solid black;
+  margin-left: 280px;
+  margin-top: -43px;
+  width: 40px;
+  height: 40px;
+}
+
+#logbtn4{
+  padding: 4px;
+  border-radius: 30px;
+  border: 3px solid black;
+  margin-left: 260px;
+  margin-top: -45px;
+  width: 40px;
+  height: 40px;
+}
+#logbtn5{
+  padding: 4px;
+  border-radius: 30px;
+  border: 3px solid black;
+  margin-left: 260px;
+  margin-top: -132px;
+  width: 40px;
+  height: 40px;
+}
   }
   
 
@@ -305,6 +337,9 @@
 
 @media  (max-width: 1200px) 
 {
+  #sepppt{
+    margin-top: -20px;
+  }
 #below{
 margin-top: 30px;
 }
@@ -330,6 +365,45 @@ margin-top: 30px;
     margin-top: -640px;
   }
 
+
+  #logbtn3{
+    padding: 2px;
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 230px;
+    margin-top: -584px;
+  }
+
+  
+  #logbtn3{
+    padding: 2px;
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 230px;
+    margin-top: -584px;
+  }
+  #logbtn4{
+    padding: 2px;
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 230px;
+    margin-top: -1079px;
+  }
+  #logbtn5{
+    padding: 2px;
+    border-radius: 30px;
+    border: 3px solid black;
+    width: 40px;
+    height: 40px;
+    margin-left: 230px;
+    margin-top: -1157px;
+  }
   #pid{
     margin-top: -860px;
     margin-left: 300px;

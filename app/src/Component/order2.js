@@ -279,6 +279,11 @@ function Order2()
 <h6 ><Link to='/profile1' style={{textDecoration:'none' , color:'black'}}>
 Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
+
+<button onClick={closesession} id='logbtn3'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
 </div>
 
 
