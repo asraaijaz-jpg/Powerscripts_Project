@@ -70,7 +70,7 @@ function Order2()
     "status":"Delivered on",
     "statusdate":"2021/3/20",
     "type":"Blog Article",
-    "ratings":<img src={star3}/>,
+    "ratings":<img src={star3}/>
   }
   ]
 
