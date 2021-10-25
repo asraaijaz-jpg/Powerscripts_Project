@@ -34,6 +34,34 @@ import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 function Profile1()
 {
  
+  var tabledata=
+  [
+  {
+      "name":"Lindsey Westervelt",
+      "email":"lindsey.werteervelt@gmail.com",
+      "status":"Pending",
+      "statusdate":"",
+      "option1":"Admnistrator",
+      "option2":"Viewer",
+  },
+  {
+    "name":"Suzane Gencore",
+    "email":"suzane@gencore.ar",
+    "status":"Registered on",
+    "statusdate":"2021-3-20",
+    "option1":"Admnistrator",
+    "option2":"Viewer",
+},
+{
+  "name":"James Gencore",
+  "email":"james@gencore.@ar",
+  "status":"Registered on",
+  "statusdate":"2021-3-20",
+  "option1":"Viewer",
+  "option2":"Admnistrator",
+}
+  ]
+
     const [show, setShow] = useState(false);   
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -401,35 +429,26 @@ width:'200px'  , marginLeft:'100px'}}></img>
     </tr>
   </thead>
   <tbody>
-    <tr style={{height:'10px' , fontSize:'14px' , backgroundColor:'#FCFCFC'}}>
-      <th scope="row">Lindsey Westervelt</th>
-      <td>lindsey.werteervelt@gmail.com</td>
-      <td>Pending</td>
-      <td>
-      <select class="form-select"                style={{fontSize:'13px' , height:'42px'}}>
-  <option selected>Admnistrator</option>
-  <option value="1">Admnistrator</option>
-</select></td>
+    
+  {
+     tabledata.map((val,id)=>{
+      return(
+        <tr style={{height:'9px' , fontSize:'15px' }}>
+          <td>{tabledata[id].name}</td>
+          <td>{tabledata[id].email}</td>
+          <td><b>{tabledata[id].status}</b>
+          <br></br><span style={{color:'black'}}>{tabledata[id].statusdate}</span></td>
+          <td>
+            <select type="button" class="btn " style={{fontSize:'14px',
+          border:'2px solid black'}}>
+            <option selected>{tabledata[id].option1}</option>
+            <option value="1">{tabledata[id].option2}</option>
+          </select></td>
+        </tr>
+      )
+     })
+   }
 
-    </tr>
-    <tr style={{height:'11px' , fontSize:'14px'  , backgroundColor:'#FCFCFC'}}>
-      <th scope="row">Suzane Gencore</th>
-      <td>suzane@gencore.ar</td>
-      <td>Registered on<br></br>2021-3-20</td>
-      <td> <select class="form-select" style={{fontSize:'13px' , height:'42px'}}>
-  <option selected>Admnistrator</option>
-  <option value="1">Admnistrator</option>
-</select></td>
-    </tr>
-    <tr style={{height:'11px' , fontSize:'14px'  , backgroundColor:'#FCFCFC'}}> 
-      <th scope="row">James Gencore</th>
-      <td>james@gencore.@ar</td>
-      <td>Registered on<br></br>2021-3-20</td>
-      <td> <select class="form-select" style={{fontSize:'13px' , height:'42px'}}> 
-  <option selected>Viewer</option>
-  <option value="1">Viewer</option>
-</select></td>
-    </tr>
 <br></br><br></br>
     
   </tbody>

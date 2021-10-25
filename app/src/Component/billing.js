@@ -39,6 +39,34 @@ import PowerSettingsNewIcon from '@material-ui/icons/PowerSettingsNew';
 
 function Billing()
 {
+
+  var tabledata=
+  [
+  {
+      "id":"20210410-10001",
+      "date":"2021-04-10",
+      "status":"Not paid",
+      "type":"120.00 ",
+      "button":"Pay now",
+  },
+  {
+    "id":"20210410-10001",
+    "date":"2021-04-10",
+    "status":"Paid",
+    "type":"120.00 ",
+    "button":"Download",
+},
+{
+  "id":"Refera code",
+  "wid":"@uftn45tgty",
+  "date":"2021-04-10",
+  "status":"Bonus",
+  "type":"120.00 ",
+  "button":"Offer",
+}
+  ]
+
+
   const [show, setShow] = useState(false);   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -373,29 +401,22 @@ marginLeft:'1150px'}}></img>
     </tr>
   </thead>
   <tbody>
-    <tr style={{height:'10px' , fontSize:'14px', fontFamily:'Lato/Regular/Regular'}}>
-      <th scope="row">20210410-10001</th>
-      <td>2021-04-10</td>
-      <td>Not paid</td>
-      <td>120.00 <EuroSymbolIcon></EuroSymbolIcon></td>
-     <td><button type="button" class="btn btn-primary"
-     style={{fontSize:'13px', backgroundColor:'#2143FB' , color:'white'}}>&nbsp;Pay now&nbsp;&nbsp;</button></td>
-    </tr>
-    <tr style={{height:'10px' , fontSize:'14px', fontFamily:'Lato/Regular/Regular'}}>
-      <td scope="row">20210410-10001</td>
-      <td>2021-04-10</td>
-      <td>Paid</td>
-      <td>120.00 <EuroSymbolIcon></EuroSymbolIcon></td>
-      <td><button type="button" class="btn btn-primary"
-      style={{fontSize:'13px' , backgroundColor:'#2143FB' , color:'white'}}>Download</button></td>
-    </tr>
-    <tr style={{height:'10px' , fontSize:'14px' , fontFamily:'Lato/Regular/Regular'}}>
-      <td scope="row">Refera code <br></br>@uftn45tgty</td>
-      <td>2021-04-10</td>
-      <td>Bonus</td>
-      <td> -120.00 <EuroSymbolIcon></EuroSymbolIcon></td>
-      <td></td>
-    </tr>
+   
+  {
+     tabledata.map((val,id)=>{
+      return(
+        <tr style={{height:'9px' , fontSize:'15px' }}>
+          <td>{tabledata[id].id}
+          <br></br>{tabledata[id].wid}</td>
+          <td>{tabledata[id].date}</td>
+          <td ><b>{tabledata[id].status}</b></td>
+          <td>{tabledata[id].type } <EuroSymbolIcon></EuroSymbolIcon></td>
+          <td><button type="button" class="btn btn-primary " id='tabbtn' style={{fontSize:'14px',
+    color:'white' , border:'2px solid #4A66FB' , backgroundColor:'#2143FB' }}><b>{tabledata[id].button}</b></button></td>
+        </tr>
+      )
+     })
+   }
 
   </tbody>
 </table>

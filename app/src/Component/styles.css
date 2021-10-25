@@ -339,6 +339,10 @@
   width: 40px;
   height: 40px;
 }
+#tabbtn{
+  width: 130px;
+  padding: 9px;
+}
   }
   
 
@@ -347,6 +351,10 @@
 
 @media  (max-width: 1200px) 
 {
+  #tabbtn{
+    width: 90px;
+    padding: 9px;
+  }
   #sepppt{
     margin-top: -5px;
   }
