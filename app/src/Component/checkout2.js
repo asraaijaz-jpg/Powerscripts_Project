@@ -53,7 +53,33 @@ function Checkout2()
         document.title='Checkout2';
     })
 
-   
+    var tabledata=
+    [
+    {
+        "product_price":<p id='c2'>Hero Subscriptions Level 1
+        <span id='saprator5'>&nbsp;147.0<EuroSymbolIcon></EuroSymbolIcon></span>
+        </p>
+    },
+    {
+      "product_price":<p id='c2'>Total (exc. VAT) 
+      <span id='saprator4'>147.0<EuroSymbolIcon></EuroSymbolIcon></span></p>
+  },
+  {
+    "product_price":<p id='c2'>Value add Tax (Austria - 8%)
+    <span id='saprator5'>24.4<EuroSymbolIcon></EuroSymbolIcon></span>
+    </p>
+},
+{
+  "product_price":<p id='c2'>
+  <hr></hr>
+  </p>
+},
+{
+  "product_price":<p id='c2'>Total 
+  <span id='saprator6'>173.4<EuroSymbolIcon></EuroSymbolIcon></span></p>
+}
+    ]
+    
     function closesession()
     {
      sessionStorage.removeItem('mysessiondata');
@@ -220,7 +246,7 @@ function Checkout2()
 
 </div>
 </div>
-<br></br>
+<br></br><br></br>
 <p style={{ fontSize:'20px'}} id='c2'> CART SUMMARY</p>
 
 <div id='dcd' >
@@ -232,27 +258,15 @@ function Checkout2()
 <table>
   <tbody>
     
-<tr>
-<p id='c2'>Hero Subscriptions Level 1
-<span id='saprator5'>147.0<EuroSymbolIcon></EuroSymbolIcon></span>
-</p>
-</tr>
-
-<tr><p id='c2'>Total (exc. VAT) 
-<span id='saprator4'>147.0<EuroSymbolIcon></EuroSymbolIcon></span></p></tr>
-
-
-<tr><p id='c2'>Value add Tax (Austria - 8%)
-<span id='saprator5'>24.4<EuroSymbolIcon></EuroSymbolIcon></span>
-</p></tr>
-
-
-<tr><p id='c2'>
-<hr></hr>
-</p></tr>
-
-<tr><p id='c2'>Total 
-<span id='saprator6'>173.4<EuroSymbolIcon></EuroSymbolIcon></span></p></tr>
+  {
+     tabledata.map((val,id)=>{
+      return(
+        <tr style={{height:'9px' , fontSize:'15px' }}>
+          <td>{tabledata[id].product_price}</td>
+        </tr>
+      )
+     })
+   }
 
 </tbody>
   </table>
@@ -262,7 +276,7 @@ function Checkout2()
 
 
 
-<p style={{ fontSize:'20px' , marginTop:'50px'}} id='c2'>PAYMENT METHOD</p>
+<p style={{ fontSize:'20px' , marginTop:'20px'}} id='c2'>PAYMENT METHOD</p>
 
 
 <div className='row' id='dr'>
@@ -290,7 +304,7 @@ style={{textDecoration:'none' , color:'black'}}>
 
 </div>
 
-<br></br><br></br><br></br>
+<br></br><br></br>
 <Link to='/billing'>
 <button className='btn ' id='c2' style={{backgroundColor:'#2143FB' , color:'white'}}
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>

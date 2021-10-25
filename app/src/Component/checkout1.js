@@ -220,7 +220,7 @@ function Checkout1()
 </div>
 </div>
 </div>
-<br></br>
+<br></br><br></br>
 <p style={{ fontSize:'20px'}} id='c2'>CART SUMMARY</p>
 
 <div id='dcd' >
@@ -266,7 +266,7 @@ function Checkout1()
 </div>
 
 
-<p style={{ fontSize:'20px' , marginTop:'50px'}} id='c2'>PAYMENT METHOD</p>
+<p style={{ fontSize:'20px' , marginTop:'20px'}} id='c2'>PAYMENT METHOD</p>
 
 
 <div className='row' id='dr'>
@@ -293,7 +293,7 @@ function Checkout1()
 
 </div>
 
-<br></br><br></br><br></br>
+<br></br><br></br>
 <Link to='/billing'>
 <button className='btn ' id='c2' style={{backgroundColor:'#2143FB' , color:'white'}}
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay now&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
