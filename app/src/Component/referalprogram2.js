@@ -47,6 +47,37 @@ import CancelIcon from '@material-ui/icons/Cancel';
 
 function Referalprogram2()
 {
+
+  var tabledata=
+  [
+    {
+      "id":"2134567890",
+      "title":"Grownbusters Demo text",
+      "status":<button className='btn ' id='bttxt' style={{backgroundColor:'#2143FB',
+      color:'white'}}>Finish order</button>,
+      "statusdate":"",
+      "type":"Blog Article",
+      "ratings":""
+  },
+  {
+      "id":"2134567890",
+      "title":"Grownbusters Demo text",
+      "status":"Delivered on",
+      "statusdate":"2021/3/20",
+      "type":"Blog Article",
+      "ratings":<img src={star4}/>
+  },
+  {
+    "id":"2134567890",
+    "title":"Grownbusters Demo text",
+    "status":"Delivered on",
+    "statusdate":"2021/3/20",
+    "type":"Blog Article",
+    "ratings":<img src={star3}/>
+  }
+  ]
+
+  
   const [show, setShow] = useState(false);   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -269,20 +300,9 @@ function Referalprogram2()
     </tr>
   </thead>
   <tbody>
-    <tr>
-      {/* <td><img src={n1}/></td> */}
-      <td style={{fontWeight:'800' }}><b><i style={{fontsize:'30px'}}>SUZANNE ***</i></b></td>
-      <td style={{color:'#333333'}}>suzanee@gancore.ar</td>
-      <td><b>Registered on</b><br></br><span style={{color:'#525252'}}>2021-03-20</span></td>
-    </tr>
-    <tr>
-      {/* <td><img src={n2}/></td> */}
-      <td style={{fontWeight:'800'}}><b><i style={{fontsize:'30px'}}>JAMES ***</i></b></td>
-      <td style={{color:'#333333'}}>james@gencore.ar</td>
-      <td><b>Registered on</b><br></br>
-      <span style={{color:'#525252'}}>2021-03-20</span></td>
-    </tr>
     
+
+
   </tbody>
 </table>
 
