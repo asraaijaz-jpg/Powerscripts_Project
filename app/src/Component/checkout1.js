@@ -296,7 +296,7 @@ function Checkout1()
 <div className='col-3' id='rside555' >
 
   
-<div className='row' id='profile'>
+<div className='row' id='profile' >
 
 
 
@@ -312,8 +312,13 @@ function Checkout1()
 Lindsey Westervelt <br></br> PREMIUM</Link></h6>
 </div>
 
-</div>
 
+
+<button onClick={closesession} id='logbtn2'>
+<Link to='/signinpage'>  <PowerSettingsNewIcon></PowerSettingsNewIcon></Link>
+  </button>
+
+</div>
 
 
 
