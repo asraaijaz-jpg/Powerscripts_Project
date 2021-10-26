@@ -89,7 +89,7 @@ function check()
 
                let data2=sessionStorage.getItem('mysessiondata');
                data2=JSON.parse(data2);
-               alert(data2.email);
+            //    alert(data2.email);
 
                setIsPreview(true);
             }
