@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Powerscripts_Project/static/css/main.4c5568f1.chunk.css",
-    "main.js": "/Powerscripts_Project/static/js/main.281f50f3.chunk.js",
-    "main.js.map": "/Powerscripts_Project/static/js/main.281f50f3.chunk.js.map",
+    "main.css": "/Powerscripts_Project/static/css/main.d552321d.chunk.css",
+    "main.js": "/Powerscripts_Project/static/js/main.f72ca435.chunk.js",
+    "main.js.map": "/Powerscripts_Project/static/js/main.f72ca435.chunk.js.map",
     "runtime-main.js": "/Powerscripts_Project/static/js/runtime-main.27299723.js",
     "runtime-main.js.map": "/Powerscripts_Project/static/js/runtime-main.27299723.js.map",
     "static/css/2.da1eef19.chunk.css": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css",
-    "static/js/2.20ad56f1.chunk.js": "/Powerscripts_Project/static/js/2.20ad56f1.chunk.js",
-    "static/js/2.20ad56f1.chunk.js.map": "/Powerscripts_Project/static/js/2.20ad56f1.chunk.js.map",
+    "static/js/2.263e3bd7.chunk.js": "/Powerscripts_Project/static/js/2.263e3bd7.chunk.js",
+    "static/js/2.263e3bd7.chunk.js.map": "/Powerscripts_Project/static/js/2.263e3bd7.chunk.js.map",
     "static/js/3.5040b019.chunk.js": "/Powerscripts_Project/static/js/3.5040b019.chunk.js",
     "static/js/3.5040b019.chunk.js.map": "/Powerscripts_Project/static/js/3.5040b019.chunk.js.map",
     "index.html": "/Powerscripts_Project/index.html",
     "static/css/2.da1eef19.chunk.css.map": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css.map",
-    "static/css/main.4c5568f1.chunk.css.map": "/Powerscripts_Project/static/css/main.4c5568f1.chunk.css.map",
-    "static/js/2.20ad56f1.chunk.js.LICENSE.txt": "/Powerscripts_Project/static/js/2.20ad56f1.chunk.js.LICENSE.txt",
+    "static/css/main.d552321d.chunk.css.map": "/Powerscripts_Project/static/css/main.d552321d.chunk.css.map",
+    "static/js/2.263e3bd7.chunk.js.LICENSE.txt": "/Powerscripts_Project/static/js/2.263e3bd7.chunk.js.LICENSE.txt",
     "static/media/cartoon1.b82cf640.png": "/Powerscripts_Project/static/media/cartoon1.b82cf640.png",
     "static/media/cartoon2.aa6d316f.png": "/Powerscripts_Project/static/media/cartoon2.aa6d316f.png",
     "static/media/cartoon3.3db7d731.png": "/Powerscripts_Project/static/media/cartoon3.3db7d731.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.27299723.js",
     "static/css/2.da1eef19.chunk.css",
-    "static/js/2.20ad56f1.chunk.js",
-    "static/css/main.4c5568f1.chunk.css",
-    "static/js/main.281f50f3.chunk.js"
+    "static/js/2.263e3bd7.chunk.js",
+    "static/css/main.d552321d.chunk.css",
+    "static/js/main.f72ca435.chunk.js"
   ]
 }
