@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Powerscripts_Project/static/css/main.d552321d.chunk.css",
-    "main.js": "/Powerscripts_Project/static/js/main.fc02a057.chunk.js",
-    "main.js.map": "/Powerscripts_Project/static/js/main.fc02a057.chunk.js.map",
+    "main.js": "/Powerscripts_Project/static/js/main.f72ca435.chunk.js",
+    "main.js.map": "/Powerscripts_Project/static/js/main.f72ca435.chunk.js.map",
     "runtime-main.js": "/Powerscripts_Project/static/js/runtime-main.27299723.js",
     "runtime-main.js.map": "/Powerscripts_Project/static/js/runtime-main.27299723.js.map",
     "static/css/2.da1eef19.chunk.css": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css",
@@ -28,6 +28,6 @@
     "static/css/2.da1eef19.chunk.css",
     "static/js/2.263e3bd7.chunk.js",
     "static/css/main.d552321d.chunk.css",
-    "static/js/main.fc02a057.chunk.js"
+    "static/js/main.f72ca435.chunk.js"
   ]
 }
