@@ -75,10 +75,29 @@ function Order1()
      
     function closesession()
     {
+      // let data2=sessionStorage.getItem('mysessiondata');
+      // data2=JSON.parse(data2);
+      // alert(data2.email);
+
      sessionStorage.removeItem('mysessiondata');
      localStorage.removeItem('myData');
      sessionStorage.clear();
      localStorage.clear();
+
+     window.history.pushState(null, document.title, window.location.href);
+     window.addEventListener('popstate', function (event){
+         window.history.pushState(null, document.title,  window.location.href);
+     });
+
+    //  <script type="text/javascript"> 
+    //   function preventBack() 
+    //   {
+    //   window.history.forward()
+    //   }  
+    //   setTimeout("preventBack()", 0);  
+    //   window.onunload = function () {null};
+    //   </script>
+
     }
 
    
