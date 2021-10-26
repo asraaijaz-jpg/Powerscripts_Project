@@ -75,7 +75,7 @@ function Checkout1()
     const handleShow = () => setShow(true);
 
      useEffect(()=>{
-        document.title='Checkout1';
+        document.title='React app';
     })
 
     function closesession()

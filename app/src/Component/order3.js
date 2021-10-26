@@ -81,7 +81,7 @@ function Order3()
   const handleShow = () => setShow(true);
   
     useEffect(()=>{
-        document.title='Order3';
+        document.title='React app';
     })
 
    

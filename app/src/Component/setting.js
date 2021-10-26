@@ -49,7 +49,7 @@ function Settings()
   const [open, setOpen] = useState(true);
 
     useEffect(()=>{
-        document.title='Settings';
+        document.title='React app';
     })
     function closesession()
     {

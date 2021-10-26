@@ -8,7 +8,7 @@ import Limage from './Limage';
 function Resetpassword2()
 {
     useEffect(()=>{
-        document.title='Reset password Page2';
+        document.title='React app';
     });
 
     return(<div className='container my-5' style={{backgroundColor:"#FCFCFC " , width:'800px'}}>

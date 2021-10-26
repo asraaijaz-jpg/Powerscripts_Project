@@ -54,7 +54,7 @@ function Productt8()
     const handleShow = () => setShow(true);
 
      useEffect(()=>{
-        document.title='Product8';
+        document.title='React app';
     })
 
     function closesession()

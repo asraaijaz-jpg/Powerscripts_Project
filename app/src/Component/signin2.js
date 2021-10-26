@@ -26,7 +26,7 @@ import { Redirect } from 'react-router-dom'
 function SigninPage2()
 {
     useEffect(()=>{
-        document.title='Sign In Page2';
+        document.title='React app';
     });
 
 

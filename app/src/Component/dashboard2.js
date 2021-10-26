@@ -20,7 +20,7 @@ function Dashboard2()
     const handleShow = () => setShow(true);
    
     useEffect(()=>{
-      document.title='Dashboard 2';
+      document.title='React app';
   })
 
     return(<div>

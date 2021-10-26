@@ -80,7 +80,7 @@ export function Dashboard4()
   
 
     useEffect(()=>{
-        document.title='Dashboard 4';
+        document.title='React app';
     })
 
     function closesession()

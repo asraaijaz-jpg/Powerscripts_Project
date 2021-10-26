@@ -67,7 +67,7 @@ function Profile1()
     const handleShow = () => setShow(true);
 
     useEffect(()=>{
-        document.title='Profile 1';
+        document.title='React app';
     })
 
     function closesession()

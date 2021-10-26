@@ -25,7 +25,7 @@ function Subscription5()
     const handleShow = () => setShow(true);
 
     useEffect(()=>{
-        document.title='Subscriptions 5';
+        document.title='React app';
     })
    
     return(<div>

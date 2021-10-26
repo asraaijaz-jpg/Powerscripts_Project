@@ -66,7 +66,7 @@ function Productt1()
     const handleShow2 = () => setShow2(true);
 
      useEffect(()=>{
-        document.title='Product1';
+        document.title='React app';
     })
 
     function closesession()

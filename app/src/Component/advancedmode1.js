@@ -26,7 +26,7 @@ function Advancedmode1()
     const handleShow = () => setShow(true);
    
     useEffect(()=>{
-      document.title='Advancedmode 1';
+      document.title='React app';
   })
 
     return(<div>

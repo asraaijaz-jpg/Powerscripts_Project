@@ -48,7 +48,7 @@ function Referalprogram1()
     const handleShow = () => setShow(true);
 
     useEffect(()=>{
-        document.title='Referalprogram1';
+        document.title='React app';
     })
 
    

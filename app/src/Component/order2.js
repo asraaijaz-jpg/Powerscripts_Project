@@ -42,7 +42,7 @@ import styles from './styles.css';
 function Order2()
 {
   useEffect(()=>{
-    document.title='Order2';
+    document.title='React app';
   })
 
   var tabledata=

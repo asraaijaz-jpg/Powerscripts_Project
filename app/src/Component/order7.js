@@ -20,7 +20,7 @@ function Order7()
     const handleShow = () => setShow(true);
    
     useEffect(()=>{
-      document.title='Order7';
+      document.title='React app';
   })
 
     return(<div>

@@ -9,7 +9,7 @@ import Image from './bgimage';
 function Product7()
 {
     useEffect(()=>{
-        document.title='Product 7';
+        document.title='React app';
     });
 
     return(<div className='container my-5' style={{backgroundColor:"#FCFCFC " , width:'800px'}}>

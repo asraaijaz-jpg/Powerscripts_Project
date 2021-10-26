@@ -48,7 +48,7 @@ function Order8()
   const handleShow = () => setShow(true);
   
      useEffect(()=>{
-        document.title='Order8';
+        document.title='React app';
     })
 
   

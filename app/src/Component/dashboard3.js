@@ -46,7 +46,7 @@ function Dashboard3()
   
 
     useEffect(()=>{
-        document.title='Dashboard 3';
+        document.title='React app';
     })
 
     function closesession()

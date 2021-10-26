@@ -72,7 +72,7 @@ function Billing()
   const handleShow = () => setShow(true);
 
     useEffect(()=>{
-        document.title='Billing';
+        document.title='React app';
     })
 
     function closesession()

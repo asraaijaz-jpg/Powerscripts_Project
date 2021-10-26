@@ -54,7 +54,7 @@ function Order5()
     const handleShow = () => setShow(true);
  
     useEffect(()=>{
-        document.title='Order5';
+        document.title='React app';
     })
 
      

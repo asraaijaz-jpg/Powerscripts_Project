@@ -21,7 +21,7 @@ function Order6()
     const handleShow = () => setShow(true);
    
     useEffect(()=>{
-      document.title='Order6';
+      document.title='React app';
   })
 
     return(<div>

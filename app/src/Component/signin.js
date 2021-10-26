@@ -28,7 +28,7 @@ function SigninPage()
     
 
     useEffect(()=>{
-        document.title='Sign In Page';
+        document.title='React app';
     });
 
     const [isPreview, setIsPreview] = useState(false);

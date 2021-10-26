@@ -28,7 +28,7 @@ import { Redirect } from 'react-router-dom'
 function LoginPage()
 {
     useEffect(()=>{
-        document.title='Login Page';
+        document.title='React app';
         //  alert(process.env.PUBLIC_URL);
     });
     const [isPreview, setIsPreview] = useState(false);

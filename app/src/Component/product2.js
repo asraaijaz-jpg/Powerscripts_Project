@@ -54,7 +54,7 @@ function Productt2()
 
 
      useEffect(()=>{
-        document.title='Product2';
+        document.title='React app';
     })
 
   

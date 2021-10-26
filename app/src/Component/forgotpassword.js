@@ -25,7 +25,7 @@ import { Redirect } from 'react-router-dom'
 function ForgotpasswordPage()
 {
     useEffect(()=>{
-        document.title='Forgotpassword Page';
+        document.title='React app';
     });
 
     const [email,setemail]=useState('');

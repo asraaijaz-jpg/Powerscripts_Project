@@ -53,7 +53,7 @@ function Order4()
     const handleShow = () => setShow(true);
     
     useEffect(()=>{
-        document.title='Order4';
+        document.title='React app';
     })
 
      

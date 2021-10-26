@@ -24,7 +24,7 @@ function Order9()
     const handleShow = () => setShow(true);
    
     useEffect(()=>{
-      document.title='Order9';
+      document.title='React app';
   })
 
 

@@ -70,7 +70,7 @@ function Referalprogram2()
   const handleShow = () => setShow(true);
  
     useEffect(()=>{
-        document.title='Referalprogram2';
+        document.title='React app';
     })
 
     

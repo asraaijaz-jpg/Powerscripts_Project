@@ -43,7 +43,7 @@ function Support()
 
 
     useEffect(()=>{
-        document.title='Support';
+        document.title='React app';
     })
 
   

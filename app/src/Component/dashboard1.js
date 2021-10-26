@@ -44,7 +44,7 @@ function Dashboard1()
 
 
     useEffect(()=>{
-        document.title='Dashboard 1';
+        document.title='React app';
     })
 
     console.log(window.innerWidth);

@@ -62,7 +62,7 @@ function Subscription2()
 
 
     useEffect(()=>{
-        document.title='Subscription 2';
+        document.title='React app';
     })
 
     function closesession()

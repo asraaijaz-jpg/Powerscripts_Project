@@ -28,7 +28,7 @@ import { Redirect } from 'react-router-dom'
 function SignupPage()
 {
     useEffect(()=>{
-        document.title='Sign Up Page';
+        document.title='React app';
     });
 
     const [isPreview, setIsPreview] = useState(false);

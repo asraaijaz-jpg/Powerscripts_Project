@@ -50,7 +50,7 @@ function Checkout2()
     const handleShow = () => setShow(true);
 
      useEffect(()=>{
-        document.title='Checkout2';
+        document.title='React app';
     })
 
     var tabledata=

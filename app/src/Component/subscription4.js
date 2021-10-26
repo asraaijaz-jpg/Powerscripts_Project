@@ -62,7 +62,7 @@ function Subscription4()
     const handleShow1 = () => setShow1(true);
  
     useEffect(()=>{
-        document.title='Subscription 4';
+        document.title='React app';
     })
 
   

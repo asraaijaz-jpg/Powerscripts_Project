@@ -26,7 +26,7 @@ import { Redirect } from 'react-router-dom'
 function ResetpasswordPage()
 {
     useEffect(()=>{
-        document.title='Reset password Page';
+        document.title='React app';
     });
 
     const [isPreview, setIsPreview] = useState(false);

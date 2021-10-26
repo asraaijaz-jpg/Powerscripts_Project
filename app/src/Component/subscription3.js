@@ -66,7 +66,7 @@ function Subscription3()
 
  
     useEffect(()=>{
-        document.title='Subscription 3';
+        document.title='React app';
     })
 
     

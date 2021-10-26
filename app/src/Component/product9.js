@@ -25,7 +25,7 @@ function Product9()
     const handleShow = () => setShow(true);
    
     useEffect(()=>{
-      document.title='Product 9';
+      document.title='React app';
   })
 
   return(<div>

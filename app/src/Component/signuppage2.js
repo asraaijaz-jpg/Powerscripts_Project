@@ -27,7 +27,7 @@ import { Redirect } from 'react-router-dom'
 function SignupPage2()
 {
     useEffect(()=>{
-        document.title='Sign Up Page2';
+        document.title='React app';
     });
 
 
