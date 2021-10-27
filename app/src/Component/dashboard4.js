@@ -106,9 +106,9 @@ fetch("https://gencore.ar/power_dom/public/api/order",
   const handleShow = () => setShow(true);
 
 
-  const [show2, setShow2] = useState(false);   
-  const handleClose2 = () => setShow2(false);
-  const handleShow2 = () => setShow2(true);
+  const [show9, setShow9] = useState(false);   
+  const handleClose9 = () => setShow9(false);
+  const handleShow9 = () => setShow9(true);
 
 
     useEffect(()=>{
@@ -556,7 +556,7 @@ backgroundColor:' #ffffff' , border:'none'}}><CancelIcon></CancelIcon></button>
    
     <div className='col-4 p-2' style={{color:'white' , backgroundColor:'blue' , borderRadius:'8px',
   width:'260px' , height:'190px'}} id='mdiv'>
-<button onClick={handleShow2}
+<button onClick={handleShow9}
  style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'blue' ,
  borderRadius:'8px'}}>
@@ -582,7 +582,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
       <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' }} id='mdiv2'>
-<button  onClick={handleShow2} style={{width:'260px' , 
+<button  onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
         <div className='row'>
         <div className='col-2 offset-2 p-2 ' >
@@ -603,7 +603,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
       <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' }} id='mdiv3'>
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
         <div className='row'>
@@ -634,7 +634,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px'}} id='mdiv4'>
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -659,7 +659,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 <div className='col-4 p-2 ' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px'  , marginLeft:'20px' }}>
 
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -681,7 +681,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' , marginLeft:'20px' }}>
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -716,7 +716,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' }}>
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -740,7 +740,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2 ' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' , marginLeft:'20px' }}>
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -762,7 +762,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' , marginLeft:'20px' }}>
-<button onClick={handleShow2} style={{width:'260px' , 
+<button onClick={handleShow9} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -801,12 +801,12 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 {/* <Limage/> */}
 
 
- <Modal show={show2} onHide={() => setShow2(false)} size="lg"  aria-labelledby="contained-modal-title-vcenter"
+ <Modal show={show9} onHide={() => setShow9(false)} size="lg"  aria-labelledby="contained-modal-title-vcenter"
      centered id='insidemodal'>
 
         <Modal.Header style={{height:'90px' , borderRadius:'30px' , backgroundColor:'#FCFCFC'}}>
        
-       <button onClick={handleClose2} className='btn btn-light' 
+       <button onClick={handleClose9} className='btn btn-light' 
        style={{backgroundColor:' #ffffff' , border:'none'}}><CancelIcon id='cancel3'></CancelIcon></button>
        
         </Modal.Header>
