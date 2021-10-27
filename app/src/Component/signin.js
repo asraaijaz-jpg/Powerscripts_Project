@@ -44,10 +44,8 @@ const [apierror , seterror] = useState('hello');
 
 function check()
 {
-  
-
     let storedata={email,password};
-    // console.log(storedata)
+    console.log(storedata)
 
 
     var a=document.getElementById("e1").value;

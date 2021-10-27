@@ -41,7 +41,7 @@ import jsondata from './jsondata';
 export function Dashboard4()
 {
  
- const [id,setid]=useState('');
+ const [userid,setuserid]=useState('');
  const [title,settitle]=useState('');
  const [status,setstatus]=useState('');
  const [type,settype]=useState('');
@@ -50,11 +50,23 @@ export function Dashboard4()
  
  function getmodaldata()
  {
-let store={id,title,status,type,content,ratings};
-alert(store);
- }
-  var tabledata=
-[
+let store={userid,title,status,type,content,ratings};
+console.log(store);
+
+fetch("https://gencore.ar/power_dom/public/api/order",
+    {
+        method:'POST',
+        headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(store)
+    })
+    .then(response => response.json())
+    .then(response => {
+    
+        console.log(response);    
+    })
+}
+
+  var tabledata=[
 {
     "id":"202010410-10001",
     "title":"Grownbusters Demo text",
@@ -803,10 +815,10 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
  
  <br></br>
    <div class="form-group row" style={{marginBottom:'13px'}}>
-   <label for="inputPassword" class="col-sm-2 col-form-label"><b>ID</b></label>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>UserID</b></label>
    <div class="col-sm-10">
-   <input type="number" class="form-control" id="inputPassword" placeholder="Id" 
-     onChange={(e)=>setid(e.target.value)}/>
+   <input type="number" class="form-control" id="inputPassword" placeholder="UserId" 
+     onChange={(e)=>setuserid(e.target.value)}/>
    </div>
    </div>
 

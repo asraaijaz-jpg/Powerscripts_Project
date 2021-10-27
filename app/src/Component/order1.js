@@ -60,7 +60,7 @@ function Order1()
     console.log(c);
     setapistore(c);
 
-    })
+    });
 
     //  axios.get('https://jsonplaceholder.typicode.com/posts')
     // .then(response=>{
