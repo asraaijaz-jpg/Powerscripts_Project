@@ -877,6 +877,89 @@ required for use.
 </Modal>
 {/* <Limage/> */}
 
+
+
+<Modal show={show9} onHide={() => setShow9(false)} size="lg"  aria-labelledby="contained-modal-title-vcenter"
+     centered id='insidemodal'>
+
+        <Modal.Header style={{height:'90px' , borderRadius:'30px' , backgroundColor:'#FCFCFC'}}>
+       
+       <button onClick={handleClose9} className='btn btn-light' 
+       style={{backgroundColor:' #ffffff' , border:'none'}}><CancelIcon id='cancel3'></CancelIcon></button>
+       
+        </Modal.Header>
+
+        <Modal.Body style={{backgroundColor:'#FEFEFE'}}> 
+       <center>
+           <h3 id='mh' style={{fontFamily:'Bangers/2XL Large' , fontWeight:'790' ,
+          color:'#101010'}}><i>PLACE YOUR ORDER</i></h3>
+ 
+ <br></br>
+   {/* <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>UserID</b></label>
+   <div class="col-sm-10">
+   <input type="number" class="form-control" id="inputPassword" placeholder="UserId" 
+     onChange={(e)=>setuserId(e.target.value)}/>
+   </div>
+   </div> */}
+
+    <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Title</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Title"
+     onChange={(e)=>settitle(e.target.value)}/>
+   </div>
+   </div>
+
+   {/* <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Status</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Status"
+     onChange={(e)=>setstatus(e.target.value)}/>
+   </div>
+   </div> */}
+
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Type</b></label>
+   <div class="col-sm-10">
+   {/* <input type="text" class="form-control" id="inputPassword" placeholder="Type"
+     onChange={(e)=>settype(e.target.value)}/> */}
+     
+<select onChange={(e)=>settype(e.target.value)}>
+  <option value="blog">Blog</option>
+  <option value="Fb_content">Fb_content</option>
+  <option value="Instagram_caption">Instagram_caption</option>
+</select>
+
+   </div>
+   </div>
+
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Content</b></label>
+   <div class="col-sm-10">
+   <textarea type="text" class="form-control" id="inputPassword" placeholder="Content"
+     onChange={(e)=>setcontent(e.target.value)}/>
+   </div>
+   </div>
+
+{/* 
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Ratings</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Ratings"
+     onChange={(e)=>setratings(e.target.value)}/>
+   </div>
+   </div> */}
+
+<br></br>
+<button type="button" class="btn btn-secondary" onClick={getmodaldata}>Submit</button>
+           </center>
+ <br></br>
+       
+        </Modal.Body>
+
+      </Modal>
+
 </div>)
 }
 export default Support;
