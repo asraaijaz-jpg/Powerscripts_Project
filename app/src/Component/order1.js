@@ -43,6 +43,34 @@ import axios from 'axios';
 function Order1()
 {
  
+  const [userId,setuserId]=useState('1');
+ const [title,settitle]=useState('');
+ const [status,setstatus]=useState('pending');
+ const [type,settype]=useState('');
+ const [content,setcontent]=useState('');
+ const [ratings,setratings]=useState('5');
+
+
+ 
+ function getmodaldata()
+ {
+  alert(type);
+let store={userId,title,status,type,content,ratings};
+console.log(store);
+
+fetch("https://gencore.ar/power_dom/public/api/order",
+    {
+        method:'POST',
+        headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(store)
+    })
+    .then(response => response.json())
+    .then(response => {
+    
+        console.log(response);    
+    })
+}
+
  const [apistore ,setapistore]=useState([]);
 
 // https://gencore.ar/power_dom/public/api/orderList
@@ -282,13 +310,13 @@ function Order1()
  
   <thead>
     <tr id='txt1'>
-      <th scope="col">id&nbsp;&nbsp;</th>
-      <th scope="col">title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      {/* <th scope="col">id&nbsp;&nbsp;</th> */}
+      <th scope="col">Title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       </th>
-      <th scope="col">status</th>
-      <th scope="col">type</th>
+      {/* <th scope="col">status</th> */}
+      <th scope="col">Type</th>
       <th scope="col">Content</th>
-      <th scope="col" style={{color:'#2143FB'}}>ratings</th>
+      {/* <th scope="col" style={{color:'#2143FB'}}>ratings</th> */}
     
 
       {/* <UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon> */}
@@ -302,14 +330,14 @@ function Order1()
      apistore.map((val,id)=>{
       return(
         <tr style={{height:'9px' , fontSize:'15px' }}>
-          <td>{apistore[id].id}</td>
+          {/* <td>{apistore[id].id}</td> */}
           <td>{apistore[id].title}</td>
           {/* <td style={{color:'blue'}}><b>{apistore[id].status}</b>
           <br></br><span style={{color:'black'}}>{apistore[id].statusdate}</span></td> */}
-          <td style={{color:'blue'}}><b>{apistore[id].status}</b></td>
+          {/* <td style={{color:'blue'}}><b>{apistore[id].status}</b></td> */}
           <td>{apistore[id].type}</td>
            <td><i>{apistore[id].content}</i></td>
-           <td>&nbsp;&nbsp;&nbsp;<b>{apistore[id].ratings}</b></td>
+           {/* <td>&nbsp;&nbsp;&nbsp;<b>{apistore[id].ratings}</b></td> */}
            
         </tr>
       )

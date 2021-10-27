@@ -43,6 +43,34 @@ import axios from 'axios';
 function Order2()
 {
 
+  const [userId,setuserId]=useState('1');
+ const [title,settitle]=useState('');
+ const [status,setstatus]=useState('pending');
+ const [type,settype]=useState('');
+ const [content,setcontent]=useState('');
+ const [ratings,setratings]=useState('5');
+
+
+ 
+ function getmodaldata()
+ {
+  alert(type);
+let store={userId,title,status,type,content,ratings};
+console.log(store);
+
+fetch("https://gencore.ar/power_dom/public/api/order",
+    {
+        method:'POST',
+        headers:{'Content-Type': 'application/json', 'Accept':'application/json'},
+        body: JSON.stringify(store)
+    })
+    .then(response => response.json())
+    .then(response => {
+    
+        console.log(response);    
+    })
+}
+
    const [apistore ,setapistore]=useState([]);
    
   useEffect(()=>{

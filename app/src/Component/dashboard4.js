@@ -41,15 +41,18 @@ import jsondata from './jsondata';
 export function Dashboard4()
 {
  
- const [userId,setuserId]=useState('');
+ const [userId,setuserId]=useState('1');
  const [title,settitle]=useState('');
- const [status,setstatus]=useState('');
+ const [status,setstatus]=useState('pending');
  const [type,settype]=useState('');
  const [content,setcontent]=useState('');
- const [ratings,setratings]=useState('');
+ const [ratings,setratings]=useState('5');
+
+
  
  function getmodaldata()
  {
+  alert(type);
 let store={userId,title,status,type,content,ratings};
 console.log(store);
 
@@ -814,13 +817,13 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
           color:'#101010'}}><i>PLACE YOUR ORDER</i></h3>
  
  <br></br>
-   <div class="form-group row" style={{marginBottom:'13px'}}>
+   {/* <div class="form-group row" style={{marginBottom:'13px'}}>
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>UserID</b></label>
    <div class="col-sm-10">
    <input type="number" class="form-control" id="inputPassword" placeholder="UserId" 
      onChange={(e)=>setuserId(e.target.value)}/>
    </div>
-   </div>
+   </div> */}
 
     <div class="form-group row" style={{marginBottom:'13px'}}>
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Title</b></label>
@@ -830,19 +833,26 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
    </div>
    </div>
 
-   <div class="form-group row" style={{marginBottom:'13px'}}>
+   {/* <div class="form-group row" style={{marginBottom:'13px'}}>
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Status</b></label>
    <div class="col-sm-10">
    <input type="text" class="form-control" id="inputPassword" placeholder="Status"
      onChange={(e)=>setstatus(e.target.value)}/>
    </div>
-   </div>
+   </div> */}
 
    <div class="form-group row" style={{marginBottom:'13px'}}>
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Type</b></label>
    <div class="col-sm-10">
-   <input type="text" class="form-control" id="inputPassword" placeholder="Type"
-     onChange={(e)=>settype(e.target.value)}/>
+   {/* <input type="text" class="form-control" id="inputPassword" placeholder="Type"
+     onChange={(e)=>settype(e.target.value)}/> */}
+     
+<select onChange={(e)=>settype(e.target.value)}>
+  <option value="blog">Blog</option>
+  <option value="Fb_content">Fb_content</option>
+  <option value="Instagram_caption">Instagram_caption</option>
+</select>
+
    </div>
    </div>
 
@@ -854,14 +864,14 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
    </div>
    </div>
 
-
+{/* 
    <div class="form-group row" style={{marginBottom:'13px'}}>
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Ratings</b></label>
    <div class="col-sm-10">
    <input type="text" class="form-control" id="inputPassword" placeholder="Ratings"
      onChange={(e)=>setratings(e.target.value)}/>
    </div>
-   </div>
+   </div> */}
 
 <br></br>
 <button type="button" class="btn btn-secondary" onClick={getmodaldata}>Submit</button>
