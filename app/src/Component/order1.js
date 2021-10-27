@@ -37,11 +37,42 @@ import blog from './images/blog.png';
 import cart from './images/cart.png';
 import CancelIcon from '@material-ui/icons/Cancel';
 import styles from './styles.css';
+import axios from 'axios';
 
 
 function Order1()
 {
  
+ const [apistore ,setapistore]=useState([]);
+
+// https://gencore.ar/power_dom/public/api/orderList
+// https://jsonplaceholder.typicode.com/posts
+
+ useEffect(() => {
+   axios.get('https://gencore.ar/power_dom/public/api/orderList')
+    .then(response=>{
+    // console.log(response)
+    let a=response;
+    let b=response.data;
+    let c=response.data.orders.data;
+    // console.log(a);
+    // console.log(b);
+    console.log(c);
+    setapistore(c);
+
+    })
+
+    //  axios.get('https://jsonplaceholder.typicode.com/posts')
+    // .then(response=>{
+    // // console.log(response)
+    // let a=response;
+    // let b=response.data;
+    // console.log(b);
+    // // setapistore(b);
+
+    // })
+
+  } );
   
   var tabledata=
 [
@@ -256,21 +287,28 @@ function Order1()
       <UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
       <th scope="col">status<UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
       <th scope="col">type<UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
+      <th scope="col">Content<UnfoldMoreTwoToneIcon id='icon'> 
+    </UnfoldMoreTwoToneIcon></th>
       <th scope="col" style={{color:'#2143FB'}}>ratings<UnfoldMoreTwoToneIcon id='icon'> </UnfoldMoreTwoToneIcon></th>
+    
     </tr>
   </thead>
   <tbody>
    
-  {
-     tabledata.map((val,id)=>{
+      
+{
+     apistore.map((val,id)=>{
       return(
         <tr style={{height:'9px' , fontSize:'15px' }}>
-          <td>{tabledata[id].id}</td>
-          <td>{tabledata[id].title}</td>
-          <td style={{color:'blue'}}><b>{tabledata[id].status}</b>
-          <br></br><span style={{color:'black'}}>{tabledata[id].statusdate}</span></td>
-          <td>{tabledata[id].type}</td>
-          <td>{tabledata[id].ratings}</td>
+          <td>{apistore[id].id}</td>
+          <td>{apistore[id].title}</td>
+          {/* <td style={{color:'blue'}}><b>{apistore[id].status}</b>
+          <br></br><span style={{color:'black'}}>{apistore[id].statusdate}</span></td> */}
+          <td style={{color:'blue'}}><b>{apistore[id].status}</b></td>
+          <td>{apistore[id].type}</td>
+           <td><i>{apistore[id].content}</i></td>
+           <td>&nbsp;&nbsp;&nbsp;<b>{apistore[id].ratings}</b></td>
+           
         </tr>
       )
      })
@@ -284,6 +322,18 @@ function Order1()
 
 </div>
 </div>
+
+<ul>
+
+{/* {
+     apistore.map((api=>{
+     <li>{apistore.title}</li>
+     }))
+   
+}  */}
+
+</ul>
+ 
 
 <br></br><br></br>
 

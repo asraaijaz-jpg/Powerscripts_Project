@@ -1199,7 +1199,7 @@ width: 600px;
     height: 700px;
   }
   #icon{
-    margin-left: 50px;
+    margin-left: 40px;
     font-size: 16px;
   }
   #mt1{
@@ -1338,6 +1338,9 @@ mll{
   margin-left: 50px;
   width: 520px;
 }
+#insidemodal{
+  width:450px;
+}
 }
 
 
@@ -1348,6 +1351,9 @@ mll{
 
 @media  (max-width: 1200px) 
 {
+  #insidemodal{
+    width:450px;
+  }
   #stp{
     margin-left: -23px;
   }

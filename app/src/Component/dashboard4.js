@@ -41,6 +41,13 @@ import jsondata from './jsondata';
 export function Dashboard4()
 {
  
+ const [id,setid]=useState('');
+ const [title,settitle]=useState('');
+ const [status,setstatus]=useState('');
+ const [type,settype]=useState('');
+ const [content,setcontent]=useState('');
+ const [ratings,setratings]=useState('');
+ 
   var tabledata=
 [
 {
@@ -60,7 +67,7 @@ export function Dashboard4()
     "statusdate":"2020-3-21",
     "type":"Blog Article",
     "ratings":"View Order",
-    "links":"/order2"
+    "links":"/order1"
 }
 ,
 {
@@ -70,14 +77,19 @@ export function Dashboard4()
     "statusdate":"2020-3-21",
     "type":"Blog Article",
     "ratings":"View Order",
-    "links":"/order2"
+    "links":"/order1"
 }
 ]
 
   const [show, setShow] = useState(false);   
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  
+
+
+  const [show2, setShow2] = useState(false);   
+  const handleClose2 = () => setShow2(false);
+  const handleShow2 = () => setShow2(true);
+
 
     useEffect(()=>{
         document.title='React app';
@@ -524,7 +536,8 @@ backgroundColor:' #ffffff' , border:'none'}}><CancelIcon></CancelIcon></button>
    
     <div className='col-4 p-2' style={{color:'white' , backgroundColor:'blue' , borderRadius:'8px',
   width:'260px' , height:'190px'}} id='mdiv'>
-<button style={{width:'260px' , 
+<button onClick={handleShow2}
+ style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'blue' ,
  borderRadius:'8px'}}>
         <div className='row'>
@@ -549,7 +562,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
       <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' }} id='mdiv2'>
-<button style={{width:'260px' , 
+<button  onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
         <div className='row'>
         <div className='col-2 offset-2 p-2 ' >
@@ -570,7 +583,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
       <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' }} id='mdiv3'>
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
         <div className='row'>
@@ -601,7 +614,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px'}} id='mdiv4'>
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -626,7 +639,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 <div className='col-4 p-2 ' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px'  , marginLeft:'20px' }}>
 
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -648,7 +661,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' , marginLeft:'20px' }}>
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -683,7 +696,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' }}>
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -707,7 +720,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2 ' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' , marginLeft:'20px' }}>
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -729,7 +742,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 
 <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
     width:'260px' , height:'190px' , marginLeft:'20px' }}>
-<button style={{width:'260px' , 
+<button onClick={handleShow2} style={{width:'260px' , 
 marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
 
 <div className='row'>
@@ -766,6 +779,80 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
 </Modal>
 
 {/* <Limage/> */}
+
+
+ <Modal show={show2} onHide={() => setShow2(false)} size="lg"  aria-labelledby="contained-modal-title-vcenter"
+     centered id='insidemodal'>
+
+        <Modal.Header style={{height:'90px' , borderRadius:'30px' , backgroundColor:'#FCFCFC'}}>
+       
+       <button onClick={handleClose2} className='btn btn-light' 
+       style={{backgroundColor:' #ffffff' , border:'none'}}><CancelIcon id='cancel3'></CancelIcon></button>
+       
+        </Modal.Header>
+
+        <Modal.Body style={{backgroundColor:'#FEFEFE'}}> 
+       <center>
+           <h3 id='mh' style={{fontFamily:'Bangers/2XL Large' , fontWeight:'790' ,
+          color:'#101010'}}><i>PLACE YOUR ORDER</i></h3>
+ 
+ <br></br>
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>ID</b></label>
+   <div class="col-sm-10">
+   <input type="number" class="form-control" id="inputPassword" placeholder="Id" 
+     onChange={(e)=>setid(e.target.value)}/>
+   </div>
+   </div>
+
+    <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Title</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Title"
+     onChange={(e)=>settitle(e.target.value)}/>
+   </div>
+   </div>
+
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Status</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Status"
+     onChange={(e)=>setstatus(e.target.value)}/>
+   </div>
+   </div>
+
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Type</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Type"
+     onChange={(e)=>settype(e.target.value)}/>
+   </div>
+   </div>
+
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Content</b></label>
+   <div class="col-sm-10">
+   <textarea type="text" class="form-control" id="inputPassword" placeholder="Content"
+     onChange={(e)=>setcontent(e.target.value)}/>
+   </div>
+   </div>
+
+
+   <div class="form-group row" style={{marginBottom:'13px'}}>
+   <label for="inputPassword" class="col-sm-2 col-form-label"><b>Ratings</b></label>
+   <div class="col-sm-10">
+   <input type="text" class="form-control" id="inputPassword" placeholder="Ratings"
+     onChange={(e)=>setratings(e.target.value)}/>
+   </div>
+   </div>
+
+           </center>
+ <br></br>
+       
+        </Modal.Body>
+
+      </Modal>
+
 
 </div>)
 }
