@@ -41,7 +41,7 @@ import jsondata from './jsondata';
 export function Dashboard4()
 {
  
- const [userid,setuserid]=useState('');
+ const [userId,setuserId]=useState('');
  const [title,settitle]=useState('');
  const [status,setstatus]=useState('');
  const [type,settype]=useState('');
@@ -50,7 +50,7 @@ export function Dashboard4()
  
  function getmodaldata()
  {
-let store={userid,title,status,type,content,ratings};
+let store={userId,title,status,type,content,ratings};
 console.log(store);
 
 fetch("https://gencore.ar/power_dom/public/api/order",
@@ -818,7 +818,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>UserID</b></label>
    <div class="col-sm-10">
    <input type="number" class="form-control" id="inputPassword" placeholder="UserId" 
-     onChange={(e)=>setuserid(e.target.value)}/>
+     onChange={(e)=>setuserId(e.target.value)}/>
    </div>
    </div>
 

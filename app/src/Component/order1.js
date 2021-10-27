@@ -282,15 +282,17 @@ function Order1()
  
   <thead>
     <tr id='txt1'>
-      <th scope="col">id&nbsp;&nbsp;<UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
+      <th scope="col">id&nbsp;&nbsp;</th>
       <th scope="col">title&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
-      <th scope="col">status<UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
-      <th scope="col">type<UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon></th>
-      <th scope="col">Content<UnfoldMoreTwoToneIcon id='icon'> 
-    </UnfoldMoreTwoToneIcon></th>
-      <th scope="col" style={{color:'#2143FB'}}>ratings<UnfoldMoreTwoToneIcon id='icon'> </UnfoldMoreTwoToneIcon></th>
+      </th>
+      <th scope="col">status</th>
+      <th scope="col">type</th>
+      <th scope="col">Content</th>
+      <th scope="col" style={{color:'#2143FB'}}>ratings</th>
     
+
+      {/* <UnfoldMoreTwoToneIcon id='icon'></UnfoldMoreTwoToneIcon> */}
+
     </tr>
   </thead>
   <tbody>
