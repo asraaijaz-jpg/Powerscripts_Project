@@ -48,6 +48,11 @@ export function Dashboard4()
  const [content,setcontent]=useState('');
  const [ratings,setratings]=useState('');
  
+ function getmodaldata()
+ {
+let store={id,title,status,type,content,ratings};
+alert(store);
+ }
   var tabledata=
 [
 {
@@ -846,6 +851,8 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
    </div>
    </div>
 
+<br></br>
+<button type="button" class="btn btn-secondary" onClick={getmodaldata}>Submit</button>
            </center>
  <br></br>
        
