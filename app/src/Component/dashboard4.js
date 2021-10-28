@@ -52,7 +52,7 @@ export function Dashboard4()
  
  function getmodaldata()
  {
-  alert(type);
+  alert('Order placed');
 let store={userId,title,status,type,content,ratings};
 console.log(store);
 
@@ -846,8 +846,10 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
    <div class="col-sm-10">
    {/* <input type="text" class="form-control" id="inputPassword" placeholder="Type"
      onChange={(e)=>settype(e.target.value)}/> */}
+
      
-<select onChange={(e)=>settype(e.target.value)}>
+<select onChange={(e)=>settype(e.target.value)} 
+style={{width:'340px' , height:'40px' ,  border:'2px solid #CCCCCC'}}>
   <option value="blog">Blog</option>
   <option value="Fb_content">Fb_content</option>
   <option value="Instagram_caption">Instagram_caption</option>
@@ -860,7 +862,7 @@ marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgro
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Content</b></label>
    <div class="col-sm-10">
    <textarea type="text" class="form-control" id="inputPassword" placeholder="Content"
-     onChange={(e)=>setcontent(e.target.value)}/>
+     onChange={(e)=>setcontent(e.target.value)} />
    </div>
    </div>
 

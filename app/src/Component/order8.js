@@ -718,7 +718,7 @@ height:'1530px'}} id='hh'></div>
    {/* <input type="text" class="form-control" id="inputPassword" placeholder="Type"
      onChange={(e)=>settype(e.target.value)}/> */}
      
-<select onChange={(e)=>settype(e.target.value)}>
+<select onChange={(e)=>settype(e.target.value)} style={{width:'340px' , height:'40px' ,  border:'2px solid #CCCCCC'}}>
   <option value="blog">Blog</option>
   <option value="Fb_content">Fb_content</option>
   <option value="Instagram_caption">Instagram_caption</option>
