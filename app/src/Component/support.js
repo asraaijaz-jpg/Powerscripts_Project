@@ -37,23 +37,23 @@ import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
 
 function Support()
 { 
-
   const [show9, setShow9] = useState(false);   
   const handleClose9 = () => setShow9(false);
   const handleShow9 = () => setShow9(true);
-  
+
+
   const [userId,setuserId]=useState('1');
- const [title,settitle]=useState('');
- const [status,setstatus]=useState('pending');
- const [type,settype]=useState('');
- const [content,setcontent]=useState('');
- const [ratings,setratings]=useState('5');
+  const [title,settitle]=useState('');
+  const [status,setstatus]=useState('pending');
+  const [type,settype]=useState('');
+  const [content,setcontent]=useState('');
+  const [ratings,setratings]=useState('5');
 
 
  
- function getmodaldata()
+  function getmodaldata()
  {
-  alert(type);
+  alert('Order placed');
 let store={userId,title,status,type,content,ratings};
 console.log(store);
 
@@ -69,6 +69,7 @@ fetch("https://gencore.ar/power_dom/public/api/order",
         console.log(response);    
     })
 }
+
 
     const [show, setShow] = useState(false);   
     const handleClose = () => setShow(false);
@@ -878,7 +879,6 @@ required for use.
 {/* <Limage/> */}
 
 
-
 <Modal show={show9} onHide={() => setShow9(false)} size="lg"  aria-labelledby="contained-modal-title-vcenter"
      centered id='insidemodal'>
 
@@ -924,8 +924,10 @@ required for use.
    <div class="col-sm-10">
    {/* <input type="text" class="form-control" id="inputPassword" placeholder="Type"
      onChange={(e)=>settype(e.target.value)}/> */}
+
      
-<select onChange={(e)=>settype(e.target.value)} style={{width:'340px' , height:'40px' ,  border:'2px solid #CCCCCC'}}>
+<select onChange={(e)=>settype(e.target.value)} 
+style={{width:'340px' , height:'40px' ,  border:'2px solid #CCCCCC'}}>
   <option value="blog">Blog</option>
   <option value="Fb_content">Fb_content</option>
   <option value="Instagram_caption">Instagram_caption</option>
@@ -938,7 +940,7 @@ required for use.
    <label for="inputPassword" class="col-sm-2 col-form-label"><b>Content</b></label>
    <div class="col-sm-10">
    <textarea type="text" class="form-control" id="inputPassword" placeholder="Content"
-     onChange={(e)=>setcontent(e.target.value)}/>
+     onChange={(e)=>setcontent(e.target.value)} />
    </div>
    </div>
 
@@ -959,6 +961,7 @@ required for use.
         </Modal.Body>
 
       </Modal>
+
 
 </div>)
 }
