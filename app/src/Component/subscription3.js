@@ -67,7 +67,7 @@ function Subscription3()
  
  function getmodaldata()
  {
-  alert(type);
+  alert('Order placed');
 let store={userId,title,status,type,content,ratings};
 console.log(store);
 
