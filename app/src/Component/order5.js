@@ -529,7 +529,7 @@ height:'1530px'}} id='hh'></div>
       
        <div className='col-4 p-2' style={{color:'white' , backgroundColor:'blue' , borderRadius:'8px',
      width:'260px' , height:'190px'}} id='mdiv'>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'blue' ,
     borderRadius:'8px'}}>
            <div className='row'>
@@ -551,7 +551,7 @@ height:'1530px'}} id='hh'></div>
    
          <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px' }} id='mdiv2'>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
            <div className='row'>
            <div className='col-2 offset-2 p-2 ' >
@@ -571,7 +571,7 @@ height:'1530px'}} id='hh'></div>
    
          <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px' }} id='mdiv3'>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
            <div className='row'>
@@ -599,7 +599,7 @@ height:'1530px'}} id='hh'></div>
    
    <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px'}} id='mdiv4'>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
    <div className='row'>
@@ -622,7 +622,7 @@ height:'1530px'}} id='hh'></div>
    <div className='col-4 p-2 ' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px'  , marginLeft:'20px' }}>
    
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
    <div className='row'>
@@ -643,7 +643,7 @@ height:'1530px'}} id='hh'></div>
    
    <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px' , marginLeft:'20px' }}>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
    <div className='row'>
@@ -672,7 +672,7 @@ height:'1530px'}} id='hh'></div>
    
    <div className='col-4 p-2' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px' }}>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
    <div className='row'>
@@ -694,7 +694,7 @@ height:'1530px'}} id='hh'></div>
    
    <div className='col-4 p-2 ' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px' , marginLeft:'20px' }}>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
    <div className='row'>
@@ -715,7 +715,7 @@ height:'1530px'}} id='hh'></div>
    
    <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
        width:'260px' , height:'190px' , marginLeft:'20px' }}>
-   <button style={{width:'260px' , 
+   <button onClick={handleShow9} style={{width:'260px' , 
    marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
    
    <div className='row'>
