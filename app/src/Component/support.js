@@ -382,230 +382,249 @@ height:'1150px' }}></div> */}
      </div>
    
    
-   
-   <div className='col-9 p-4'>
-   
-     <h4 style={{marginTop:'-40px'}} id='mdiv'><b>Recommended for you</b></h4><br></br>
-   
-   
-       <div className='row'>
-      
-       <div className='col-4 p-2' style={{color:'white' , backgroundColor:'blue' , borderRadius:'8px',
-     width:'260px' , height:'190px'}} id='mdiv'>
-   <button onClick={handleShow9} style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'blue' ,
-    borderRadius:'8px'}}>
-           <div className='row'>
-           <div className='col-2 offset-2 p-2' >
-           <img src={fb}/>
-           </div>
-           <div className='col-5 offset-1 p-2'>
-           <h6>Facebook <br></br> Primary Text </h6>               
-           </div>
-           </div>
-          <p className='p-2 ' ><br></br>Create Google Ads from scratch with
-              exact requirements and layouts
-              required for use.
-          </p>
-   </button> 
-        </div>
-       
-   
-   
-         <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px' }} id='mdiv2'>
-   <button onClick={handleShow9} style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-           <div className='row'>
-           <div className='col-2 offset-2 p-2 ' >
-           <img src={blog}/>
-           </div>
-           <div className='col-5 offset-1 p-3'>
-           <h6 style={{color:'black'}}>Blog</h6>               
-           </div>
-           </div>
-          <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-              exact requirements and layouts
-              required for use.
-          </p>
-          </button>
-        </div>
-   
-   
-         <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px' }} id='mdiv3'>
-   <button onClick={handleShow9}  style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-           <div className='row'>
-           <div className='col-2 offset-2 p-2' >
-           <img  src={cart} />
-           </div>
-           <div className='col-5 offset-1 p-2'>
-           <h6 style={{color:'black'}}>Product<br></br> Description </h6>               
-           </div>
-           </div>
-          <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-              exact requirements and layouts
-              required for use.
-          </p>
-          </button>
-        </div>
-   
-        
-   
-       </div>
-   
-   <br></br>
-   
-   <div className='row'>
-   
-   <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px'}} id='mdiv4'>
-   <button onClick={handleShow9} style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-   <div className='row'>
-   <div className='col-2 offset-2 p-2' >
-   <img src={fb1}/>
+     <div className='col-9 p-4'>
+
+<h4 style={{marginTop:'-10px'}} id='mdiv'><b>Recommended for you</b></h4><br></br>
+
+
+  <div className='row'>
+ 
+  <div className='col-4 p-2' style={{color:'white' , backgroundColor:'blue' , borderRadius:'8px',
+width:'260px' , height:'190px'}} id='mdiv'>
+<button onClick={handleShow9}
+style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'blue' ,
+borderRadius:'8px'}}>
+      <div className='row'>
+      <div className='col-2 offset-2 p-2' >
+      <img src={fb} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'white' , marginLeft:'-33px' , marginTop:'9px'
+    , textAlign:'start'}}>Facebook <br></br>Primary Text</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'white' , marginTop:'-27px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+
+</button> 
    </div>
-   <div className='col-5 offset-1 p-2'>
-   <h6 style={{color:'black'}}>Facebook <br></br> Primary Text </h6>               
+  
+
+
+    <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px' }} id='mdiv2'>
+<button  onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+      <div className='row'>
+      <div className='col-2 offset-2 p-2 ' >
+      <img src={blog} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-113px' , marginTop:'22px'}}>Blog</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-15px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+     </button>
    </div>
+
+
+    <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px' }} id='mdiv3'>
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+      <div className='row'>
+      <div className='col-2 offset-2 p-2' >
+      <img src={cart} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-33px' , marginTop:'9px'
+    , textAlign:'start'}}>Product <br></br>Description</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-27px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p> </button>
    </div>
-   <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-   exact requirements and layouts
-   required for use.
-   </p>
-   </button>
-   </div>
+
    
-   
-   
-   <div className='col-4 p-2 ' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px'  , marginLeft:'20px' }}>
-   
-   <button  onClick={handleShow9} style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-   <div className='row'>
-   <div className='col-2 offset-2 p-2 ' >
-   <img src={blog}/>
-   </div>
-   <div className='col-5 offset-1 p-3'>
-   <h6 style={{color:'black'}}>Blog</h6>               
-   </div>
-   </div>
-   <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-   exact requirements and layouts
-   required for use.
-   </p>
-   </button>
-   </div>
-   
-   
-   <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px' , marginLeft:'20px' }}>
-   <button  onClick={handleShow9} style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-   <div className='row'>
-   <div className='col-2 offset-2 p-2' >
-   <img  src={cart} />
-   </div>
-   <div className='col-5 offset-1 p-2'>
-   <h6 style={{color:'black'}}>Product<br></br> Description </h6>               
-   </div>
-   </div>
-   <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-   exact requirements and layouts
-   required for use.
-   </p>
-   </button>
-   </div>
-   
-   
-   
-   </div>
-   
-   
-   <br></br>
-   
-   <div className='row'>
-   
-   <div className='col-4 p-2' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px' }}>
-   <button onClick={handleShow9}  style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-   <div className='row'>
-   <div className='col-2 offset-2 p-2' >
-   <img src={fb1}/>
-   </div>
-   <div className='col-5 offset-1 p-2'>
-   <h6 style={{color:'black'}}>Facebook <br></br> Primary Text </h6>               
-   </div>
-   </div>
-   <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-   exact requirements and layouts
-   required for use.
-   </p>
-   </button>
-   </div>
-   
-   
-   
-   <div className='col-4 p-2 ' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px' , marginLeft:'20px' }}>
-   <button onClick={handleShow9}  style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-   <div className='row'>
-   <div className='col-2 offset-2 p-2 ' >
-   <img src={blog}/>
-   </div>
-   <div className='col-5 offset-1 p-3'>
-   <h6 style={{color:'black'}}>Blog</h6>               
-   </div>
-   </div>
-   <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-   exact requirements and layouts
-   required for use.
-   </p>
-   </button>
-   </div>
-   
-   
-   <div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
-       width:'260px' , height:'190px' , marginLeft:'20px' }}>
-   <button  onClick={handleShow9} style={{width:'260px' , 
-   marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
-   
-   <div className='row'>
-   <div className='col-2 offset-2 p-2' >
-   <img  src={cart} />
-   </div>
-   <div className='col-5 offset-1 p-2'>
-   <h6 style={{color:'black'}}>Product<br></br> Description </h6>               
-   </div>
-   </div>
-   <p className='p-2' style={{color:'blue'}}><br></br>Create Google Ads from scratch with
-   exact requirements and layouts
-   required for use.
-   </p>
-   </button>
-   </div>
-   
-   
-   
-   </div>
-   
-   
-   
-   
-   </div>
-     </div>
-   
+
+  </div>
+
+
+
+  <br></br>
+
+<div className='row'>
+
+<div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px'}} id='mdiv4'>
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+<div className='row'>
+<div className='col-2 offset-2 p-2' >
+<img src={fb1} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-33px' , marginTop:'9px'
+    , textAlign:'start'}}>Facebook <br></br>Primary Text</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-27px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+</button>
+</div>
+
+
+
+<div className='col-4 p-2 ' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px'  , marginLeft:'20px' }}>
+
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+<div className='row'>
+<div className='col-2 offset-2 p-2 ' >
+<img src={blog} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-113px' , marginTop:'22px'}}>Blog</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-15px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+     </button>
+</div>
+
+
+<div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px' , marginLeft:'20px' }}>
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+<div className='row'>
+<div className='col-2 offset-2 p-2' >
+<img src={cart} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-33px' , marginTop:'9px'
+    , textAlign:'start'}}>Product <br></br>Description</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-27px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+     </button>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+<br></br>
+
+<div className='row'>
+
+<div className='col-4 p-2' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px' }}>
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+<div className='row'>
+<div className='col-2 offset-2 p-2' >
+<img src={fb1} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-33px' , marginTop:'9px'
+    , textAlign:'start'}}>Facebook <br></br>Primary Text</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-27px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+     </button>
+</div>
+
+
+
+<div className='col-4 p-2 ' style={{backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px' , marginLeft:'20px' }}>
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+<div className='row'>
+<div className='col-2 offset-2 p-2 ' >
+<img src={blog} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-113px' , marginTop:'22px'}}>Blog</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-15px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+     </button>
+</div>
+
+
+<div className='col-4 p-2' style={{color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px',
+  width:'260px' , height:'190px' , marginLeft:'20px' }}>
+<button onClick={handleShow9} style={{width:'260px' , 
+marginLeft:'-10px' , marginTop:'-10px' , border:'none' , color:'white' , backgroundColor:'#F2F2F2' , borderRadius:'8px' }}>
+
+<div className='row'>
+<div className='col-2 offset-2 p-2' >
+<img src={cart} style={{marginTop:'15px' , marginLeft:'-27px'}}/>
+      </div>
+      <div className='col-5 offset-1 p-3'>
+      <h6 style={{color:'black' , marginLeft:'-33px' , marginTop:'9px'
+    , textAlign:'start'}}>Product <br></br>Description</h6>               
+      </div>
+      </div>
+     <p className='p-2' style={{color:'blue' , marginTop:'-27px' , textAlign:'start' , 
+    marginLeft:'8px'}}><br></br>Create Google Ad from scratch with
+         exact requirements and layouts
+         required for use.
+     </p>
+     </button>
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
+
 </Modal.Body>
 
 <Modal.Footer>
