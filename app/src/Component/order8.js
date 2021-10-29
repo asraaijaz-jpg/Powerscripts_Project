@@ -1,6 +1,7 @@
 import React, { useEffect , useState } from 'react';
 import ReactDOM from 'react';
-import Icon from '@material-ui/core/Icon';import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
+import Icon from '@material-ui/core/Icon';
+import {Route , Link , Switch , BrowserRouter, NavLink} from 'react-router-dom';
 import cartoon from './images/cartoon4.png'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
