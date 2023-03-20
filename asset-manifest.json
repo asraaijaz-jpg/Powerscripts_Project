@@ -1,33 +1,23 @@
 {
   "files": {
-    "main.css": "/Powerscripts_Project/static/css/main.eed069fb.chunk.css",
-    "main.js": "/Powerscripts_Project/static/js/main.cb1b4aad.chunk.js",
-    "main.js.map": "/Powerscripts_Project/static/js/main.cb1b4aad.chunk.js.map",
-    "runtime-main.js": "/Powerscripts_Project/static/js/runtime-main.34663fb3.js",
-    "runtime-main.js.map": "/Powerscripts_Project/static/js/runtime-main.34663fb3.js.map",
-    "static/css/2.da1eef19.chunk.css": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css",
-    "static/js/2.66048247.chunk.js": "/Powerscripts_Project/static/js/2.66048247.chunk.js",
-    "static/js/2.66048247.chunk.js.map": "/Powerscripts_Project/static/js/2.66048247.chunk.js.map",
-    "static/js/3.79f7ff7e.chunk.js": "/Powerscripts_Project/static/js/3.79f7ff7e.chunk.js",
-    "static/js/3.79f7ff7e.chunk.js.map": "/Powerscripts_Project/static/js/3.79f7ff7e.chunk.js.map",
+    "main.css": "/Powerscripts_Project/static/css/main.cf194d8b.css",
+    "main.js": "/Powerscripts_Project/static/js/main.f6693669.js",
+    "static/js/787.ee4d86e2.chunk.js": "/Powerscripts_Project/static/js/787.ee4d86e2.chunk.js",
+    "static/media/cartoon3.png": "/Powerscripts_Project/static/media/cartoon3.3db7d7310aa01841c68b.png",
+    "static/media/cartoon1.png": "/Powerscripts_Project/static/media/cartoon1.b82cf6409870e2e1b386.png",
+    "static/media/cartoon2.png": "/Powerscripts_Project/static/media/cartoon2.aa6d316fc726b6e8f455.png",
+    "static/media/cir3.png": "/Powerscripts_Project/static/media/cir3.f97487db16c411810d5e.png",
+    "static/media/txtimg.png": "/Powerscripts_Project/static/media/txtimg.7a0b77469d6b41ec616c.png",
+    "static/media/logo3.png": "/Powerscripts_Project/static/media/logo3.51dd037c0bb724eef185.png",
+    "static/media/cartoon4.png": "/Powerscripts_Project/static/media/cartoon4.a804c983ae76954c4c10.png",
+    "static/media/logo.svg": "/Powerscripts_Project/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Powerscripts_Project/index.html",
-    "static/css/2.da1eef19.chunk.css.map": "/Powerscripts_Project/static/css/2.da1eef19.chunk.css.map",
-    "static/css/main.eed069fb.chunk.css.map": "/Powerscripts_Project/static/css/main.eed069fb.chunk.css.map",
-    "static/js/2.66048247.chunk.js.LICENSE.txt": "/Powerscripts_Project/static/js/2.66048247.chunk.js.LICENSE.txt",
-    "static/media/cartoon1.b82cf640.png": "/Powerscripts_Project/static/media/cartoon1.b82cf640.png",
-    "static/media/cartoon2.aa6d316f.png": "/Powerscripts_Project/static/media/cartoon2.aa6d316f.png",
-    "static/media/cartoon3.3db7d731.png": "/Powerscripts_Project/static/media/cartoon3.3db7d731.png",
-    "static/media/cartoon4.a804c983.png": "/Powerscripts_Project/static/media/cartoon4.a804c983.png",
-    "static/media/cir3.f97487db.png": "/Powerscripts_Project/static/media/cir3.f97487db.png",
-    "static/media/logo.6ce24c58.svg": "/Powerscripts_Project/static/media/logo.6ce24c58.svg",
-    "static/media/logo3.51dd037c.png": "/Powerscripts_Project/static/media/logo3.51dd037c.png",
-    "static/media/txtimg.7a0b7746.png": "/Powerscripts_Project/static/media/txtimg.7a0b7746.png"
+    "main.cf194d8b.css.map": "/Powerscripts_Project/static/css/main.cf194d8b.css.map",
+    "main.f6693669.js.map": "/Powerscripts_Project/static/js/main.f6693669.js.map",
+    "787.ee4d86e2.chunk.js.map": "/Powerscripts_Project/static/js/787.ee4d86e2.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.34663fb3.js",
-    "static/css/2.da1eef19.chunk.css",
-    "static/js/2.66048247.chunk.js",
-    "static/css/main.eed069fb.chunk.css",
-    "static/js/main.cb1b4aad.chunk.js"
+    "static/css/main.cf194d8b.css",
+    "static/js/main.f6693669.js"
   ]
 }
